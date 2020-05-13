@@ -1,2 +1,3 @@
 name: Gina Martiny
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
