@@ -3,16 +3,27 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
+
+nav ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    border-bottom: 2px solid #5E5E63;
+}
+
+footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
     color: rgba(67, 3, 249, .7);;
@@ -28,11 +39,11 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: rgb(39, 39, 47);
+    color: rgb(94, 94, 99);
     text-align: center;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 2px solid #5E5E63;
     font-size: .8em;
 }
 
