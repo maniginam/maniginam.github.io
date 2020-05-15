@@ -42,10 +42,19 @@ p {
     color: rgb(94, 94, 99);
     text-align: center;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 footer {
     border-top: 2px solid #5E5E63;
     font-size: .8em;
 }
+
 
 ul.posts { 
     margin: 20px auto 40px; 
