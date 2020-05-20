@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Changing the Future"
 date: 2020-05-17
 ---
