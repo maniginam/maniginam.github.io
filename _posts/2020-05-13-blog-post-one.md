@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 title: "Blog Post One"
 date: 2020-05-13
 ---
