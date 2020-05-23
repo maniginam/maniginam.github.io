@@ -1,7 +1,7 @@
 body {
     background-color: rgba(100, 50, 255,0.25);
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
 
 nav ul {
@@ -13,7 +13,7 @@ nav ul {
     background-color: rgba(100, 50, 255, 0.25);
     position: fixed;
     top: 0px;
-    width: 70%;
+    width: 80%;
 }
 
 footer ul {
@@ -45,6 +45,8 @@ p {
     line-height: 1.4em;
     color: rgb(94, 94, 99);
     text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 img {
@@ -59,6 +61,10 @@ footer {
     font-size: .8em;
 }
 
+div.blurb p {
+	text-align: justify;
+}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -69,9 +75,23 @@ ul.posts li {
     list-style: none;
 }
 
-p.posts {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: rgb(94, 94, 99);
 
+div.post p {
+		text-align: justify;		
 }
+
+div.post ol {
+	font-size: 1.5em;
+	color: rgb(94, 94, 99);
+	padding-right: 25px;
+}
+
+div.post ol p {
+	font-size: 1em;
+	margin-right: 25px;
+}
+
+
+
+
+
