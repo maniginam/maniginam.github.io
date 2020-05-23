@@ -22,10 +22,13 @@ It was on Tuesday that suddenly my boss & two of the other managers were behavin
 
 After a little more contemplation on the best way to play my cards, I was able to come up with a few proposals for him, so yesterday, I asked to speak with him.  I told him that I was not formally resigning right now, but that I did have intentions to leave the company.  I explained that if layoffs are coming that “I volunteer as tribute!”.  Once I got my nerves under control, I proposed my other ideas also:
 
-1.	I resign, and we make it a clean cut.
-2.	Because he knows I’m leaving anyway, they lay me off in place of someone else who is still adding value.
-3.	I resign, but I stay on board for a few extra weeks, strictly working remotely to help ensure we have a smooth quarter end.
-4.	(or, and this one is my favorite) I don’t resign and don’t get laid off, and instead we negotiate some terms for me to work strictly remotely part-time covering a dumb tasks that we call IRA, which the engineers are currently required to do every day and I happen to be very good at—I’m actually the best on site and mentor the others on how to do these transactions.
+1. I resign, and we make it a clean cut.
+
+2. Because he knows I’m leaving anyway, they lay me off in place of someone else who is still adding value.
+
+3. I resign, but I stay on board for a few extra weeks, strictly working remotely to help ensure we have a smooth quarter end.
+
+4. (or, and this one is my favorite) I don’t resign and don’t get laid off, and instead we negotiate some terms for me to work strictly remotely part-time covering a dumb tasks that we call IRA, which the engineers are currently required to do every day and I happen to be very good at—I’m actually the best on site and mentor the others on how to do these transactions.
 
 He was very appreciative that I told him what was going on ahead of making the cut as well as being willing to continue to support the site.  He was actually really interested in option 4.  
 
