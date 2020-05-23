@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "I think this might work"
+title: "i think this might work"
 date: 2020-05-23
 ---
 
