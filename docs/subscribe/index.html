@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Subscribed!</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="action" type="php" href="/php/subscribe.php">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1></h1>
+
+<div class="blurb">
+	Welcome! <?php echo $_GET["email"]; ?>
+</div>
+
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+        			<li><a href="mailto: maniginam@gmail.com">email me</a></li>
+					<li><a href="https://github.com/maniginam">github.com/maniginam</a></li>		
+					<li><form action="subscribe.php" method="get">
+						<input name="email" type="text" placeholder="Enter your email">
+						<button class="button" type="submit">Subscribe</button>		
+					</form></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
