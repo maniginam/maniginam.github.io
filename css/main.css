@@ -30,7 +30,7 @@ nav ul li, footer ul li {
 
 a {
     text-decoration: none;
-    color: rgba(67, 3, 249, .7);;
+    color: rgba(67, 3, 249, .7);
 }
 a:hover {
     text-decoration: underline;
@@ -60,6 +60,23 @@ footer {
     border-top: 2px solid #5E5E63;
     font-size: .8em;
 }
+
+footer ul li form {
+	margin-left: 260px;
+
+}
+
+input[type=text] {
+	background-color: rgba(100, 50, 255,0.25);
+	border: 1px solid #5E5E63
+	color: rgba(67, 3, 249, .7);
+	margin-left: 250px;
+}
+
+input[type=submit] {
+
+}
+
 
 div.about p {
 	text-align: justify;
@@ -93,6 +110,7 @@ div.post ol p {
 	font-size: 1em;
 	margin-right: 40px;
 }
+
 
 
 
