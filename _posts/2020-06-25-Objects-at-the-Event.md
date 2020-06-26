@@ -1,6 +1,6 @@
 ---
 Layout: posts
-Title: 2020-06-25-Objects-at-the-Event
+Title: Objects at the Event
 Date: 2020-06-25
 ---
 
