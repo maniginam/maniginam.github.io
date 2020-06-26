@@ -19,8 +19,10 @@ I've also had the opportunity to work with my dad a bunch this week.  He showed 
 I'm still having fun and really enjoying all of this.  Still don't have any closure on the work situation, but I'm trying
 be flexible and help out however I can.  
 
-Leo has started army crawling.  He doesn't quite crawl yet, but he has a very determined & desperate army crawl that only
-utilizes his arms.  And I mean that litterally; he honestly looks like a person who just lost his legs and is crying and
+Leo has started army crawling.  By that I mean, he does what I call a desparate wounded warrior crawl where he doesn't 
+quite crawl yet, but he has a very determined & desperate army crawl that only
+utilizes his arms while allowing his legs to limply trail behind him.  And I mean that literally; he honestly looks like
+a person who just lost his legs and is crying and
 desperately trying to crawl to safety (me).  I of course feel bad for him and pick him up quickly.
 
 Rex on the other hand is talking up a storm these days.  Yesterday, he said he got bit by a bug.  His finger was swollen,
