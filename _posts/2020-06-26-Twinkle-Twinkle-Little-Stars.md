@@ -10,7 +10,8 @@ blog for today....
 Rex:  
 Rex stuff
 
-<video src="twinkel twinkle little star.mp4" atl="Rex finds a tree star and sings twinkle twinkle little star" width="320" height="240"></video>
+<video src="twinkle twinkle little star.mp4" width="320" height="240">
+</video>
 
 
 Leo:  
