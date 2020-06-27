@@ -20,6 +20,7 @@ And lastly, I knew it was only a matter of time before this happened, but I was 
 dream about writing code!  I think i was trying to solve the euler 5 in my dream, and it was a good dream; I solved it.
 I briefly woke up (i think) and tried to remember how I solved it but the memory of the precise code was fleeting...
 
+***
 Rex:  
 Today, Rex hunted for coins in the school parking lot and found a whole dollar in quarters--I didn't even
 put them down for him.  These were legit found quarters.
@@ -28,7 +29,7 @@ Then i showed him a tree star.  He got excited, picked it up, and started to sin
 "Twinkle Twinkle Little Star".  It was so cute.  I even tried to embed a video of it below, but I don't think
 it's working, so I'll come back to it.
 
-<video src="twinkle twinkle little star.mp4" width="320" height="240">
+<video src="/pics/twinkle twinkle little star.mp4" width="320" height="240">
 </video>
 
 
