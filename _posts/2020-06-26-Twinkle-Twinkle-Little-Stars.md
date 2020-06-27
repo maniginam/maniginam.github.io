@@ -16,7 +16,6 @@ to set it in place once the box is clicked.  This is tough & i think i think i m
 and sub-objects, so i'm getting a little wrapped up in where the hell I am in the depth of the objects...
 I'll get there... 
 
-***
 Rex:  
 Today, Rex hunted for coins in the school parking lot and found a whole dollar in quarters--I didn't even
 put them down for him.  These were legit found quarters.
