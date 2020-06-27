@@ -4,7 +4,7 @@ title: "Twinkle Twinkle Little Stars"
 date: 2020-06-26
 ---
 
-oh... time management is a pain!  I'm so bad at it.
+oh... time management...  I'm so bad at it.
 
 That being said, I completed euler 5 today and started & completed euler 6--it was
 kind of an easier one, so i just did it.  Still, it was very exciting to have completed
@@ -15,6 +15,10 @@ and 'X' follows the mouse while it is 'YOUR_TURN'.  That was very exciting.  Now
 to set it in place once the box is clicked.  This is tough & i think i think i may have too many objects
 and sub-objects, so i'm getting a little wrapped up in where the hell I am in the depth of the objects...
 I'll get there... 
+
+And lastly, I knew it was only a matter of time before this happened, but I was surprised that I, so soon, had my first
+dream about writing code!  I think i was trying to solve the euler 5 in my dream, and it was a good dream; I solved it.
+I briefly woke up (i think) and tried to remember how I solved it but the memory of the precise code was fleeting...
 
 Rex:  
 Today, Rex hunted for coins in the school parking lot and found a whole dollar in quarters--I didn't even
