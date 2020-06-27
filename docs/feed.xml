@@ -1,18 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-01T17:18:27-05:00</updated><id>/feed.xml</id><title type="html">Gina Martiny</title><entry><title type="html">sacrifice or mutual gain</title><link href="/blog/2020/06/01/sacrifice-or-mutual-gain.html" rel="alternate" type="text/html" title="sacrifice or mutual gain" /><published>2020-06-01T00:00:00-05:00</published><updated>2020-06-01T00:00:00-05:00</updated><id>/blog/2020/06/01/sacrifice-or-mutual-gain</id><content type="html" xml:base="/blog/2020/06/01/sacrifice-or-mutual-gain.html">&lt;p&gt;So just a couple things to touch base on as I document this adventure.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-27T14:01:22-05:00</updated><id>/feed.xml</id><title type="html">Gina Martiny</title><entry><title type="html">Twinkle Twinkle Little Stars</title><link href="/blog/2020/06/26/Twinkle-Twinkle-Little-Stars.html" rel="alternate" type="text/html" title="Twinkle Twinkle Little Stars" /><published>2020-06-26T00:00:00-05:00</published><updated>2020-06-26T00:00:00-05:00</updated><id>/blog/2020/06/26/Twinkle-Twinkle-Little-Stars</id><content type="html" xml:base="/blog/2020/06/26/Twinkle-Twinkle-Little-Stars.html">&lt;p&gt;oh… time management…  I’m so bad at it.&lt;/p&gt;
+
+&lt;p&gt;That being said, I completed euler 5 today and started &amp;amp; completed euler 6–it was
+kind of an easier one, so i just did it.  Still, it was very exciting to have completed
+two eulers in one day!&lt;/p&gt;
+
+&lt;p&gt;I also got my ‘X’ to float in tic tac toe.  By float, i mean that at the on set of the Start event, 
+and ‘X’ follows the mouse while it is ‘YOUR_TURN’.  That was very exciting.  Now I’m trying to change the object
+to set it in place once the box is clicked.  This is tough &amp;amp; i think i think i may have too many objects
+and sub-objects, so i’m getting a little wrapped up in where the hell I am in the depth of the objects…
+I’ll get there…&lt;/p&gt;
+
+&lt;p&gt;And lastly, I knew it was only a matter of time before this happened, but I was surprised that I, so soon, had my first
+dream about writing code!  I think i was trying to solve the euler 5 in my dream, and it was a good dream; I solved it.
+I briefly woke up (i think) and tried to remember how I solved it but the memory of the precise code was fleeting…&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Rex:&lt;br /&gt;
+Today, Rex hunted for coins in the school parking lot and found a whole dollar in quarters–I didn’t even
+put them down for him.  These were legit found quarters.&lt;/p&gt;
+
+&lt;p&gt;Then i showed him a tree star.  He got excited, picked it up, and started to sing
+“Twinkle Twinkle Little Star”.  It was so cute.  I even tried to embed a video of it below, but I don’t think
+it’s working, so I’ll come back to it.&lt;/p&gt;
+
+&lt;video width=&quot;320&quot; height=&quot;240&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/pics/TwinkleTwinkleLittleStar.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;
+
+&lt;p&gt;Leo:&lt;br /&gt;
+Leo crawled last night!!  Like a full hands &amp;amp; knees crawl!  So that fun.  And he’s
+trying to pull up on his own now.  also fun…&lt;/p&gt;</content><author><name></name></author><summary type="html">oh… time management… I’m so bad at it.</summary></entry><entry><title type="html">Objects at the Event</title><link href="/blog/2020/06/25/Objects-at-the-Event.html" rel="alternate" type="text/html" title="Objects at the Event" /><published>2020-06-25T00:00:00-05:00</published><updated>2020-06-25T00:00:00-05:00</updated><id>/blog/2020/06/25/Objects-at-the-Event</id><content type="html" xml:base="/blog/2020/06/25/Objects-at-the-Event.html">&lt;p&gt;Today was a good day.  I’m being more &amp;amp; more released from my normal work duties which is nice because it allows me more time to code!  It’s amazing how quickly the day goes by when coding.&lt;/p&gt;
+
+&lt;p&gt;Today, after updating my dad’s website by removing a cancelled event (and i didn’t break the world doing it!), I spent most of the morning working on Euler #5: smallest possible multiple divisible by every integer between 1 &amp;amp; 20.  I kept getting stuck in an infinite loop between checking to see if the test value was the lowest prime perfect root that I really don’t think should be an infinite loop, but after the umpteenth attempt at rewiring the function, i decided to break from that to come back to it later with fresh eyes.  Hopefully, i’ll get it tomorrow.&lt;/p&gt;
+
+&lt;p&gt;After that, I spent some time on tic tac toe doing a bunch of stuff just to un-do a lot of it to get back to where i started today.  I can get an “X” to follow the mouse (which is pretty cool), but i want it to follow the mouse only after the Start event has occurred and the state becomes Your_Turn.   This requires creating a game piece object which creates an X object.  I have no problem creating objects at the set up of the app, but I can’t figure out the best place/time to create an object at an event.  I’ve tried putting it in the switch case, but that seems a little messy–i don’t know.  I’ve asked…&lt;/p&gt;
+
+&lt;p&gt;Rex:&lt;br /&gt;
+Rex has been a grump the past couple days, but he’s also been pretty cute and needing me–that’s always nice.  Last night, right after i told him he could not have a cookie before dinner, his dad offered him a cookie (he didn’t know i’d already said no).  I asked Rex if he wanted a whole cookie or a half cookie.  He insisted on a whole cookie.  Once he ate, he turned to me and said “I want half a cookie too.”  stinker…&lt;/p&gt;
+
+&lt;p&gt;Leo:&lt;br /&gt;
+This morning, I put Leo in his little bouncer thing, played one of his songs, and started dancing.  He laughed so hard when he watched me dance.  His smile is just so big and happy.  He also pulled himself up to his feet with very little assistance while I offered his little hands support to do so.&lt;/p&gt;
+
+&lt;p&gt;**&lt;/p&gt;</content><author><name></name></author><summary type="html">Today was a good day. I’m being more &amp;amp; more released from my normal work duties which is nice because it allows me more time to code! It’s amazing how quickly the day goes by when coding.</summary></entry><entry><title type="html">You Dog!</title><link href="/blog/2020/06/24/You-Dog!.html" rel="alternate" type="text/html" title="You Dog!" /><published>2020-06-24T00:00:00-05:00</published><updated>2020-06-24T00:00:00-05:00</updated><id>/blog/2020/06/24/%22You-Dog!%22</id><content type="html" xml:base="/blog/2020/06/24/You-Dog!.html">&lt;p&gt;“You Dog!” is a phrase my father frequently yells at the computer when it does something stupid and annoying while he is coding–especially if he wasn’t expecting it, but also sometimes when he does…  He also likes to speak in the voice of the computer to personify it’s actions.  The technique is both funny &amp;amp; effective to the point that I found myself doing it also to explain to him how I understand a concept.  In fact, just today, I was explaining to a newer engineer at work how a transaction in SAP works by taking the tone of SAP…  Weird how something can rub off quickly.&lt;/p&gt;
+
+&lt;p&gt;Anyway, working with my father can’t be considered anything but a treat or at least an opportunity that you don’t pass up.  I felt so bad having to take phone calls for work or do stupid little tasks for work while on his time.  My dad’s time is so much more valuable, and I kept having the guilty thought in that i imagine there are several thousand, if not more, coders out there who would jump for the opportunity to code with my dad, and here I was making him wait on me so that I can figure out how to get someone at the plant to pick up a damn containment berm before the driver had to leave…&lt;/p&gt;
+
+&lt;p&gt;What I liked about working with my dad was that he taught me a lot of very important and probably often overlooked concepts–or if not overlooked, not learned until you’re facing the problem, hopefully before the customer finds the problem.  I learned about why ten years ago, toyotas started losing their break controls over and over–that has to do with the stack, which is the second set of memory that a program uses.  He laughed as the light came on over my head when we navigated to the StackOverflow website–”ohh… ‘Stack’ overflow!”&lt;/p&gt;
+
+&lt;p&gt;We also spent some time making a “horse race” (actually, they were just circles) to get me some more exposure to using graphics &amp;amp; creating GUI’s.&lt;/p&gt;
+
+&lt;p&gt;With this, I’ve now been able to start a Tic Tac Toe game.  I’ve got the board laid out and have a start button.  This has been fun so far.&lt;/p&gt;
+
+&lt;p&gt;As for work, I should know more next week…  But my boss is being very flexible with me now, so that’s great.&lt;/p&gt;
+
+&lt;p&gt;Don’t use floats for money!&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Rex:&lt;br /&gt;
+It is one of Rex’s jobs to give treats to the dogs every morning.  One for Brusly, and one for Tails.  One day last week, Tails got Brusly’s treat too, and Rex cried and cried until I went in and got a new treat for Brusly–he was more careful that time.&lt;/p&gt;
+
+&lt;p&gt;Rex also had a great weekend with Bobby.  Bobby is Rex’s best friend!  He was sooo excited to see Bobby when we picked him up from school last Thursday.  He loves to ride on his shoulders to see cars &amp;amp; trucks..&lt;/p&gt;
+
+&lt;p&gt;This weekend, Rex came into the trailer, aka my office, and started screaming “I love YOU, mommy!”.  I would repeat back to him, “I love YOU, Rex!”, and every time he would say it louder &amp;amp; louder.  He also went poddy &amp;amp; poop in the poddy!  The highlight of the weekend.&lt;/p&gt;
+
+&lt;p&gt;Leo:&lt;br /&gt;
+Leo has started babbling, and I think he is calling me now with “Momomom!”.  He’s also in the 8 month sleep regression, and thus he is waking up every 1.5-2 hours at night–it’s awesome…&lt;/p&gt;
+
+&lt;p&gt;I think Leo also crawled a couple steps actually on his hands and knees instead of doing his desperate wounded warrior crawl.  He’s also standing on his own if he’s holding on to something stable–can’t pull up, but getting there.&lt;/p&gt;
+
+&lt;p&gt;Lastly, because he wakes up every 1.5-2 hours, he nurses every 1.5-2 hours at night, and he has 5 teeth, and likes to chomp as he falls back to sleep…  Then I’m really up…
+***&lt;/p&gt;</content><author><name></name></author><summary type="html">“You Dog!” is a phrase my father frequently yells at the computer when it does something stupid and annoying while he is coding–especially if he wasn’t expecting it, but also sometimes when he does… He also likes to speak in the voice of the computer to personify it’s actions. The technique is both funny &amp;amp; effective to the point that I found myself doing it also to explain to him how I understand a concept. In fact, just today, I was explaining to a newer engineer at work how a transaction in SAP works by taking the tone of SAP… Weird how something can rub off quickly.</summary></entry><entry><title type="html">palindromes</title><link href="/blog/2020/06/17/palindromes.html" rel="alternate" type="text/html" title="palindromes" /><published>2020-06-17T00:00:00-05:00</published><updated>2020-06-17T00:00:00-05:00</updated><id>/blog/2020/06/17/palindromes</id><content type="html" xml:base="/blog/2020/06/17/palindromes.html">&lt;p&gt;I got a macbook!  This is my first post from the Mac!  And i was able to clone all my stuff from the
+windows computer to the mac!  Pretty cool!&lt;/p&gt;
+
+&lt;p&gt;I’ve mostly been working through the euler project problems recently.  I solved finding the largest prime factor of like
+600 billion!  It’s surprisingly gratifying when I finally solve a problem.  I’m not working the largest palindrome
+product of two 3-digit numbers.  I thought i almost had it and had just one step left, but that proved to be more complicated.
+I was happy that I was able to convert a large integer into a sequence–granted, I’m sure there is a straightforward way
+to do it, but I enjoyed thinking through how to manipulate each digit of the integer.&lt;/p&gt;
+
+&lt;p&gt;I’ve also had the opportunity to work with my dad a bunch this week.  He showed me his website and how to make updates to it,
+ and he’s shown me a little more about intelliJ and started me on Java today.&lt;/p&gt;
+
+&lt;p&gt;I’m still having fun and really enjoying all of this.  Still don’t have any closure on the work situation, but I’m trying
+be flexible and help out however I can.&lt;/p&gt;
+
+&lt;p&gt;Leo has started army crawling.  By that I mean, he does what I call a desparate wounded warrior crawl where he doesn’t 
+quite crawl yet, but he has a very determined &amp;amp; desperate army crawl that only
+utilizes his arms while allowing his legs to limply trail behind him.  And I mean that literally; he honestly looks like
+a person who just lost his legs and is crying and
+desperately trying to crawl to safety (me).  I of course feel bad for him and pick him up quickly.&lt;/p&gt;
+
+&lt;p&gt;Rex on the other hand is talking up a storm these days.  Yesterday, he said he got bit by a bug.  His finger was swollen,
+but I’m not sure what ‘bit’ (or stung) him.  At the moment, he’s very into finding coins, so every day when i pick him up, 
+he yells to me “I found friends again! Find more coins!”  I’ve now started planting dimes &amp;amp; quarters in the parking lot 
+for him to hunt for so that he can put them in his dinosaur.&lt;/p&gt;
+
+&lt;p&gt;Speaking of, I should probably go get them now…&lt;/p&gt;</content><author><name></name></author><summary type="html">I got a macbook! This is my first post from the Mac! And i was able to clone all my stuff from the windows computer to the mac! Pretty cool!</summary></entry><entry><title type="html">e^(ipi) + 1 = 0</title><link href="/blog/2020/06/09/e-ipi+1=0.html" rel="alternate" type="text/html" title="e^(ipi) + 1 = 0" /><published>2020-06-09T00:00:00-05:00</published><updated>2020-06-09T00:00:00-05:00</updated><id>/blog/2020/06/09/e%5Eipi+1=0</id><content type="html" xml:base="/blog/2020/06/09/e-ipi+1=0.html">&lt;p&gt;When I was in college, I was pretty proud of the fact that I was an engineering student.  I loved feeling “smart” even if on relative terms I was not always the sharpest in the class.  I liked feeling smart so much that I would memorize mathmatical concepts and reiterate them in unexpecting moments.&lt;/p&gt;
+
+&lt;p&gt;There was one night while I was out at a bar in Urbana-Champagn, I think, where a young man physically got in my way to deliberately block me as I was walking, maybe to the bathroom.  He said, “Tell me something interesting.”  I said, “Please move.”  He said, “For real, tell me something interesting, and then I’ll move.”  I rolled my eyes at him and, thinking it would scare him off, I wittily replied, “Fine.  ‘e’ to the ‘i’ pi equals negative one.” (just saying, I think that’s the first time I’ve ever spelled that equation out).&lt;/p&gt;
+
+&lt;p&gt;This guy wasn’t scared off.  No, he was not!  He responded to my smart-ass comment with a huge bear hug while informing me that that was the “hottest thing a girl in a bar has ever said” to him and that he was a mathematics phd student.  Go figure…&lt;/p&gt;
+
+&lt;p&gt;What’s my point with that story?  Well, I guess I don’t have one, other than I have finished the Koans and have started working on the Euler project puzzles.  Those are a lot of fun!&lt;/p&gt;
+
+&lt;p&gt;I did one with my guru mentor yesterday, and I have to admit that I was impressed with myself that I not only solved it, but did it while under the pressure of having someone watch me.  I thought I was going to go blank.  I have almost completed the second one today—but did get as far as having it spit out the Fibonacci sequence.  That took some thought, and my code is a mess still, but [pause for emphasis] it works!  It even adds up the even numbers within the sequence.   So that’s very cool.  I’m feeling a pride and a sense of accomplishment that I haven’t felt in a really long time.&lt;/p&gt;</content><author><name></name></author><summary type="html">When I was in college, I was pretty proud of the fact that I was an engineering student. I loved feeling “smart” even if on relative terms I was not always the sharpest in the class. I liked feeling smart so much that I would memorize mathmatical concepts and reiterate them in unexpecting moments.</summary></entry><entry><title type="html">sacrifice or mutual gain</title><link href="/blog/2020/06/01/sacrifice-or-mutual-gain.html" rel="alternate" type="text/html" title="sacrifice or mutual gain" /><published>2020-06-01T00:00:00-05:00</published><updated>2020-06-01T00:00:00-05:00</updated><id>/blog/2020/06/01/sacrifice-or-mutual-gain</id><content type="html" xml:base="/blog/2020/06/01/sacrifice-or-mutual-gain.html">&lt;p&gt;So just a couple things to touch base on as I document this adventure.&lt;/p&gt;
 
 &lt;p&gt;First, I am excited to announce that I am almost done with my first run through all of the clojure koans!  This is very exciting.  I’ve also made some more improvements to my blog page, such as inserting a non-functioning email subscription input &amp;amp; button!  Very exciting stuff.  For now (and for looks) I think I’m going to just leave it there (it will actually get pushed with this blog post).  I’ll leave it as a reminder to figure how to get that to actually work in the future.&lt;/p&gt;
 
 &lt;p&gt;The koans have been fun.  I can see how &amp;amp; why clojure is considered to be such a powerful language.  It just has abilities that make the readibility of the code a lot simpler if you understand the language.  I believe it also makes it more difficult to royally mess up a program, but I’m still learning this.&lt;/p&gt;
 
-&lt;p&gt;I’ve also started reading Programming Clojure.  I haven’t gotten very far, but I think this will be a good source for me going forward.&lt;/p&gt;
-
-&lt;p&gt;As for everything else, well, my boss actually got back to me pretty quickly, and he has agreed to lay me off!&lt;/p&gt;
-
-&lt;p&gt;At first, as you might infer from my last post, I was a little disappointed, but in our conversation, he told me that he really appreciated me coming forward to him early and my willingness to support the site.  He also told me that he admired me for this action, which struck me with both surprise and deeply (he’s not the type to admit admiration).&lt;/p&gt;
-
-&lt;p&gt;I suppose in a way, I’m sacrificing myself even if for mutual gain.  My site will survive this better with me having communicated my plans to them, and I learned (I think) that my ‘sacrifice’ will save not one, but two employees from the chopping board!!  This of course, in itself, made me once again question my sanity—my salary is enough to save 2 other employees at a time when there will be a huge oversupply of engineers, and I’m choosing to give it up and jump into this starving pool of plenty??!!&lt;/p&gt;
-
-&lt;p&gt;On the other hand, it feels pretty good to have made a non-related life choice that is now allowing me to save the jobs of two other people.  That’s pretty cool, and even with the little jab, I have no regrets about this choice I’ve made.  In fact, it’s just the opposite.  I’m excited, and actually, back to my previous point, I’m relieved that he didn’t ask me to stay on to do that one task I mentioned last week.  It’s all I’ve been doing this week, and it takes up a lot of time when all the units are running.  Plus, it gave me an idea for something I could maybe do “after” all of this.  But more on that at another time.&lt;/p&gt;</content><author><name></name></author><summary type="html">So just a couple things to touch base on as I document this adventure.</summary></entry><entry><title type="html">i think this might work</title><link href="/blog/2020/05/23/i-think-this-will-work.html" rel="alternate" type="text/html" title="i think this might work" /><published>2020-05-23T00:00:00-05:00</published><updated>2020-05-23T00:00:00-05:00</updated><id>/blog/2020/05/23/i-think-this-will-work</id><content type="html" xml:base="/blog/2020/05/23/i-think-this-will-work.html">&lt;p&gt;I think this might work…  All of it.  Things are coming together!&lt;/p&gt;
+&lt;p&gt;I’ve also started reading Programming Clojure.  I haven’t gotten very far, but I think this will be a good source for me going forward.&lt;/p&gt;</content><author><name></name></author><summary type="html">So just a couple things to touch base on as I document this adventure.</summary></entry><entry><title type="html">i think this might work</title><link href="/blog/2020/05/23/i-think-this-will-work.html" rel="alternate" type="text/html" title="i think this might work" /><published>2020-05-23T00:00:00-05:00</published><updated>2020-05-23T00:00:00-05:00</updated><id>/blog/2020/05/23/i-think-this-will-work</id><content type="html" xml:base="/blog/2020/05/23/i-think-this-will-work.html">&lt;p&gt;I think this might work…  All of it.  Things are coming together!&lt;/p&gt;
 
 &lt;p&gt;First, my website, while still purple, is looking a lot cleaner.  I’ve been able to re-size the image on the homepage so that it’s not distorted.  I was able to set the text in both the about page &amp;amp; the blogs to justify, and this is saying a lot, because in order to do that, I had to dive into the main.css and the about index to get an understanding of how the classes work.  Finally, look at my second blog from last week.  It is so much cleaner than it was!  I even got the list numbers to display at the correct size and add cleaner margins to the lists.  This is all exciting stuff!&lt;/p&gt;
 

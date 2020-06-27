@@ -29,7 +29,9 @@ Then i showed him a tree star.  He got excited, picked it up, and started to sin
 "Twinkle Twinkle Little Star".  It was so cute.  I even tried to embed a video of it below, but I don't think
 it's working, so I'll come back to it.
 
-<video src="/pics/TwinkleTwinkleLittleStar.mp4" width="320" height="240">
+
+<video width="320" height="240" controls>
+  <source src="/pics/TwinkleTwinkleLittleStar.mp4" type="video/mp4">
 </video>
 
 
