@@ -30,8 +30,8 @@ Then i showed him a tree star.  He got excited, picked it up, and started to sin
 it's working, so I'll come back to it.
 
 
-<video width="320" height="240" controls>
-  <source src="maniginam.github.io/pics/TwinkleTwinkleLittleStar.MP4.zip" type="video/mp4">
+<video width="320" height="400" controls>
+  <source src="maniginam.github.io/pics/TwinkleTwinkleLittleStar.mov" type="video/mp4">
 </video>
 
 
