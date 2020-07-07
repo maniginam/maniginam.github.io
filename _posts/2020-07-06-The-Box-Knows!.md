@@ -1,7 +1,7 @@
 ---
-Layout: posts
-Title: "The Box Knows!"
-Date: 2020-07-06
+layout: posts
+title: "The Box Knows!"
+date: 2020-07-06
 ---
 
 What I am finding interesting is just how literally one must think about what he or she is coding.  I’m working on Tic Tac Toe.  I kept getting stuck on placing a played piece.  You see, I’ve set the game up so that initially, the piece in play floats above the board, so that the player can position it where he or she would like to make the play before actually committing to the play.  
