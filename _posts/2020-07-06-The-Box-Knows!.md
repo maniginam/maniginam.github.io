@@ -19,8 +19,8 @@ Nonetheless, I have a working game that allows a player(s) to alternate laying d
 Doesn’t seem like much, but I’m feeling pretty proud of that progress...
 
 ***
-Rex:
+Rex:  
 Rex is officially 2 and a half yesterday!  We took him to the zoo, and he had a blast!  He also built little puzzles all on his own, which was awesome!  And he calls things “Awesome”, which is pretty cute.
 
-Leo:
+Leo:  
 Leo is officially 9 months old!  While he can crawl, he still prefers his desperate wounded warrior crawl to get around.  He’s also pulling himself up on anything he can reach.
