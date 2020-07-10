@@ -82,6 +82,10 @@ div.about p {
 	text-align: justify;
 }
 
+div.ThingsMyKidsSay li {
+    font-weight: none;
+}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
