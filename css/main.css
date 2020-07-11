@@ -82,9 +82,11 @@ div.about p {
 	text-align: justify;
 }
 
-div.ThingsMyKidsSay li {
-    font-weight: plain;
-}
+ul.ThingsMyKidsSay li{
+    font-size: 1.5em;
+    color: rgb(94, 94, 99);
+    padding-right: 25px;
+    margin-left: 40px;
 
 
 ul.posts { 
