@@ -31,7 +31,7 @@ it's working, so I'll come back to it.
 
 
 <video width="320" height="400" controls>
-  <source src="blog/pics&vids/TwinkleTwinkleLittleStar2.mp4" type="video/mov">
+  <source src="https://maniginam.github.io/blog/pics&vids/TwinkleTwinkleLittleStar.mp4" type="video/mov">
 </video>
 
 
