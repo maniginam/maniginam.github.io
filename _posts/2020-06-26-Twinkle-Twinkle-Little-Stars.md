@@ -28,8 +28,7 @@ put them down for him.  These were legit found quarters.
 Then i showed him a tree star.  He got excited, picked it up, and started to sing
 "Twinkle Twinkle Little Star".  It was so cute.  I even tried to embed a video of it below, but I don't think
 it's working, so I'll come back to it.
-<video src="https://maniginam.github.io/blog/pics&vids/TwinkleTwinkleLittleStar.mp4" width="320" height="400" controls>
-
+<video src="https://maniginam.github.io/blog/pics&vids/TwinkleTwinkleLittleStar.mp4" width="320" height="400" controls></video>
 
 Leo:  
 Leo crawled last night!!  Like a full hands & knees crawl!  So that fun.  And he's
