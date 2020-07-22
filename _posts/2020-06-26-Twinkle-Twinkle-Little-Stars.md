@@ -34,7 +34,6 @@ it's working, so I'll come back to it.
   <source src="https://maniginam.github.io/blog/pics&vids/TwinkleTwinkleLittleStar.mp4" type="video/mov">
 </video>
 
-
 Leo:  
 Leo crawled last night!!  Like a full hands & knees crawl!  So that fun.  And he's
 trying to pull up on his own now.  also fun...  
