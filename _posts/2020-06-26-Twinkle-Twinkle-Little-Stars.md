@@ -30,6 +30,7 @@ Then i showed him a tree star.  He got excited, picked it up, and started to sin
 it's working, so I'll come back to it.
 <video src="https://maniginam.github.io/blog/pics&vids/TwinkleTwinkleLittleStar.mp4" width="320" height="400" controls>
 
+
 Leo:  
 Leo crawled last night!!  Like a full hands & knees crawl!  So that fun.  And he's
 trying to pull up on his own now.  also fun...  
