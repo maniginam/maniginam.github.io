@@ -1,4 +1,4 @@
 echo "serving blog on port 8080"
-pushd docs
+pushd /Users/maniginam/blogSite/maniginam.github.io/docs
 python -m http.server 8080
 popd
