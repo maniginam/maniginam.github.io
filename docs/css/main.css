@@ -82,6 +82,17 @@ div.about p {
 	text-align: justify;
 }
 
+div.ThingsMyKidsSay {
+	text-align: justify;
+}
+
+div.ThingsMyKidsSay li {
+    font-size: 1em;
+    color: rgb(94, 94, 99);
+    padding-right: 25px;
+    margin-left: 40px;
+}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -94,7 +105,7 @@ ul.posts li {
 
 
 div.post p {
-	text-align: justify;
+	text-align: left;
 	margin-left: 40px;
 	margin-right: 40px;
 }
@@ -115,7 +126,7 @@ div.post video {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    padding:0px;
+    padding:50px;
 }
 
 
