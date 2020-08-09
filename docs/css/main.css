@@ -35,11 +35,20 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     text-align: center;
 }
+
+h2 ul li{
+	font-size: .75em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    display: inline;
+    margin-right: 75%;
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
