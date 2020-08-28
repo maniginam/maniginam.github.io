@@ -15,8 +15,9 @@ On to coding.  I spent much of the day researching and trying to understand The 
 I was wanting to put it into action within TTT to use that as an example for my presentation, but i failed horribly for the remainder of the day at that.  So all in all, thanks to the hurricanes, i did not accomplish much of what was required this week…  Except i did just get one of the printables out of the tests finally.  That’s actually where I started with the OCP today.  I wanted to separate it all out to follow the principles instead of making work arounds.  In the end, i made the work arounds, but, hey, they work!  Just a couple more to pull out...
 
 Hurricane Babies:
-<img src="https://maniginam.github.io/blog/pics&vids/HurricaneBabies.jpeg" atl="Rex & his Racetrack" width="211" height="250">
-<img src="https://maniginam.github.io/blog/pics&vids/HurricaneLeo.jpeg" atl="Rex & his Racetrack" width="211" height="250">
+<img src="https://maniginam.github.io/blog/pics&vids/HurricaneBabies.jpeg" atl="Hurricane Babies" width="211" height="250">
+
+<img src="https://maniginam.github.io/blog/pics&vids/HurricaneLeo.jpeg" atl="Hurricane Leo" width="211" height="250">
 
 ***
 Rex:  
@@ -26,5 +27,5 @@ Look up duh-low!!!!  He says as a truck launches off a ramp, which is the bed of
 Leo:  
 Whenever the door to outside opens, Leo stops whatever he is doing and makes a run for it.  Hence the hurricane showers yesterday...  
 I should also mention that he's been biting a lot lately!  The other day, he bit poor Rex on the nose and wouldn't let go...
-<img src="https://maniginam.github.io/blog/pics&vids/noseBite.jpeg" atl="Rex & his Racetrack" width="211" height="250">
+<img src="https://maniginam.github.io/blog/pics&vids/noseBite.jpeg" atl="Nose Bite" width="300" height="350">
 
