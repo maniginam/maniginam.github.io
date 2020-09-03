@@ -12,7 +12,7 @@ Changing topics, although it is getting windy in this trailer now, I just got of
 
 After hearing about Brusly, I also became a dud.  I was able to clean up my euler 14 a bit and work on cleaning my ttt tests up.  I’ve also done some research into the OCP.  
 
-<img src="https://maniginam.github.io/blog/pics&vids/BruslyDog.jpeg" atl="Rex & his Racetrack" width="211" height="250">
+<img src="https://maniginam.github.io/blog/pics&vids/BruslyDog.jpeg" alt="Brusly & the Cheez-it" width="211" height="250">
 
 ***
 Rex:  
