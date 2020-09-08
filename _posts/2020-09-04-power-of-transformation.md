@@ -15,6 +15,7 @@ Regardless, i did not finish getting ttt to actually work again.  It is still no
 Bowling Kata:
 <video src="https://maniginam.github.io/blog/pics&vids/Bowling Kata.mp4" width="600" height="600" controls></video>
 Full length song: https://freemusicarchive.org/music/KieLoKaz/Free_Ganymed/Alte_Herren_Kielokaz_ID_364
+
 ***
 Rex:  
 The other day Rex asked if he had a super power.  I told him, I’m not sure.  Do you?  And he told me, “Yes, i have a super power.”  “What is your super power?”  “My super power is Transformation!”  “What?!  Well, 1, i don’t know how you know that word, and 2, that is an awesome superpower!”
