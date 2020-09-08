@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: SuperPower: Transformation
+title: SuperPower of Transformation
 date: 2020-09-04
 ---
 
@@ -12,6 +12,8 @@ As for ttt; i think i actually did complete all the requirements for the week.  
 
 Regardless, i did not finish getting ttt to actually work again.  It is still not playable int he new set up.  I think I’m only like an hour or two from getting it there, so I’m hoping i can work on it a little during this holiday weekend—if the boys allow.  Then I’ll need to clean up the order of all the functions.  They are a little all over the place.  
 
+Bowling Kata:
+<video src="https://maniginam.github.io/blog/pics&vids/Bowling Kata.mp4" width="600" height="600" controls></video>
 ***
 Rex:  
 The other day Rex asked if he had a super power.  I told him, I’m not sure.  Do you?  And he told me, “Yes, i have a super power.”  “What is your super power?”  “My super power is Transformation!”  “What?!  Well, 1, i don’t know how you know that word, and 2, that is an awesome superpower!”
