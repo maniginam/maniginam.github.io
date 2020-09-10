@@ -113,7 +113,8 @@ div.ThingsMyKidsSay li {
 
 
 ul.posts { 
-    margin: 20px auto 40px; 
+    margin: 20px auto 40px;
+    margin-left: 40px;
     font-size: 1.5em;
 }
 
@@ -121,11 +122,18 @@ ul.posts li {
     list-style: none;
 }
 
-
 div.post p {
 	text-align: left;
 	margin-left: 40px;
 	margin-right: 40px;
+}
+
+div.post ul {
+	font-size: .9em;
+	color: rgb(94, 94, 99);
+	padding-right: 25px;
+	margin-left: 40px;
+	text-align: justify;
 }
 
 div.post ol {
