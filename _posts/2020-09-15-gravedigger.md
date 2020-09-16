@@ -27,4 +27,4 @@ Leo has also begun to think monster trucks are awesome.  These days, he can freq
 
 Leo has also become a master at saying “hi” & “bye”.  
 
-![Leo says Hi](https://maniginam.github.io/blog/pics&vids/LeoSaysHi.mp4#thumbnail)
+<video src="https://maniginam.github.io/blog/pics&vids/LeoSaysHi.mp4" width="300" height="350" controls></video>
