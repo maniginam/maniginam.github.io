@@ -155,7 +155,7 @@ div.post video {
     padding:50px;
 }
 
-img[src*="#thubnail"] {
+img[src*="#thumbnail"] {
 width: 200px;
 height: 200px;
 }
