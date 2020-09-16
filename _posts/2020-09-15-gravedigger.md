@@ -18,7 +18,7 @@ So yeah, all in all, it was a great day!
 
 ***
 Rex:  
-Rex got to go to the dentist today!  I told him he was going to get to sit in a spaceship chair and from that point forward he was on board with the idea.  He even got to drive the spaceship chair with the buttons!  He did great through every step of the appointment.  The dental assistant even remarked about how awesome he did.  For being so awesome, I reward him with a Gravedigger monster truck--that kid’s face lit up like it was the best day ever.  I think he’s been wanting Gravedigger for a while now.
+It’s fitting that Rex has recently began to tell us while he eating that he’s crushing his food with his teeth (and chomps), because Rex got to go to the dentist today!  I told him he was going to get to sit in a spaceship chair and from that point forward he was on board with the idea.  He even got to drive the spaceship chair with the buttons!  He did great through every step of the appointment.  The dental assistant even remarked about how awesome he did.  For being so awesome, I reward him with a Gravedigger monster truck--that kid’s face lit up like it was the best day ever.  I think he’s been wanting Gravedigger for a while now.
 
 ![Rex at the dentistry with Gravedigger monster truck!](https://maniginam.github.io/blog/pics&vids/RexAtDentistWGraveDigger.jpeg#thumbnail)
 
