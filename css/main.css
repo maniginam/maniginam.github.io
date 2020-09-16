@@ -156,13 +156,13 @@ div.post video {
 }
 
 img[src*="#thumbnail"] {
-width: 200px;
-height: 200px;
+width: 300px;
+height: 350px;
 }
 
 vid[src*="#thubnail"] {
-width: 200px;
-height: 200px;
+width: 300px;
+height: 300px;
 }
 
 .row  {
