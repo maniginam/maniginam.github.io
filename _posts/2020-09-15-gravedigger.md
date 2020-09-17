@@ -20,11 +20,11 @@ So yeah, all in all, it was a great day!
 Rex:  
 It’s fitting that Rex has recently began to tell us while he eating that he’s crushing his food with his teeth (and chomps), because Rex got to go to the dentist today!  I told him he was going to get to sit in a spaceship chair and from that point forward he was on board with the idea.  He even got to drive the spaceship chair with the buttons!  He did great through every step of the appointment.  The dental assistant even remarked about how awesome he did.  For being so awesome, I reward him with a Gravedigger monster truck--that kid’s face lit up like it was the best day ever.  I think he’s been wanting Gravedigger for a while now.
 
-![Rex at the dentistry with Gravedigger monster truck!](https://maniginam.github.io/blog/pics&vids/RexAtDentistWGraveDigger.jpeg#thumbnail)
+![Rex at the dentist!](https://maniginam.github.io/blog/pics&vids/RexAtDentist.jpeg#thumbnail)
 
 Leo:  
 Leo has also begun to think monster trucks are awesome.  These days, he can frequently be found crawling on all fours with a monster truck (or a car or something good for banging) under one of his hands getting pushed around.  
 
 Leo has also become a master at saying “hi” & “bye”.  
 
-<video src="https://maniginam.github.io/blog/pics&vids/LeoSaysHi.mp4" width="300" height="350" controls></video>
+<video src="https://maniginam.github.io/blog/pics&vids/LeoSaysHi.mp4" alt="Leo Says Hi!" width="320" height="400" controls></video>
