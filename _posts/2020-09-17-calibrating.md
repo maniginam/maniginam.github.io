@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: calibrating
+title: Calibrating
 date: 2020-09-17
 ---
 
