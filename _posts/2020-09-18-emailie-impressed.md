@@ -1,0 +1,19 @@
+---
+layout: posts
+title: emailie impressed
+date: 2020-09-18
+---
+
+Next week I’m going back to writing at the end of the day or even starting in the morning and finishing at the end of the day.  It’s just not possible right now for me to write in the evenings once the kids are home—some days yes, but most days it’s one or the other.
+
+Today was good on some aspects and a little disappointing on others.  All week, i felt like i was making really good progress on ttt and meeting my goals for the week.  I think i finally started to realize I wasn’t going to make it yesterday, but I felt like if i got a good start on it early today that there may be hope.  In the end, I did not meet my agenda for the week.  I do have a somewhat functioning clojure GUI for ttt, but it only works for 2 players and even still is both skewed and has some wrong report outs.  Argh!  But!  I think I’m grasping the “tell don’t ask” aspect of it, and I’ve got that from the GUI, i just need to re-implant that in the main game.  Essentially, i think i need to re-write the terminal game to give the data to the main game opposed to the main game asking for the information from the terminal.  
+
+I know, I know, “rewrite” again?!  
+
+But no, it’s really just re-writing a few functions to decouple them further.  Maybe I’m trying to do to much too soon.  I feel like i could totally get it all done if I were just trying to put out a crap product that worked, but I really want to follow the disciplines and not only get it working, but also get it working well where i can give the code to someone else and have him/her (pretty sure that’s grammatically correct and also includes all of the genetically inclusive pronouns) understand it.  
+
+As disorganized as a person as I am in general, i do feel like i have a sense for how the code should flow and that it’s important for it to work in a way that makes sense to not only me but others too.  I just don’t know how to structure it yet—i guess that’s what I’m learning.  Honestly, I feel like almost anyone can learn to code, but to code well and professionally, that takes discipline, practice, and expertise.  The coding I can learn; the discipline, well, that is where I think the structured mentorship comes in.
+
+So that was disappointing that I didn’t get that finished and that I don’t think I’ll get much time to work on it this weekend before iteration, but on a positive note, i wrote back and heard back from my local network person. I think it is going to be fun.  He knew that I was very new to the industry and started pointing me in directions to get started.  I felt like at that point I had to give him a little more insight into where I was coming from, and so I told him a basic background.  I mentioned to him the languages that I’m learning right now and also that I’m trying to put a big emphasis on learning the SOLID principles.  His response to all of that was very positive, and he almost seemed email-ie impressed that I knew the term so early in my learnings and told me he looks forward to our chat next week.  
+
+Perhaps I’m being a little evasive, but i didn’t want to tell him too much over email.  I actually executed my first email very formally and vaguely introductory to propose a quick chat to simply network with just that as my agenda.  And it is—I’m only looking to network.  Even if I didn’t have employment already, that’s all i would be seeking at this point—local networking.  But even with all that said, I’m really looking forward to him asking about my family, how I got into coding, and what I know about the SOLID principles...  I’m very proud of my dad & brothers and cannot wait to tastefully brag to this world that I am his daughter and their sister.  
