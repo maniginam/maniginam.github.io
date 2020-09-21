@@ -1,12 +1,16 @@
 ---
 layout: posts
-title: emailie impressed
+title: going-loopy-to-comprehend-sequences
 date: 2020-09-18
 ---
 
 Next week I’m going back to writing at the end of the day or even starting in the morning and finishing at the end of the day.  It’s just not possible right now for me to write in the evenings once the kids are home—some days yes, but most days it’s one or the other.
 
-Today was good on some aspects and a little disappointing on others.  All week, i felt like i was making really good progress on ttt and meeting my goals for the week.  I think i finally started to realize I wasn’t going to make it yesterday, but I felt like if i got a good start on it early today that there may be hope.  In the end, I did not meet my agenda for the week.  I do have a somewhat functioning clojure GUI for ttt, but it only works for 2 players and even still is both skewed and has some wrong report outs.  Argh!  But!  I think I’m grasping the “tell don’t ask” aspect of it, and I’ve got that from the GUI, i just need to re-implant that in the main game.  Essentially, i think i need to re-write the terminal game to give the data to the main game opposed to the main game asking for the information from the terminal.  
+Today was good on some aspects and a little disappointing on others.  All week, i felt like i was making really good progress on ttt and meeting my goals for the week.  Then ‘for’ got me!  I spent a while trying to get my GUI to print repetitive things.  I was able to get it to print if I printed individually, but as soon as I wrapped it in ‘for’, it wouldn’t print any more.  This actually happened yesterday, but it struck me today.  I was trying to print all the played pieces using ‘for’ across a list of played-boxes.  I moved the ‘for’ up and down the functions thinking that maybe it was just out of place and printing in the back instead of on top, since printables can act funny sometimes.  It would not print, which was leading to me have to write the function for every box--but what if we played on a 4x4 board?  I’d have to have all of these defined ‘empty’ boxes and an infinite quantity at that, so i couldn’t go that route.  
+
+Then I thought about ‘for’.  Why won’t it print?  ‘for’ is not normal loop--it is list/sequence comprehension.  It analyzes a list and does stuff each element.  It doesn’t really like side effects--wait!  ‘for’ returns a sequence!  OMG.  It’s not doing what i want, because it’s not supposed to!  It’s returning a list of the return values each interaction, which in these cases, is nil every time.  ‘for’ is not the answer here!  What is?  ‘do’ prints side effects, but same thing, i want to give it a sequence to iterate over--’doseq’?  I’ve never used that, but that feels like it would be appropriate…  And it worked!!  ‘for’ is not a loop!  It is sequence comprehension!  It returns a sequence.  Wow!  Yay! 
+
+I think i finally started to realize I wasn’t going to make it yesterday, but I felt like if i got a good start on it early today that there may be hope.  In the end, I did not meet my agenda for the week.  I do have a somewhat functioning clojure GUI for ttt, but it only works for 2 players and even still is both skewed and has some wrong report outs.  Argh!  But!  I think I’m grasping the “tell don’t ask” aspect of it, and I’ve got that from the GUI, i just need to re-implant that in the main game.  Essentially, i think i need to re-write the terminal game to give the data to the main game opposed to the main game asking for the information from the terminal.  
 
 I know, I know, “rewrite” again?!  
 
