@@ -20,9 +20,9 @@ I’m eager for the next project to try this out—of course like with anything 
 
 Anyway, it’s not perfect, but it kind of works.
 
-Also, 
+Also, Coin Changer: 
 
-<video src="https://maniginam.github.io/blog/pics&vids/CoinChangerKata.mp4" width="400" height="300" controls></video>
+<video src="https://maniginam.github.io/blog/pics&vids/CoinChangerKata.mp4" width="600" height="400" controls></video>
 
 Rex:  
 Rex said *L*eo yesterday!  I told him, no, it’s ***M***eo!!
