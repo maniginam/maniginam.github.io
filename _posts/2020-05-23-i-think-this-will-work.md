@@ -28,11 +28,11 @@ After a little more contemplation on the best way to play my cards, I was able t
 
 3. I resign, but I stay on board for a few extra weeks, strictly working remotely to help ensure we have a smooth quarter end.
 
-4. (or, and this one is my favorite) I don’t resign and don’t get laid off, and instead we negotiate some terms for me to work strictly remotely part-time covering a dumb tasks that we call IRA, which the engineers are currently required to do every day and I happen to be very good at—I’m actually the best on site and mentor the others on how to do these transactions.
+4. (or, and this one is my favorite) I don’t resign and don’t get laid off, and instead we negotiate some terms for me to work strictly remotely part-time covering a dumb task that the engineers are currently required to do every day and that I happen to be very good at—I’m actually the best on site and mentor the others on how to do these transactions.
 
 He was very appreciative that I told him what was going on ahead of making the cut as well as being willing to continue to support the site.  He was actually really interested in option 4.  
 
-You see, my company is in a weird way with this economic crisis, and he knows this.  If I quit, the odds are very high that he would not be allowed to backfill my position, so they’d be down a person.  I am very good at IRA, and he trusts me more than anyone else to get it right.  Even if I only work 1-3 hours a day, I would be giving the engineers 3-10 manhours back each day, and having one point-person to go to for IRA questions would highly benefit him.  They’ve wanted a role like this at the plant for years now, but the learning curve is very steep and there must be an understanding of the units and SAP to do it right.
+You see, my company is in a weird way with this economic crisis, and he knows this.  If I quit, the odds are very high that he would not be allowed to backfill my position, so they’d be down a person.  I am very good at this tedious, daily task, and he trusts me more than anyone else to get it right.  Even if I only work 1-3 hours a day, I would be giving the engineers 3-10 manhours back each day, and having one point-person to go to for IRA questions would highly benefit him.  They’ve wanted a role like this at the plant for years now, but the learning curve is very steep and there must be an understanding of the units and the software database to do it right.
 
 Not to mention that with what I’m about to be studying, I would expect that I could find an efficient way to streamline the whole process for them—this is one of those things I mentioned in the last post that I’ve wanted to do for years, but just don’t have the skillset—yet.  
 
