@@ -14,7 +14,7 @@ I’m hoping for more good progress tomorrow, but i spoke briefly with my manage
 ***
 Rex:  
 This past weekend I did the cookie challenge with Rex.  The cookie challenge is something that several moms have been posting on facebook lately where a mom places a single cookie in front of her toddler, tells the child she has to go poddy and to not eat the cookie until she returns, then leaves for up to two minutes, and finally returns to see what remains of the cookie.  The whole event is of course recorded, and I am very proud to say that Rex passed this test with flying colors.  Video evidence below.
-<video src="https://maniginam.github.io/blog/pics&vids/CookieChallenge.mp4" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/blog/pics&vids/CookieChallenge.mp4" width="600" height="400" controls></video>
 
 
 Leo:  
