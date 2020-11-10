@@ -29,7 +29,7 @@ Hurricane Babies:
 ***
 Rex:  
 Look up duh-low!!!!  He says as a truck launches off a ramp, which is the bed of a dump truck, and flies through the air over on lookers “duh-low” (below). 
-<video src="https://maniginam.github.io/blog/pics&vids/LookUpDuhLow.mp4" width="320" height="400" controls></video>
+<video src="fda6598013 * blog/pics&vids/LookUpDuhLow.mp4" width="320" height="400" controls></video>
 
 Leo:  
 Whenever the door to outside opens, Leo stops whatever he is doing and makes a run for it.  Hence the hurricane showers yesterday...  
