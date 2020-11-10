@@ -6,7 +6,7 @@ date: 2020-11-06
 
 Alright, it’s been a minute (or several) since I last posted.  I spent the last two and a half weeks traveling the continental US with my big brother in his “Micah’s yellow airplane” as Rex calls it.  We began our voyage on 10/20 to visit our parents in Chicago and for the CCs commercial shoot.  
 
-![Rex & Leo in Micah's Yellow Airplane!](https://maniginam.github.io/blog/pics&vids/Rex&LeoInPlane.jpeg#thumbnail)
+![Take Off!](https://maniginam.github.io/blog/pics&vids/Rex&LeoInPlane.jpeg#thumbnail)
 
 I was a little apprehensive taking both little boys in a little airplane, but once we were in the air, things were pretty smooth, the anxiety kinda fled away, and the both boys proved to be excellent flyers!  I was very impressed with both of them on how well they tolerated being in their car/airplane seats for so long.
 
