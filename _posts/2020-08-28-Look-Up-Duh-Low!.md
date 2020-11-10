@@ -21,7 +21,7 @@ Hurricane Babies:
     </div>
 
    <div class="column">
-<img src="https://github.com/maniginam/maniginam.github.io.git/info/lfs/HurricaneLeo.jpeg" alt="Hurricane Leo" style="width:82%">
+<img src="https://maniginam.github.io/blog/pics&vids/HurricaneLeo.jpeg" alt="Hurricane Leo" style="width:82%">
     </div>
 </div>
 <br>
@@ -29,7 +29,7 @@ Hurricane Babies:
 ***
 Rex:  
 Look up duh-low!!!!  He says as a truck launches off a ramp, which is the bed of a dump truck, and flies through the air over on lookers “duh-low” (below). 
-<video src="https://github.com/maniginam/maniginam.github.io.git/info/lfs/LookUpDuhLow.mp4" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/blog/pics&vids/LookUpDuhLow.mp4" width="320" height="400" controls></video>
 
 Leo:  
 Whenever the door to outside opens, Leo stops whatever he is doing and makes a run for it.  Hence the hurricane showers yesterday...  
