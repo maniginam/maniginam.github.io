@@ -12,7 +12,7 @@ Nonetheless, I think it is getting better.  I’m certainly eager for my next as
 
 You’d think I’d have a bunch to talk about seeing as I was out of town for so long recently, but I’m kind of at a loss for what else to say…  Until next time I guess.
 
-<video src="https://maniginam.github.io/blog/pics&vids/Game-Of-Life-Kata.mp4" width="600" height="400" controls></video>
+<video src="https://maniginam.github.io/blog/pics&vids/Game-of-Life-Kata.mp4" width="600" height="400" controls></video>
 
 
 ***
