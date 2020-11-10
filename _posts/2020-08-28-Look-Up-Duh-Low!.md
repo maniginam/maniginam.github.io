@@ -21,7 +21,7 @@ Hurricane Babies:
     </div>
 
    <div class="column">
-<img src="https://maniginam.github.io/blog/pics&vids/HurricaneLeo.jpeg" alt="Hurricane Leo" style="width:82%">
+<img src="e4d4b09467 * blog/pics&vids/HurricaneLeo.jpeg" alt="Hurricane Leo" style="width:82%">
     </div>
 </div>
 <br>
