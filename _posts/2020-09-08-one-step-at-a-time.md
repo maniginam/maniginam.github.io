@@ -10,7 +10,7 @@ All my decoupling & multimethod use in ttt did buff up my map skills though, whi
 
 Oh, and in my DIP presentation, the silly clip art seemed to go over well, so that was also good.  I was nervous that the angry bee & ant might be a little cheesy, but i think it simplified it enough that it worked and helped to paint the picture.  
 
-My next kata, I think will be the Lanston Ant…--but that might be tough to do in a 4 day week since it requires a grid, so I might pick a simpler one this go around and let that be the following one.  
+My next kata, I think will be the Langston Ant…--but that might be tough to do in a 4 day week since it requires a grid, so I might pick a simpler one this go around and let that be the following one.  
 
 I guess that’s it for today.  Overall, i’m still in high spirits about all of this and ever more excited for the next challenges.  
 

@@ -20,7 +20,7 @@ I’m eager for the next project to try this out—of course like with anything 
 
 Anyway, it’s not perfect, but it kind of works.
 
-Also, Coin Changer: 
+Also, [Coin Changer](https://www.youtube.com/watch?v=clWyqXoG-2o): 
 
 <video src="https://maniginam.github.io/blog/pics&vids/CoinChangerKata.mp4" width="600" height="400" controls></video>
 

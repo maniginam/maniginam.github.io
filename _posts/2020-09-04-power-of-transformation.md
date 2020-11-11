@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: SuperPower of Transformation
+title: Super Power of Transformation
 date: 2020-09-04
 ---
 
@@ -12,7 +12,7 @@ As for ttt; i think i actually did complete all the requirements for the week.  
 
 Regardless, i did not finish getting ttt to actually work again.  It is still not playable int he new set up.  I think I’m only like an hour or two from getting it there, so I’m hoping i can work on it a little during this holiday weekend—if the boys allow.  Then I’ll need to clean up the order of all the functions.  They are a little all over the place.  
 
-Bowling Kata (full screen is best): <video src="https://maniginam.github.io/blog/pics&vids/Bowling Kata.mp4" width="400" height="300" controls></video>
+[Bowling Kata](https://www.youtube.com/watch?v=1vlhlSjmJQk) (full screen is best): <video src="https://maniginam.github.io/blog/pics&vids/Bowling Kata.mp4" width="400" height="300" controls></video>
 Full length song: https://freemusicarchive.org/music/KieLoKaz/Free_Ganymed/Alte_Herren_Kielokaz_ID_364
 
 ***
