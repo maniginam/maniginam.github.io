@@ -4,16 +4,13 @@ title: Game Of Life
 date: 2020-11-09
 ---
 
-Let’s see.  Today, i started by finishing the video for my game-of-life kata. I think it looks pretty good, but let’s see what y’all have to say about it (it’s down below)
+Let’s see.  Today, i started by finishing the video for my [Game-of-Life Kata](https://www.youtube.com/watch?v=Gwk9mmQtYOc). I think it looks pretty good, but let’s see what y’all have to say about [it](https://www.youtube.com/watch?v=Gwk9mmQtYOc).  Feel free to comment & like.
 
 After this, i thought i had all the time in the world to finish all the TODO’s in TTT.  Ha!  While i did have all that time, everytime I went to fix something, something else broke--sometimes my tests and sometimes the production code.  Fragile & rigid for sure!
 
 Nonetheless, I think it is getting better.  I’m certainly eager for my next assignment, so I’m working hard to get this done efficiently.
 
 You’d think I’d have a bunch to talk about seeing as I was out of town for so long recently, but I’m kind of at a loss for what else to say…  Until next time I guess.
-
-<video src="https://maniginam.github.io/blog/pics&vids/Game-of-Life-Kata.mp4" width="600" height="400" controls></video>
-
 
 ***
 Rex:  

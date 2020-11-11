@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: unfinished post...
+title: Unfinished Post...
 date: 2020-10-16
 ---
 
