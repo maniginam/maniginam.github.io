@@ -1,6 +1,6 @@
 ---
 layout: posts
-Title: Ride til I Can’t No Mo’
+Title: Ride til I Can’t No Mo'\
 date: 2020-11-16
 ---
 
