@@ -25,4 +25,5 @@ After which, he’s been super pleasant all week with getting ready for school. 
 
 Leo:  
 And every time Rex sings, Leo dances!  Actually Leo did something really cute and impressive tonight.  He was wandering around and went into the bathroom.  When i found him, he was on Rex’s step with my blush brush in one had and my mascara tube in the other hand.  I asked him what he was doing, and he proceeded to dip the blush brush into my closed compact and brush it on his face and then took the mascara tube and horizontally brushed it over his eye and forehead.  This was impressive, because i don’t think I’ve put make-up on in front of him in quite a while, yet, he kind of demonstrated the basic concepts of what each tool was used for.  Then he found his toothbrush and kept that in his mouth until bed.
+![Leo chillin' in a beanbag](http://maniginam.github.io/blog/pics&vids/LeoBeanBag.jpeg)
 
