@@ -28,14 +28,14 @@ At 807AM, I heard the most surreal sound suddenly making it all real—I heard h
 
 Today that little boy is 3, and he still makes my world go round.  
 
-—-
+***
 As for coding, today i made progress.  I’m glad i asked about what I was doing, because go figure, i was doing it wrong.  In fact, what I was doing last week and commented out, was in fact correct.  Somehow last Thursday, i got confused and thought i was supposed to get the actual GUI to run in the web, but that’s not the case.  I’m just supposed to implement the game within a web GUI—that is so much easier…
 
 So i undid everything i undid the other day, and drew the board.  Now I’m trying to figure out how to click the boxes.  The game runs, but gets stuck at draw-board.  For my task this week, that should actually be a fairly simple task to fix with a nil so that the rest of the game runs.  
 
 All in all, a productive day and I think I’m on track for meeting iteration this week.
 
-—-
+***
 Rex:  
 We went bowling for his birthday—and had pizza.  I don’t think there has ever been a happier boy.  It was amazing to see how much he has changed from bowling last year though.  He was able to carry the ball all by himself this time, position it on the dragon ramp, and roll it to the pins.  
 

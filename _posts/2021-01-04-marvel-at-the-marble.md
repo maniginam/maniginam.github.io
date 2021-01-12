@@ -38,6 +38,7 @@ Now to do this, i had to stop the game from running, but I think i can get that 
 
 Tomorrow at stand up, I will ask my mentor for fine minutes to check my work and make sure that I am on track and doing this correctly.  I’d hate for Thursday’s iteration to come and for me to think i have everything working only to find that I’ve done it completely wrong—that’s happened before.  No sense working diligently on a task if you’re doing it wrong, so it’s probably good to touch base and make sure that I’m on the right track.
 
+***
 Rex:  
 Rex will be 3 tomorrow!  I cannot believe this amazing kid has been in our lives for three years!  I also cannot believe what an awesome kid he is.  He is so sweet and so smart, and just a wonderful little boy.  Tonight he was using filler words (so…. um… mm…..) because he didn’t have anything to say, but desperately wanted to talk, so he went on to tell me that the kitchen has lights on.  Yes it does. 
 

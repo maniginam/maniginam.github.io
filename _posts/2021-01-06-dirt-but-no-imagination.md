@@ -26,7 +26,7 @@ With all that said, i also feel like I’ve missed some tests…. For instance, 
 
 Regardless of my pleasure in completing my iteration (to my understanding), i can’t help but feel slow.  I feel like I should have been able to do more than what i accomplished in the time i estimated.  Granted, i actually got more working, i think, than my iteration expected, i still feel short.  One of these days, must be the day when i figure out how estimating accurately works and furthermore, how to break things up accurately.  
 
-—-
+***
 Rex:  
 For his birthday, Rex got a new construction site toy.  Repeatedly, he has asked me to give him some pretend dirt.  In response I’ve told him that for pretend dirt, he can use his imagination.  His reply is “but i can’t!  I don’t have one!”  A 3 year-old with no imagination would be the saddest thing.  Fortunately, this too has been tested by him asking “what if it were pink?  That would be silly!”.  This kid loves pink and thinks it’s silly.
 
