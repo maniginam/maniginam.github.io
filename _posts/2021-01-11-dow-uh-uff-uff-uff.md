@@ -1,6 +1,6 @@
 ---
 layout: posts
-Title: Dow-ah\: Uff, Uff, Uff
+Title: Dow-ah says Uff, Uff, Uff
 date: 2021-01-11
 ---
 
