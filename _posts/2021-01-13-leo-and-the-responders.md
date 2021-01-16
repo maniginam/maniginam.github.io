@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: Leo & the Responders: One Responsibility
+title: 'Leo & the Responders: One Responsibility'
 date: 2021-01-13
 ---
 
