@@ -31,7 +31,7 @@ This exam caught me off guard, and so I didn’t realize all this until the tail
 
 Leo laughed through his entire exam.  He thought it was all hysterical—except the ear check, but even that was kinda funny.  
 
-Anyway, after that I dropped them off and went to work.  I refactored more and refactored my main function to no longer parse the args since my HttpServer already did that for me.  Got that working, and then refactored too far and had to back track a little, but all in all everything is working and the app runs.  
+Anyway, after that I guiltily took them to school, and I went to work.  I refactored more and refactored my main function to no longer parse the args since my HttpServer already did that for me.  Got that working, and then refactored too far and had to back track a little, but all in all everything is working and the app runs.  
 
 Then I looked into cookies.  Thought about making some snickerdoodles, but then refocused on the cookies at hand—brower cookies!  Have you seen Storybots on Netflix?  If not, you should.  There is a great one about how computers work (featuring Snoop Dog coming out from behind a processor in a puff of smoke).  It’s a great show!  
 
