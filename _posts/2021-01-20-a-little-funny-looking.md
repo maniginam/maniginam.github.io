@@ -24,3 +24,6 @@ who submitted an offer to us yesterday--very exciting that we got, actually, a v
 fortunate for that and super excited!  yay!
 
 ta-ta for now
+
+Oh, but first, here's Leo doing a daily task for probably about 30 minutes (this is actually Rex's job, but Leo does it really well):
+<video src="https://maniginam.github.io/blog/pics&vids/LeoFeedsTails.mov" width="320" height="400" controls></video>
