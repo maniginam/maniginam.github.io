@@ -6,7 +6,7 @@ date: 2021-01-22
 
 I put a lot of thought into how to go about this client-side ttt this morning.  Now that I’m mildly familiar with scripting and how it works, I was ready to get started on writing the code to do it, but I was a little confused on where to start.  It made sense to start with ttt and i was told to do everything in ttt, but who was going to start the server?  I suppose I could have webttt start the server and call ttt which could then open a socket to connect to webttt and then use webttt’s set up code—
 
-***bright white flash of light as i saw grim images of the future: The world had exploded into devastation and the end of mankind because this route would result in ttt depending on webttt when webttt already depends on ttt!***.
+***--bright white flash of light as i saw grim images of the future: The world had exploded into devastation and the end of mankind because this route would result in ttt depending on webttt when webttt already depends on ttt!***.
 
 Whoo! That was a close one!  Let’s think about a different way of doing this...
 
@@ -42,7 +42,7 @@ Then, as i pulled up the drive to school, i rethought that.  Had I called Micah,
 
 No.  I might not have written much (read any) production (or tests) today, but I learned a ton today.  And I think what I learned today might be more important than a lot of what I’ve learned along this whole journey.  Let me explain.
 
-Early this afternoon, I was essentially copying and pasting other people’s configurations into the project.clj and getting things to work while mildly under the impression that “yeah yeah, i know the project.clj is \”important\”, but it’s not **real** code, so why waste precious time dealing with this when i can learn how to write clojurescript, which **is** real code and thus what I’m supposed to be learning?”.
+Early this afternoon, I was essentially copying and pasting other people’s configurations into the project.clj and getting things to work while mildly under the impression that “yeah yeah, i know the project.clj is ”important”, but it’s not **real** code, so why waste precious time dealing with this when i can learn how to write clojurescript, which **is** real code and thus what I’m supposed to be learning?”.
 
 But by the end of the day, using figwheel, leiningen, & speclj as my guides, i was reconfiguring the :cljsbuild of project.clj all on my own, and understanding what I was doing with it.  I suppose it could be said, that this is more important than the production code, because project.clj is kind of the heart of it all.  Or perhaps it’s the brain.  The production code won’t function without project.clj, but project.clj won’t do much without the production code, so they need each other to function.  Maybe there’s no brain at all in software (hahahaha!), but seriously!  Perhaps there’s no brain—i mean the most efficient and productive little programs that I know of don’t have brains and execute almost flawlessly on a daily basis doing hard, difficult, and dangerous labor—ants!  They just do, and they do exactly as they are supposed to do, and when they don’t (usually due to some kind of parasitic fungus), the other ants kill or exile them as if they are a bug (ha!  I’m on a roll tonight!) in their mass program.
 
