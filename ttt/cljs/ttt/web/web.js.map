@@ -1,0 +1,1 @@
+{"version":3,"file":"\/Users\/maniginam\/TicTacToe\/resources\/public\/cljs\/ttt\/web\/web.js","sources":["web.cljc"],"lineCount":11,"mappings":";AAAA;;;;AAKA,AAAKA,wBAAU,yBAAA,zBAACC;AAYhB,0BAAA,1BAAME,4DAAaC;AAAnB,AAAA,OAAAF,0BAIEE","names":["ttt.web.web\/game-atom","cljs.core\/atom","cljs.core\/deref","ttt.web.web\/update-game","game-atom"]}
