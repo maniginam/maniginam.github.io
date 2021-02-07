@@ -1,1 +1,0 @@
-{:output-wrapper false, :externs ["closure-js/externs"], :libs ["closure-js/libs"], :asset-path "../cljs", :output-to "resources/public/cljs/main_dev.js", :output-dir "resources/public/cljs", :main ttt.web.core-spec}

@@ -80,7 +80,7 @@ goog.addDependency("../cljsjs/react-dom/development/react-dom.inc.js", ['react_d
 goog.addDependency("../sablono/interpreter.js", ['sablono.interpreter'], ['sablono.util', 'react', 'cljs.core', 'goog.object', 'sablono.normalize', 'react_dom', 'clojure.string']);
 goog.addDependency("../sablono/core.js", ['sablono.core'], ['goog.dom', 'sablono.util', 'goog.string', 'react', 'cljs.core', 'sablono.interpreter', 'sablono.normalize', 'clojure.string']);
 goog.addDependency("../ttt/web/components.js", ['ttt.web.components'], ['ttt.master.core', 'ttt.master.game_master', 'cljs.core', 'sablono.core', 'ttt.web.board', 'ttt.web.setup']);
-goog.addDependency("../ttt/web/core.js", ['ttt.web.core'], ['cljs.core', 'ttt.web.components']);
+goog.addDependency("../ttt/web/core.js", ['ttt.web.core'], ['ttt.master.core', 'ttt.master.game_master', 'cljs.core', 'ttt.web.components']);
 goog.addDependency("../ttt/web/component_spec.js", ['ttt.web.component_spec'], ['cljs.core']);
 goog.addDependency("../ttt/web/core_spec.js", ['ttt.web.core_spec'], ['cljs.core', 'speclj.core']);
 goog.addDependency("../ttt/web/board_spec.js", ['ttt.web.board_spec'], ['cljs.core', 'ttt.web.board', 'speclj.core', 'ttt.master.spec_helper']);

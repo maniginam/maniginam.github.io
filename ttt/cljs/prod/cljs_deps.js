@@ -62,4 +62,4 @@ goog.addDependency("../sablono/core.js", ['sablono.core'], ['goog.dom', 'sablono
 goog.addDependency("../ttt/web/board.js", ['ttt.web.board'], ['ttt.master.core', 'ttt.master.game_master', 'cljs.core', 'ttt.board.board']);
 goog.addDependency("../ttt/web/setup.js", ['ttt.web.setup'], ['ttt.master.core', 'cljs.core', 'ttt.board.board']);
 goog.addDependency("../ttt/web/components.js", ['ttt.web.components'], ['ttt.master.core', 'ttt.master.game_master', 'cljs.core', 'sablono.core', 'ttt.web.board', 'ttt.web.setup']);
-goog.addDependency("../ttt/web/core.js", ['ttt.web.core'], ['cljs.core', 'ttt.web.components']);
+goog.addDependency("../ttt/web/core.js", ['ttt.web.core'], ['ttt.master.core', 'ttt.master.game_master', 'cljs.core', 'ttt.web.components']);

@@ -88,7 +88,7 @@
 		state))
 
 (defn maybe-game-over [state]
-	(if (and (game-over? state) (not (nil? (:board state))))
+	(if (and (not (nil? (:board state))) (game-over? state))
 		(assoc state :status :game-over)
 		state))
 

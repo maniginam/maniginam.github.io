@@ -118,7 +118,7 @@ return state;
 }
 });
 ttt.master.game_master.maybe_game_over = (function ttt$master$game_master$maybe_game_over(state){
-if(((ttt.master.game_master.game_over_QMARK_.call(null,state)) && ((!((new cljs.core.Keyword(null,"board","board",-1907017633).cljs$core$IFn$_invoke$arity$1(state) == null)))))){
+if((((!((new cljs.core.Keyword(null,"board","board",-1907017633).cljs$core$IFn$_invoke$arity$1(state) == null)))) && (ttt.master.game_master.game_over_QMARK_.call(null,state)))){
 return cljs.core.assoc.call(null,state,new cljs.core.Keyword(null,"status","status",-1997798413),new cljs.core.Keyword(null,"game-over","game-over",-607322695));
 } else {
 return state;

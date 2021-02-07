@@ -94,7 +94,8 @@
 												:type     "submit"
 												:on-click #(let [entry (.-value (.getElementById js/document "boardsize"))]
 																		 (swap! game-atom assoc :entry entry :current-player :player1)
-																		 (swap! game-atom merge (tcore/set-parameters @game-atom)))}
+																		 (swap! game-atom merge (tcore/set-parameters @game-atom))
+																		 (swap! game-atom merge (master/update-state @game-atom)))}
 							 "Let's Play!"]]]))
 
 (defmethod component :playing [game-atom]
