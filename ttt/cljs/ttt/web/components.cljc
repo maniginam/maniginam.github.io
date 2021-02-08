@@ -88,7 +88,7 @@
 							[:h1 "TicTacToe!"]
 							[:h2 "What size board do you want to play?"]
 							[:br]
-							[:label "? x ?  "]
+							[:label "enter board-size"]
 							[:input {:id "boardsize" :type "text" :name "board-size"}]
 							[:button {:id       "play"
 												:type     "submit"

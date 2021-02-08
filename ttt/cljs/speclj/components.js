@@ -7,7 +7,7 @@ goog.require('cljs.core');
  */
 speclj.components.SpecComponent = function(){};
 
-var speclj$components$SpecComponent$install$dyn_2543 = (function (this$,description){
+var speclj$components$SpecComponent$install$dyn_7973 = (function (this$,description){
 var x__4428__auto__ = (((this$ == null))?null:this$);
 var m__4429__auto__ = (speclj.components.install[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -25,7 +25,7 @@ speclj.components.install = (function speclj$components$install(this$,descriptio
 if((((!((this$ == null)))) && ((!((this$.speclj$components$SpecComponent$install$arity$2 == null)))))){
 return this$.speclj$components$SpecComponent$install$arity$2(this$,description);
 } else {
-return speclj$components$SpecComponent$install$dyn_2543.call(null,this$,description);
+return speclj$components$SpecComponent$install$dyn_7973.call(null,this$,description);
 }
 });
 
@@ -33,53 +33,53 @@ return speclj$components$SpecComponent$install$dyn_2543.call(null,this$,descript
 
 (cljs.core.LazySeq.prototype.speclj$components$SpecComponent$install$arity$2 = (function (this$,description){
 var this$__$1 = this;
-var seq__2544 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
-var chunk__2545 = null;
-var count__2546 = (0);
-var i__2547 = (0);
+var seq__7974 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
+var chunk__7975 = null;
+var count__7976 = (0);
+var i__7977 = (0);
 while(true){
-if((i__2547 < count__2546)){
-var component = cljs.core._nth.call(null,chunk__2545,i__2547);
+if((i__7977 < count__7976)){
+var component = cljs.core._nth.call(null,chunk__7975,i__7977);
 speclj.components.install.call(null,component,description);
 
 
-var G__2560 = seq__2544;
-var G__2561 = chunk__2545;
-var G__2562 = count__2546;
-var G__2563 = (i__2547 + (1));
-seq__2544 = G__2560;
-chunk__2545 = G__2561;
-count__2546 = G__2562;
-i__2547 = G__2563;
+var G__7990 = seq__7974;
+var G__7991 = chunk__7975;
+var G__7992 = count__7976;
+var G__7993 = (i__7977 + (1));
+seq__7974 = G__7990;
+chunk__7975 = G__7991;
+count__7976 = G__7992;
+i__7977 = G__7993;
 continue;
 } else {
-var temp__5735__auto__ = cljs.core.seq.call(null,seq__2544);
+var temp__5735__auto__ = cljs.core.seq.call(null,seq__7974);
 if(temp__5735__auto__){
-var seq__2544__$1 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__2544__$1)){
-var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__2544__$1);
-var G__2564 = cljs.core.chunk_rest.call(null,seq__2544__$1);
-var G__2565 = c__4556__auto__;
-var G__2566 = cljs.core.count.call(null,c__4556__auto__);
-var G__2567 = (0);
-seq__2544 = G__2564;
-chunk__2545 = G__2565;
-count__2546 = G__2566;
-i__2547 = G__2567;
+var seq__7974__$1 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7974__$1)){
+var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__7974__$1);
+var G__7994 = cljs.core.chunk_rest.call(null,seq__7974__$1);
+var G__7995 = c__4556__auto__;
+var G__7996 = cljs.core.count.call(null,c__4556__auto__);
+var G__7997 = (0);
+seq__7974 = G__7994;
+chunk__7975 = G__7995;
+count__7976 = G__7996;
+i__7977 = G__7997;
 continue;
 } else {
-var component = cljs.core.first.call(null,seq__2544__$1);
+var component = cljs.core.first.call(null,seq__7974__$1);
 speclj.components.install.call(null,component,description);
 
 
-var G__2568 = cljs.core.next.call(null,seq__2544__$1);
-var G__2569 = null;
-var G__2570 = (0);
-var G__2571 = (0);
-seq__2544 = G__2568;
-chunk__2545 = G__2569;
-count__2546 = G__2570;
-i__2547 = G__2571;
+var G__7998 = cljs.core.next.call(null,seq__7974__$1);
+var G__7999 = null;
+var G__8000 = (0);
+var G__8001 = (0);
+seq__7974 = G__7998;
+chunk__7975 = G__7999;
+count__7976 = G__8000;
+i__7977 = G__8001;
 continue;
 }
 } else {
@@ -94,53 +94,53 @@ break;
 
 (cljs.core.List.prototype.speclj$components$SpecComponent$install$arity$2 = (function (this$,description){
 var this$__$1 = this;
-var seq__2548 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
-var chunk__2549 = null;
-var count__2550 = (0);
-var i__2551 = (0);
+var seq__7978 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
+var chunk__7979 = null;
+var count__7980 = (0);
+var i__7981 = (0);
 while(true){
-if((i__2551 < count__2550)){
-var component = cljs.core._nth.call(null,chunk__2549,i__2551);
+if((i__7981 < count__7980)){
+var component = cljs.core._nth.call(null,chunk__7979,i__7981);
 speclj.components.install.call(null,component,description);
 
 
-var G__2572 = seq__2548;
-var G__2573 = chunk__2549;
-var G__2574 = count__2550;
-var G__2575 = (i__2551 + (1));
-seq__2548 = G__2572;
-chunk__2549 = G__2573;
-count__2550 = G__2574;
-i__2551 = G__2575;
+var G__8002 = seq__7978;
+var G__8003 = chunk__7979;
+var G__8004 = count__7980;
+var G__8005 = (i__7981 + (1));
+seq__7978 = G__8002;
+chunk__7979 = G__8003;
+count__7980 = G__8004;
+i__7981 = G__8005;
 continue;
 } else {
-var temp__5735__auto__ = cljs.core.seq.call(null,seq__2548);
+var temp__5735__auto__ = cljs.core.seq.call(null,seq__7978);
 if(temp__5735__auto__){
-var seq__2548__$1 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__2548__$1)){
-var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__2548__$1);
-var G__2576 = cljs.core.chunk_rest.call(null,seq__2548__$1);
-var G__2577 = c__4556__auto__;
-var G__2578 = cljs.core.count.call(null,c__4556__auto__);
-var G__2579 = (0);
-seq__2548 = G__2576;
-chunk__2549 = G__2577;
-count__2550 = G__2578;
-i__2551 = G__2579;
+var seq__7978__$1 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7978__$1)){
+var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__7978__$1);
+var G__8006 = cljs.core.chunk_rest.call(null,seq__7978__$1);
+var G__8007 = c__4556__auto__;
+var G__8008 = cljs.core.count.call(null,c__4556__auto__);
+var G__8009 = (0);
+seq__7978 = G__8006;
+chunk__7979 = G__8007;
+count__7980 = G__8008;
+i__7981 = G__8009;
 continue;
 } else {
-var component = cljs.core.first.call(null,seq__2548__$1);
+var component = cljs.core.first.call(null,seq__7978__$1);
 speclj.components.install.call(null,component,description);
 
 
-var G__2580 = cljs.core.next.call(null,seq__2548__$1);
-var G__2581 = null;
-var G__2582 = (0);
-var G__2583 = (0);
-seq__2548 = G__2580;
-chunk__2549 = G__2581;
-count__2550 = G__2582;
-i__2551 = G__2583;
+var G__8010 = cljs.core.next.call(null,seq__7978__$1);
+var G__8011 = null;
+var G__8012 = (0);
+var G__8013 = (0);
+seq__7978 = G__8010;
+chunk__7979 = G__8011;
+count__7980 = G__8012;
+i__7981 = G__8013;
 continue;
 }
 } else {
@@ -155,53 +155,53 @@ break;
 
 (cljs.core.EmptyList.prototype.speclj$components$SpecComponent$install$arity$2 = (function (this$,description){
 var this$__$1 = this;
-var seq__2552 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
-var chunk__2553 = null;
-var count__2554 = (0);
-var i__2555 = (0);
+var seq__7982 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
+var chunk__7983 = null;
+var count__7984 = (0);
+var i__7985 = (0);
 while(true){
-if((i__2555 < count__2554)){
-var component = cljs.core._nth.call(null,chunk__2553,i__2555);
+if((i__7985 < count__7984)){
+var component = cljs.core._nth.call(null,chunk__7983,i__7985);
 speclj.components.install.call(null,component,description);
 
 
-var G__2584 = seq__2552;
-var G__2585 = chunk__2553;
-var G__2586 = count__2554;
-var G__2587 = (i__2555 + (1));
-seq__2552 = G__2584;
-chunk__2553 = G__2585;
-count__2554 = G__2586;
-i__2555 = G__2587;
+var G__8014 = seq__7982;
+var G__8015 = chunk__7983;
+var G__8016 = count__7984;
+var G__8017 = (i__7985 + (1));
+seq__7982 = G__8014;
+chunk__7983 = G__8015;
+count__7984 = G__8016;
+i__7985 = G__8017;
 continue;
 } else {
-var temp__5735__auto__ = cljs.core.seq.call(null,seq__2552);
+var temp__5735__auto__ = cljs.core.seq.call(null,seq__7982);
 if(temp__5735__auto__){
-var seq__2552__$1 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__2552__$1)){
-var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__2552__$1);
-var G__2588 = cljs.core.chunk_rest.call(null,seq__2552__$1);
-var G__2589 = c__4556__auto__;
-var G__2590 = cljs.core.count.call(null,c__4556__auto__);
-var G__2591 = (0);
-seq__2552 = G__2588;
-chunk__2553 = G__2589;
-count__2554 = G__2590;
-i__2555 = G__2591;
+var seq__7982__$1 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7982__$1)){
+var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__7982__$1);
+var G__8018 = cljs.core.chunk_rest.call(null,seq__7982__$1);
+var G__8019 = c__4556__auto__;
+var G__8020 = cljs.core.count.call(null,c__4556__auto__);
+var G__8021 = (0);
+seq__7982 = G__8018;
+chunk__7983 = G__8019;
+count__7984 = G__8020;
+i__7985 = G__8021;
 continue;
 } else {
-var component = cljs.core.first.call(null,seq__2552__$1);
+var component = cljs.core.first.call(null,seq__7982__$1);
 speclj.components.install.call(null,component,description);
 
 
-var G__2592 = cljs.core.next.call(null,seq__2552__$1);
-var G__2593 = null;
-var G__2594 = (0);
-var G__2595 = (0);
-seq__2552 = G__2592;
-chunk__2553 = G__2593;
-count__2554 = G__2594;
-i__2555 = G__2595;
+var G__8022 = cljs.core.next.call(null,seq__7982__$1);
+var G__8023 = null;
+var G__8024 = (0);
+var G__8025 = (0);
+seq__7982 = G__8022;
+chunk__7983 = G__8023;
+count__7984 = G__8024;
+i__7985 = G__8025;
 continue;
 }
 } else {
@@ -216,53 +216,53 @@ break;
 
 (cljs.core.PersistentVector.prototype.speclj$components$SpecComponent$install$arity$2 = (function (this$,description){
 var this$__$1 = this;
-var seq__2556 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
-var chunk__2557 = null;
-var count__2558 = (0);
-var i__2559 = (0);
+var seq__7986 = cljs.core.seq.call(null,cljs.core.seq.call(null,this$__$1));
+var chunk__7987 = null;
+var count__7988 = (0);
+var i__7989 = (0);
 while(true){
-if((i__2559 < count__2558)){
-var component = cljs.core._nth.call(null,chunk__2557,i__2559);
+if((i__7989 < count__7988)){
+var component = cljs.core._nth.call(null,chunk__7987,i__7989);
 speclj.components.install.call(null,component,description);
 
 
-var G__2596 = seq__2556;
-var G__2597 = chunk__2557;
-var G__2598 = count__2558;
-var G__2599 = (i__2559 + (1));
-seq__2556 = G__2596;
-chunk__2557 = G__2597;
-count__2558 = G__2598;
-i__2559 = G__2599;
+var G__8026 = seq__7986;
+var G__8027 = chunk__7987;
+var G__8028 = count__7988;
+var G__8029 = (i__7989 + (1));
+seq__7986 = G__8026;
+chunk__7987 = G__8027;
+count__7988 = G__8028;
+i__7989 = G__8029;
 continue;
 } else {
-var temp__5735__auto__ = cljs.core.seq.call(null,seq__2556);
+var temp__5735__auto__ = cljs.core.seq.call(null,seq__7986);
 if(temp__5735__auto__){
-var seq__2556__$1 = temp__5735__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__2556__$1)){
-var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__2556__$1);
-var G__2600 = cljs.core.chunk_rest.call(null,seq__2556__$1);
-var G__2601 = c__4556__auto__;
-var G__2602 = cljs.core.count.call(null,c__4556__auto__);
-var G__2603 = (0);
-seq__2556 = G__2600;
-chunk__2557 = G__2601;
-count__2558 = G__2602;
-i__2559 = G__2603;
+var seq__7986__$1 = temp__5735__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7986__$1)){
+var c__4556__auto__ = cljs.core.chunk_first.call(null,seq__7986__$1);
+var G__8030 = cljs.core.chunk_rest.call(null,seq__7986__$1);
+var G__8031 = c__4556__auto__;
+var G__8032 = cljs.core.count.call(null,c__4556__auto__);
+var G__8033 = (0);
+seq__7986 = G__8030;
+chunk__7987 = G__8031;
+count__7988 = G__8032;
+i__7989 = G__8033;
 continue;
 } else {
-var component = cljs.core.first.call(null,seq__2556__$1);
+var component = cljs.core.first.call(null,seq__7986__$1);
 speclj.components.install.call(null,component,description);
 
 
-var G__2604 = cljs.core.next.call(null,seq__2556__$1);
-var G__2605 = null;
-var G__2606 = (0);
-var G__2607 = (0);
-seq__2556 = G__2604;
-chunk__2557 = G__2605;
-count__2558 = G__2606;
-i__2559 = G__2607;
+var G__8034 = cljs.core.next.call(null,seq__7986__$1);
+var G__8035 = null;
+var G__8036 = (0);
+var G__8037 = (0);
+seq__7986 = G__8034;
+chunk__7987 = G__8035;
+count__7988 = G__8036;
+i__7989 = G__8037;
 continue;
 }
 } else {
@@ -391,8 +391,8 @@ return (new speclj.components.Characteristic(name,parent,body));
 });
 
 speclj.components.new_characteristic = (function speclj$components$new_characteristic(var_args){
-var G__2609 = arguments.length;
-switch (G__2609) {
+var G__8039 = arguments.length;
+switch (G__8039) {
 case 2:
 return speclj.components.new_characteristic.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 

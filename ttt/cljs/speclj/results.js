@@ -141,11 +141,11 @@ speclj.results.error_QMARK_ = (function speclj$results$error_QMARK_(result){
 return cljs.core._EQ_.call(null,cljs.core.type.call(null,result),speclj.results.ErrorResult);
 });
 speclj.results.fail_count = (function speclj$results$fail_count(results){
-return cljs.core.reduce.call(null,(function (p1__2314_SHARP_,p2__2313_SHARP_){
-if(((speclj.results.fail_QMARK_.call(null,p2__2313_SHARP_)) || (speclj.results.error_QMARK_.call(null,p2__2313_SHARP_)))){
-return (p1__2314_SHARP_ + (1));
+return cljs.core.reduce.call(null,(function (p1__7744_SHARP_,p2__7743_SHARP_){
+if(((speclj.results.fail_QMARK_.call(null,p2__7743_SHARP_)) || (speclj.results.error_QMARK_.call(null,p2__7743_SHARP_)))){
+return (p1__7744_SHARP_ + (1));
 } else {
-return p1__2314_SHARP_;
+return p1__7744_SHARP_;
 }
 }),(0),results);
 });

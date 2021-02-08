@@ -11,10 +11,10 @@ var component__$1 = cljs.core.deref.call(null,component.parent);
 var level = (0);
 while(true){
 if(cljs.core.truth_(component__$1)){
-var G__2788 = cljs.core.deref.call(null,component__$1.parent);
-var G__2789 = (level + (1));
-component__$1 = G__2788;
-level = G__2789;
+var G__8218 = cljs.core.deref.call(null,component__$1.parent);
+var G__8219 = (level + (1));
+component__$1 = G__8218;
+level = G__8219;
 continue;
 } else {
 return level;

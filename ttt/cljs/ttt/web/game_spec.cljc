@@ -45,5 +45,6 @@
 			(should= :player2 (:current-player @test-atom))))
 	)
 
+
 (run-specs)
 
