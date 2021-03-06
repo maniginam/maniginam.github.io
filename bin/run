@@ -1,4 +1,4 @@
-echo "serving blog on port 8080"
+echo "serving blog on port 3141"
 pushd /Users/maniginam/blogSite/maniginam.github.io/docs
-python -m SimpleHTTPServer 8080
+python -m SimpleHTTPServer 3141
 popd
