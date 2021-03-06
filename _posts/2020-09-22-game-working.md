@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: :game-working
+title: game-working
 date: 2020-09-22
 ---
 
