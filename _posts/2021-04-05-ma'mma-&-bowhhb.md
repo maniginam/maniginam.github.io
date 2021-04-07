@@ -22,8 +22,8 @@ Leo:
 Leo can say “Mi-ma/Ma-ma/G-ma” for gramma and “Boww!!/Bahuwwp!/Bowww-b!” for Bobby.  He also started saying “ready, set, go!”, but it’s more like: “Ouh!  Ehh!!  Gooooohhhwwww!”
 
 He also found & loved a hat this weekend:
-![Leo wearing a hat](http://maniginam.github.io/blog/pics&vids/LeoWearsHat.jpeg)
+![Leo wearing a hat](http://maniginam.github.io/blog/pics&vids/LeoWearsHat.jpeg#thumbnail)
 
 Also, here are their school pictures:
-![Rex Spring 2021 3yrs old](http://maniginam.github.io/blog/pics&vids/RexSpr2021.jpeg)
-![Leo Spring 2021 18mts old](http://maniginam.github.io/blog/pics&vids/LeoSpr2021.jpeg)
+![Rex Spring 2021 3yrs old](http://maniginam.github.io/blog/pics&vids/RexSpr2021.jpeg#thumbnail)
+![Leo Spring 2021 18mts old](http://maniginam.github.io/blog/pics&vids/LeoSpr2021.jpeg#thumbnail)
