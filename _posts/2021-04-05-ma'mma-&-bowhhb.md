@@ -25,5 +25,13 @@ He also found & loved a hat this weekend:
 ![Leo wearing a hat](https://maniginam.github.io/blog/pics&vids/LeoWearsHat.jpeg#thumbnail)
 
 Also, here are their school pictures:
-![Rex Spring 2021 3yrs old](https://maniginam.github.io/blog/pics&vids/RexSpr2021.jpeg#thumbnail)
-![Leo Spring 2021 18mts old](https://maniginam.github.io/blog/pics&vids/LeoSpr2021.jpeg#thumbnail)
+<div class="row">
+    <div class="column">
+<img src="https://maniginam.github.io/blog/pics&vids/RexSpr2021.jpeg" alt="Rex Spring 2021 3yrs old" style="width:82%">
+    </div>
+
+   <div class="column">
+<img src="https://maniginam.github.io/blog/pics&vids/LeoSpr2021.jpeg" alt="Leo Spring 2021 18mts old" style="width:82%">
+    </div>
+</div>
+<br>
