@@ -27,6 +27,6 @@ The other night we went to get Pizza.  Leo became obsessed with the parmesan sha
 ![Leo Learning from Bobby!](https://maniginam.github.io/blog/pics&vids/LeoLearnsFromBobby.jpeg#thumbnail)
 
 Today, I saw a very disappointing pajama set in my endeavor to get Rex some new pajamas that actually fit him.  It’s below.  It’s embarrassing as I hope the makers feel.  It’s just so wrong! 
-![They should be embarrassed!](https://maniginam.github.io/blog/pics&vids/embarassingPjs.jpeg#thumbnail)
+![They should be embarrassed!](https://maniginam.github.io/blog/pics&vids/embarassingPjs.jpg#thumbnail)
 
 
