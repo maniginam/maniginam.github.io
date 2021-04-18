@@ -1,0 +1,263 @@
+When an individual encounters an obstacle in his or her life, no matter the significance or severity, the odds are that the challenge, while unique and new to the individual, has probably stood in the way of challengers before him or her.  In other words, the individual is likely not the first to face this challenge.  Think of the race Tough Mudder, which I have never and will never do (the electrical shocking at the end is a bit much).  As you approach an obstacle, the *odds* are you are not the first one there.  Others have faced the obstacle before you.  Some have succeeded, while others parish--some may even find a way around it.
+
+With that in mind, I experienced a road block that over the past decade, I revisited several times with the same outcome until I finally asked for help.  I wanted to learn how to code, but I didn't really know where to start.  Even if I had, I still didn't know how to get truly started.
+
+Sure, I played around with online platforms like codecademy and online koans.  Using those tools, I was able to learn the basics of a language or two, but that was online in an application that did all the real stuff for me.  I wasn't going to be able to write an application in an online interface.  Not to mention, I was doing simple exercises to solve little (and sometimes challenging) problems, so how do you go from this to actually writing an application?
+
+In reference to my first statement, I simply just cannot believe that I am the first or the only one who has been blocked here.  If this was a roadblock for me, there must be others, and so, I'm going unblock you--at least help you to get past the first block--commanding your computer!
+
+##Software Descriptions
+Before diving into all the downloads & installations, feel free to review this quick overview of the software we will be installing on your machine.
+
+####[Clojure](https://clojure.org)
+We're going to get you set up to write in Clojure.  Clojure is a very powerful & efficient language.  It is a functional, lisp language.  I've chosen clojure for you to start on for three reasons.
+
+1.  It's what I know best.
+2.  While the syntax is a little confusing at first, maneuvering over lists and functions to create simple algorithms is actually easier and more straight forward.
+3.  In everything that I've read, those who start with a procedural language like java or python, are often intimidated by functional languages, and I've observed that they often don't take the opportunity to learn one.
+
+    Starting with a functional language like Clojure, gets you comfortable with it from the start.  There's no doubt that you will learn procedural languages down the line.
+
+#####[Java8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+There are newer versions, but for now, stick with [version 8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) as it is the most commonly used.
+Because of this, using newer versions could cause you seemingly unsolvable problems down the line.
+
+#####[Homebrew](https://homebrew.sh) & [Chocolatey](https://chocolate.org)
+Homebrew and Chocolatey are Package Managers, which are essentially programs that do the work of downloading & installing other applications on the correct path for you.  To learn more about Homebrew or Chocolatey, visit their sites [Homebrew](https://homebrew.sh) and [Chocolatey](https://chocolate.org).
+Macs will be using Homebrew (and if you do, feel free to imbibe).  Windows will be using Chocolatey.
+
+#####[Leiningen](https://leiningen.org)
+Leiningen is a tool that automates clojure and helps to manage dependencies.  Trust me, you’ll want it and will come to need it if you continue to use clojure.
+
+####[.NET Framework 4.5+](https://dotnet.microsoft.com/download)
+This is for windows only and is a .NET Framework which is required for clojure & chocolatey to run.
+
+####Terminal & PowerShell
+While this little window may look unimpressive upon opening, it is literally the window into your computer.  With the right commands, it can read files, download data, search websites, and run applications.  In fact, it is the command line for your computer, and anything that you do on your computer could theoretically be commanded through this shell window.
+Terminal is for Mac while PowerShell is for Windows.  They are shell script readers.
+
+##Installations, Downloads, & Setup
+**All instructions except downloading java (and .NET for Windows), will all be performed in Terminal/PowerShell.  The commands to use, which you can simply copy & paste, will be *italicized*.**
+
+###Macs
+#####[Java8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+*   Download & Install for macOSx64
+
+The rest of the instructions will be in Terminal, copy/paste or type out the italicized *instructions*.  
+#####Set Environment Variables
+*   Ensure java is installed:               *which java*
+*   Double check the version type: 			*java -version*
+*   Find the shell you’re using:			*echo $SHELL*
+    ![Mac JAVA_HOME](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/macJavaHome.png)
+*   **Note either /bin/bash or /bin/zsh**
+    *   If /bin/bash, type:				*vim ~/.bashrc*
+    *   If /bin/zsh, type:				*vim ~/.zshrc*
+*   You've now opened vim, which allows you to edit documents within the terminal
+    *   Push “i” to INSERT text
+    *   Copy/Paste:     *export JAVA_HOME=/usr/libexec/java_home -v {{  enter version i.e. 1.8 }}*
+        ![vim export JAVA_HOME](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/exportJavaHomeVIM.png)
+    *   Push esc, then type:					*:wq*
+        ![Mac vim :wq](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/vim:wq.png)
+    *   Check that it’s been set:				*echo $JAVA_HOME*
+
+#####[Homebrew](https://homebrew.sh)
+*   Download & install Homebrew:  */bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"*
+
+#####[Clojure](https://clojure.org)
+*   Download & install Clojure: *brew install clojure/tools/clojure*
+    *   Pay attention.  Your terminal is going to ask you for your password a couple times and then prompt you to accept terms.  Do these things.*
+
+#####[Leiningen](https://leiningen.org)
+*   Download & install Leiningen:   *brew install leiningen*
+
+###Windows
+#####[Java8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+*   Download & Install for your System Type
+    *   If you're not sure of your system type, go to your Settings and click About.  System Type should be listed--mine is x64.
+
+#####[.NET Framework 4.5+](https://dotnet.microsoft.com/download)
+*   Download & Install .NET Framework Dev Pack
+
+***
+
+Open Powershell as ***Administrator***.
+First things first,
+*   Make sure you have at least version 5 of PowerShell:  *Get-Host*
+    *   Confirm your version.  Upgrade if you have an earlier version than 5: *Update-Module PowerShell*
+        *   If it asks you to update NuGet, please do so.
+
+The rest of the instructions will be in PowerShell.  If you get errors between installations, close & reopen PowerShell as ***Administrator***.
+
+#####Set Environment Variables
+Note: If you are not using PowerShell, this part of the instructions may not work.
+Also, just below these instructions is an image of what this should all look like.
+*   Find the java path:			        *$Env:JAVA_HOME*
+*   Confirm the java version:		    *java -version*
+    *   If is spits out jdk1.8.0_xxx, then you are good to go, and don't need to set your Environment Variables.
+*   Confirm path of Java8:              *Get-ChildItem "C:\Program Files\Java"*
+    *   If you see a folder called jdk1.8.0_xxx, then that's the one.  
+    *   If you don't then we'll need to find it:  
+        Note: These commands will be further explained in a later section: A Path Forward - Directories, so don't sweat about not knowing what you're doing right now.
+        *   Go to root directory:        *cd /*
+        *   List it's items:             *ls ".\Program Files\Java"*
+        *   Visually check the list.  Do you see it?  
+            * If not, then you'll need to search for it.  It will likely be in Program Files and probably be in a directory that containing "Java" or "JDK".
+*   Set JAVA_HOME:                      *$env:JAVA_HOME="C:\Program Files\Java\jdk1.8.***X_XXX***\"*
+*   Confirm it was set:                 *$Env:JAVA_HOME*  
+
+This is what it should look like in the end:
+![win JAVA_HOME](/Users/maniginam/projects/final/article/images/winJavaHome.png)
+
+
+#####[Chocolatey](https://chocolatey.org)
+*   Check your access:  *Get-ExecutionPolicy*
+    *   It will probably say Restricted, so
+    *   Set your access:    *Set-ExecutionPolicy Bypass -Scope Process*
+        *   When it asks for permission, enter  *Y*
+*   Download & install Chocolatey:  *Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://community.chocolatey.org/install.ps1 -UseBasicParsing | iex*
+
+#####[Clojure](https://clojure.org)
+Unfortunately chocolatey only has version 6, and we need 7, so we’ll do this manually.
+*   Download & install Clojure: *iwr -useb download.clojure.org/install/win-install-1.10.3.822.ps1 | iex*
+    *   It’s going to prompt you for an installation location.  Per Clojure’s instructions, choose option *1*.
+
+#####[Leiningen](https://leiningen.org)
+*   Download & install Leiningen:   *choco install lein*
+
+
+##Let's Code!
+***Congrats!***  Whether you are a Mac or a PC, you have just made your first true requests, downloads, & installations through your powerful little shell window, and all with single lines!  Pretty cool!
+
+And, I know what you’re probably thinking: coding is really just a bunch of copying & pasting, isn’t it?!  Here you thought we did truly special things...  I hate to break it to you that your thought is not entirely untrue, but I promise, it does get better.  In fact, let’s have some fun!
+
+These instructions will also be in your shell.
+*   Start the REPL:     *lein repl*
+    ![REPL](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/repl.png)
+    The REPL is clojure’s free-coding arena.  It stands for Read-Eval-Print-Loop.  I use it frequently as my trial & error space while I’m working on projects.  It allows you to run or write functions and execute them in real time instead of having to run your program.
+*   Try something like this: 			*(+ 3 3)*
+    *   Did it return 6?
+        ![repl (+ 3 3)](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/replSix.png)
+*   Now try this:  					*(def hello “Hello, World!”)*
+*   and now: 			            *hello*
+    ![Hello, World!](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/helloWorld.png)
+*   Let’s write a function:  			*(defn hello [name] “Hello, ” name “!”)*
+*   Call your function: 				*(hello “Gina”)*
+    ![Hello, Gina!](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/helloGina.png)
+*   Set your name:  				    *(def my-name “Gina”)*
+*   Call your function again with my-name:  	*(hello my-name)*
+    ![Hello, My Name!](/Users/maniginam/Library/Application Support/JetBrains/IdeaIC2020.2/scratches/images/hello-my-name.png)
+
+Cool!
+
+The book Programming Clojure by Alex Miller is a part of The Pragmatic Programmer series, and is a very good resource for learning clojure.  It does get high level, but it’s simple enough for even newbies to follow along.
+
+
+##A Path Forward
+Let’s give you some direction.  I'm going to help you get setup with Koans, as well as practicing Test-Driven-Development (TDD) with the problems from [Project Euler](https://projecteuler.net/) and [4Clojure](https://www.4clojure.com/).
+
+*   Stop the REPL:                       *^d*
+
+####[Git](https://git-scm.com/)
+*   Check for Git:                       *git --version*
+    *   if not already installed:
+        *   Mac:                         *brew install git*
+    *   Windows:                         *choco install git*
+
+####[GitHub](https://github.com).
+Go ahead and sign up for or signin into [GitHub](https://github.com), so we can fork some stuff!
+
+Forking puts copies of repositories created by others under your own repository.  Anything you change in your repository will not affect the master repository, so don’t worry.
+
+At the top right of each page I'm about to direct you to, there will be a button called Fork.  That's the button to push when I say "Fork It!"
+![Fork](/Users/maniginam/projects/final/article/images/forkIt!.png)
+
+*   Go to the [clojure koans](https://github.com/functional-koans/clojure-koans.git)
+    *   Fork it!
+*   Go to [euler specs](https://github.com/slagyr/euler.git)
+    *   Fork it!
+*   Go to [4clojure](https://github.com/4clojure/4clojure.git)
+    *   Fork it!
+
+
+####Directories
+Let’s get your projects directory set up.
+
+In your shell, note what directory you are in.  It’s probably Users/{{user name}}.  This is probably a good place, but feel free to select a different location:
+
+The following commands will get you to where you want to go:
+*   List all directories in the current directory:		*ls*
+*   Change Directories to a lower directory
+    *   Mac:                                            *cd /name-of-directory/*
+    *   Windows:                                        *cd .\name-of-directory\\*
+*   Change to a higher directory:			            *cd ..*
+
+Once you’re in the directory where you want your projects folder
+*   Make your projects directory:  						*mkdir projects*
+*   Change into it:							            *cd projects*
+    ![mkdir & cd projects](/Users/maniginam/projects/final/article/images/macdProjects.png)
+
+
+####Local Repositories
+We need to make local repositories also for you to be able to do your work.
+
+In your projects directory
+*   clone koans:                *git clone https://github.com/functional-koans/clojure-koans.git*
+*   clone euler:                *git clone https://github.com/slagyr/euler.git*
+*   clone 4clojure:                *git clone https://github.com/4clojure/4clojure.git*
+
+####IDE
+Finally, you are going to want a textEditor or IDE.
+I personally suggest using intelliJ by [jetBrains](https://www.jetbrains.com/idea/download/#section=mac).  If you're using it for personal use only, they do offer a free community edition.
+One note on intellJ, it does a lot for you!  This is great, but you will come to depend on some of the tools and hints that intelliJ offers, which will impede your overall understanding of what you are doing especially while you are novice.  I started with intelliJ, so I’m not saying don’t, just be aware that it does things for you that you might need to understand as you progress in your new hobby/education/career.
+
+There are also editors like [SublimeText](https://www.sublimetext.com/), [TextMate](https://macromates.com/), etc.
+
+For the tasks I've supplied you with, any of those will do. Just save the files properly: .clj
+
+####Good Luck!
+I’ll leave you with that.
+
+I’d walk you through starting & running each of these tools, but my goal today was to help you get over the biggest hurdle: installation of all the pieces and then direction forward.
+
+The truth is that learning to code involves a great deal of figuring things out on your own.  That being said, just because it involves figuring things out on your own, it doesn’t mean that you *are* on your own, so if you do get stuck, remember that you are probably not the first or the only person to have ever gotten stuck at your block.  If you've tried everything and still can't get there, please feel free to use me as resource, and I will try my best to get you over the hurdle!
+
+One last hint: I highly suggest that you read the README’s!  They will tell you how to run the program and/or the specs/tests.
+
+
+
+Sources:
+1.  ParallelsDesktop - windows 10
+2.  Setting JAVA_HOME on mac:  
+    a.  Permanently:  
+    i.   Jonas Rabbe; Oct 29. 2013 & Arv; Sept 27, 2018; https://stackoverflow.com/questions/14702702/how-to-set-java-home-in-mac-permanently  
+    ii. https://mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/  
+    b.  Temporarily: http://www.sajeconsultants.com/how-to-set-java_home-on-mac-os-x/
+3.  Setting JAVA_HOME on Win: https://putridparrot.com/blog/environment-variables-in-powershell/
+4.  Homebrew: https://brew.sh
+5.  Chocolatey: https://chocolatey.org/install
+6.  Install Leiningen: https://community.chocolatey.org/packages/lein
+7.  Clojure:	https://clojure.org
+8.  Mac: Install & Setup:	https://clojure.org/guides/getting_started
+9.  Windows Install & Setup:  https://github.com/clojure/tools.deps.alpha/wiki/clj-on-Windows
+10. Leiningen: https://leiningen.org/
+11. Script Mac: https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+12. Script Window: https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein.bat
+13. .NET: https://dotnet.microsoft.com/download
+14. Oracle; Java8: https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+15. Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+16. Clojure Koans:  https://github.com/functional-koans/clojure-koans
+17. Euler:
+    a.  https://github.com/slagyr/euler
+    b.  https://projecteuler.net/
+18. 4Clojure:
+    a.  https://www.4clojure.com/
+    b.  https://github.com/4clojure/4clojure
+19. PowerShell Commands: https://docs.microsoft.com/en-us/powershell/module/powershellget/update-module?view=powershell-7.1
+
+
+
+
+
+
+
+

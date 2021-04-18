@@ -2,7 +2,7 @@
 layout: posts
 Title: Dogs Make Good Floor Cleaners
 date: 2021-01-21
-—-
+---
 
 A better day today.  I had iteration this morning and, to my delight (and perhaps surprise), there were no bugs in my webttt demo.  Yay!  
 
