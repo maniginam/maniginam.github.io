@@ -32,7 +32,14 @@ It startled me, but I quickly realized it was Keith.  Then I saw him, and he was
 
 “Oh....”, I thought and made a bee-line for that pile I’d seen earlier despite Keith’s protests for me to not go see him.  
 
-Sure enough, that pile I’d failed to notice in detail was Cheddar.  It wasn’t a pretty picture.  His body was intact, but with some pretty gruesome lacerations around his abdomen.  I touched him and shuddered when I felt that rigor mortis had already set in, knowing that this probably happened pretty early in the night.  
+Sure enough, that pile I’d failed to notice in detail
+was Cheddar.  It wasn’t a pretty picture.  While his body was 
+intact, it had some pretty gruesome lacerations around 
+his abdomen, and it was pretty clear simply by the way he was lying
+on the ground that his spine was was broken and possibly
+even his neck.  I touched his soft fur and shuddered when I
+felt that his body was already cold and stiff, realizing 
+that this probably happened pretty early in the night.  
 
 Before going inside, I pulled out my phone to study the ring footage.  There he was at 11:35PM at the front door, just sitting there and then finally walked around the corner.  Keith and I were packing up to go in at about that time.  Then at exactly 2AM, some strange blonde dog makes his way up to the door bell sniffing around & panting.  It’s not enough for a conviction, but it is some pretty incriminating evidence.
 
