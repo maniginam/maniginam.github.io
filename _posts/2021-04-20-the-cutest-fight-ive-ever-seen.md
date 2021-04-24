@@ -12,7 +12,7 @@ Anyway, i don’t really want to talk about it all.  I’m disappointed in mysel
 
 Regardless, i received some good feedback for how to do better and what they are looking for, so I will aim for achieving that.
 
-After all that was done, I picke the boys up a little early, and focused on spending the rest of the evening as high quality time with them, and then wine.  I was glad I chose to focus on them for some time, because--well it had been a while.  It was weird, I think i missed them more last week than I had in the week I was out of town and away from them.  Perhaps, because they were so close and I couldn’t really spend any time with them.  I could hear them cry for me, and had to stay away, because I knew if I went out, they would just cry more.
+After all that was done, I picked the boys up a little early, and focused on spending the rest of the evening as high quality time with them, and then wine.  I was glad I chose to focus on them for some time, because--well it had been a while.  It was weird, I think i missed them more last week than I had in the week I was out of town and away from them.  Perhaps, because they were so close and I couldn’t really spend any time with them.  I could hear them cry for me, and had to stay away, because I knew if I went out, they would just cry more.
 
 ***
 

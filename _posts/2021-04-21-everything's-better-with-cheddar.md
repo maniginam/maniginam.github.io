@@ -48,3 +48,5 @@ There are a couple more clips of instants where it looks like something might ha
 Cheddar-bug was a good cat.  His squeaky meow never faded, so when he needed something, he would sing to you with it and practically shatter the panes in the house.  He loved to give massages and cuddle, and he loved goldfish crackers & shrimp.  
 
 He was a good cat.  Everything’s better with Cheddar.  
+
+![Cheddar Kitten](https://maniginam.github.io/blogs/pics&vids/CheddarKitten.mov)
