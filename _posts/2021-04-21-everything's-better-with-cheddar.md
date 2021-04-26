@@ -14,7 +14,7 @@ Back then, I was frequently fostering strays & homeless pets, and I’d recently
 
 I sped over to the petsmart they were at to pick up this adorable 4 week old orange tabby cat who had big eyes and the squeakiest little meow.  
 
-When I got him home, we followed their advice, and I video’d Keith rubbing two tiny little kittens together.  He looked at me with a smirk, and said, “Hand me another one.  I think this one’s all used up.”  It was endearing, and finding that video when I did and having shared it with Keith on Monday, was one of those coincidental ironies that life likes to throw at you.  
+When I got him home, we followed their advice, and I video’d Keith rubbing two tiny little kittens together.  He looked at me with a smirk, and said, “Do you wanna go get another one?  I think this one’s used up.”  It was endearing, and finding that video when I did and having shared it with Keith on Monday, was one of those coincidental ironies that life likes to throw at you.  
 
 Last night after working, I went outside to keep Keith company as he was digging up the garden he wants to plant.  Tails got out and tried to go too far, so I went to take her inside.  As I let her in, I saw Cheddar hanging out in the kitchen. I said, “Hi Cheddar-bug”, as this was my pet name for my favorite feline pet.  I don’t recall if he came out then.  
 
@@ -48,5 +48,4 @@ There are a couple more clips of instants where it looks like something might ha
 Cheddar-bug was a good cat.  His squeaky meow never faded, so when he needed something, he would sing to you with it and practically shatter the panes in the house.  He loved to give massages and cuddle, and he loved goldfish crackers & shrimp.  
 
 He was a good cat.  Everything’s better with Cheddar.  
-
 <video src="https://maniginam.github.io/blog/pics&vids/CheddarKitten.mp4" width="320" height="400" controls></video>
