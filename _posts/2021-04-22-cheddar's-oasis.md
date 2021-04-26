@@ -15,4 +15,4 @@ Progress was made, and I’ll make more tomorrow.  For now, we are about to bury
 
 ![Cheddar-bug](https://maniginam.github.io/blog/pics&vids/CheddarBug.JPG#thumbnail)
 
-![Cheddar's Squeaky Meow](https://maniginam.github.io/blog/pics&vids/CheddarMeow.JPG#thumbnail)
+![Cheddar's Squeaky Meow](https://maniginam.github.io/blog/pics&vids/CheddarMeow.jpeg#thumbnail)

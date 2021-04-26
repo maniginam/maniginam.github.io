@@ -49,4 +49,4 @@ Cheddar-bug was a good cat.  His squeaky meow never faded, so when he needed som
 
 He was a good cat.  Everything’s better with Cheddar.  
 
-![Cheddar Kitten](https://maniginam.github.io/blog/pics&vids/CheddarKitten.mov)
+![Cheddar Kitten](https://maniginam.github.io/blog/pics&vids/CheddarKitten.mp4)
