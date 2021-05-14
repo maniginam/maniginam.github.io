@@ -20,7 +20,7 @@ Today, i refactored my trello js til I dropped--that doesn’t necessarily mean 
 
 Then I met with Micah, and showed him what I’d done.  It all went down, for my first time, pretty well.  There weren’t any unexpected bugs--a couple things that didn’t go as originally scoped, but even those were expected because the scope changed last week.  After showcasing what I’d done, I received two new trello stories for next week and a new challenge.
 
-My new challenge, specifically, is ***dun dun dun*** tic tac toe!!!  I should have seen that coming.  This time though it’s in the form of holding aluminum oxide under immense amounts of pressure for a long period of time.  Ruby!  I’ve always been interested in learning Ruby, but it is the language that roadblocked me so many years ago, so I think i hold a grudge.
+My new challenge, specifically, is ***dun dun dun*** tic tac toe!!!  I should have seen that coming.  Though, speaking of precious materials, this time tic tac toe will be in the form of aluminum oxide after having been trapped under immense amounts of pressure for a long period of time.  
 
-Nonetheless, if you can believe it, I am actually excited to do tictactoe yet again… 
+Ruby.
 
