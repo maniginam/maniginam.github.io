@@ -14,7 +14,9 @@ Then I took Tails over to our neighbors house for a doggy play date.  These peop
 
 They made me a whole plate to walk home with and thanked me over and over for bringing Tails over for a playdate.  They just loved on Tails the moment she got there--these are the people whose dog I caught in my yard and put in my backyard the day after we found Cheddar dead in our front yard.  I’m glad I fought through my anger at all dogs and helped that dog.
 
-Later I met with Micah about a number of things including helium hotspots, BTC being back above $40k (yay!), my web-sandbox, and some other stuff.  PS. I did have a README for my ric-rac-ruby-o!  I was in the lib directory when i pushed, and so it never uploaded.  It was incredibly embarrassing when Micah mentioned I didn’t have a readme, and I was so perplexed.  I saw the problem, and fixed it, but yikes!  Rookie mistake for sure--or really, just a lack of attention for details.  Trust but verify as my least favorite supervisor ever used to say to me on a daily basis.  In this case, while I trusted commits and pushes to make it to github, i should have verified.
+Later I met with Micah about a number of things including helium hotspots, BTC being back above $40k (yay!), my web-sandbox, and some other stuff including ric-rac-ruby-o.
+
+PS. I did have a README!  I was in the lib directory when i pushed and not the main project directory, and so it didn’t push...  It was incredibly embarrassing when Micah mentioned I didn’t have a readme, and I was so perplexed.  I saw the problem, and fixed it, but yikes!  Rookie mistake for sure--or really, just a lack of attention for details.  Trust but verify as my least favorite supervisor ever used to say to me on a daily basis.  In this case, while I trusted commits and pushes to make it to github, i should have verified.
 
 After the call, I became concerned that none of my previous pushes actually made it to github...That would be very bad...
 
