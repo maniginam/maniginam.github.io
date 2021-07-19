@@ -6,8 +6,14 @@ date: 2021-06-16
 
 My Mission:
 My mission is to build bridges over the rivers & canyons that inhibit daily task efficiency within my former industry, chemical manufacturing, by implementing my freshly learned and refactored skill-sets that will forge as I work to become the best developer that I can be within my future industry, software.
+
 With the understanding that perfecting my craft will take no less than a lifetime, I estimate the portion of the second half of my mission that includes qualifying as a software developer, to be worth: Optimistically: 130 points Realistically: 390 points Pessimistically: 520 points
-I estimate the first half of my mission to be worth: Optimistically: 2600 points Realistically: 5200 points Pessimistically: 7800 points
+I estimate the first half of my mission to be worth: 
+
+Optimistically: 2600 points 
+Realistically: 5200 points 
+Pessimistically: 7800 points
+
 A little over a year ago, i set a goal.  To be proficient enough at developing software to be employable.  What happened three and a half months later was unexpected.  For all intensive purposes (or is it intents and purposes?), while Leo was still in his desperate-wounded-warrior-crawl state-of-life, i met that goal by submitting my first iteration of tic-tac-toe to Clean Coders, who thereafter offered me a job as a software apprentice.
 
 That was on September 9, 2020.  The term of my apprenticeship was estimated to be approximately 5 months.
