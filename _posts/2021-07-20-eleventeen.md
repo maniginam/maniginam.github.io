@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Eleventeen"
+title: Eleventeen
 date: 2021-07-20
 ---
 
