@@ -6,3 +6,7 @@ Gemfile.lock
 *.xml
 .idea
 .idea/
+.docs/*
+docs/*
+docs/blog/index.html
+.jekyll-cache/
