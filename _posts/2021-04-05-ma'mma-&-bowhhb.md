@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Ma’m-ma & Bowhh-b
 date: 2021-04-05
 ---

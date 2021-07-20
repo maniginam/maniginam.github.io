@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: I Want to Help
 date: 2021-01-18
 ---

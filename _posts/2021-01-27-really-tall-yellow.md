@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Really Tall Yellow
 date: 2021-01-27
 ---

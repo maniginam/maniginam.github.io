@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: DOM DOM DOM...
 date: 2021-01-26
 ---

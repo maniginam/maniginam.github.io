@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Leo is Screaming...
 date: 2021-03-17
 ---

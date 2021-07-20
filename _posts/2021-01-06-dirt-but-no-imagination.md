@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Dirt but No Imagination
 date: 2021-01-06
 ---

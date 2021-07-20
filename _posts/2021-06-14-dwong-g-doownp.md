@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Dwong-g-dwoonp
 date: 2021-06-14
 ---

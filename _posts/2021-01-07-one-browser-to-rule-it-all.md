@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: One Browser to Rule it All
 date: 2021-01-07
 ---

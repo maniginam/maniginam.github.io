@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: What Languages do You Speak?
 date: 2021-03-15
 ---

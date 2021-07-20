@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: I got char*d
 date: 2021-04-13
 ---

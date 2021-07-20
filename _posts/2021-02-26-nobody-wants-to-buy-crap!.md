@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Nobody Wants to Buy Crap!
 date: 2021-02-26
 ---

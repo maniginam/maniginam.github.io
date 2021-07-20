@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: This One is About Cheddar too
 date: 2021-04-23
 ---

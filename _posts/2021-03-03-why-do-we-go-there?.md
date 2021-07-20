@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Why Do We Go There?
 date: 2021-03-03
 ---

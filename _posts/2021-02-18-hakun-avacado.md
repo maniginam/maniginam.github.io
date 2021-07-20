@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Hakun-Avacado
 date: 2021-02-18
 ---

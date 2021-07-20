@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Am I Hooked? POST!
 date: 2021-04-08
 ---

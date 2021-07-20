@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: All the Stories
 date: 2021-03-29
 ---

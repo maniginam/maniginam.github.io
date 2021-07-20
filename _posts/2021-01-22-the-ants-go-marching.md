@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: The Ants Go Marching
 date: 2021-01-22
 ---

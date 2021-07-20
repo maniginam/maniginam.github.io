@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Dogs Make Good Floor Cleaners
 date: 2021-01-21
 ---

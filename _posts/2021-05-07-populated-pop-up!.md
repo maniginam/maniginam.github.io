@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Populated Pop Up!
 date: 2021-05-07
 ---

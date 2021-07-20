@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Building with Toddlers
 date: 2021-03-08
 ---

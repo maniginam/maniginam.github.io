@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Pushing Buttons & Hoping for Productivity
 date: 2021-01-19
 ---

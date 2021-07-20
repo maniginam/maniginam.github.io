@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Brusly at the Farm?
 date: 2021-01-12
 ---

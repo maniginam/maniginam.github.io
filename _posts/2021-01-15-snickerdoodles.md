@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Snickerdoodles
 date: 2021-01-15
 ---

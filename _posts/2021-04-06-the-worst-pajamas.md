@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: The Worst Pajamas
 date: 2021-04-06
 ---

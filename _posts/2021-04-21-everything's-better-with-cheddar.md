@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Everything’s Better with Cheddar
 date: 2021-04-21
 ---

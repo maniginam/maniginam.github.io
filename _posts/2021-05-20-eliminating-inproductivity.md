@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Eliminating Inproductivity
 date: 2021-05-20
 ---

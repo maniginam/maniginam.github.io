@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Lotion D'Alfredo
 date: 2021-02-22
 ---

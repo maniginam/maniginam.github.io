@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Sight without Site
 date: 2021-03-09
 ---

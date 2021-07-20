@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Entomological Foresight
 date: 2021-05-26
 ---

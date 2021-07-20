@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: A Little Lion’s Dog Nose
 date: 2021-02-23
 ---

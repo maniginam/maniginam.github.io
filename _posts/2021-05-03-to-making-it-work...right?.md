@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: To Making it Work...right?
 date: 2021-05-03
 ---

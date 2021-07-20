@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Frozen-Melted Snowflakes
 date: 2021-02-15
 ---

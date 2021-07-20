@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: The Compounding Footprint
 date: 2021-02-16
 ---

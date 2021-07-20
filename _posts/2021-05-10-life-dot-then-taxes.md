@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Life dot then Taxes
 date: 2021-05-10
 ---

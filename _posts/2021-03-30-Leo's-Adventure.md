@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Leo’s Adventure
 date: 2021-03-30
 ---

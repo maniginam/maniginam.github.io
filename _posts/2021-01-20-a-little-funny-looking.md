@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: They're a Little Funny Looking
 date: 2021-01-20
 ---

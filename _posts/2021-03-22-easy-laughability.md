@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Easy-Laughability
 date: 2021-03-22
 ---

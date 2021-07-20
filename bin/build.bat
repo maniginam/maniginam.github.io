@@ -1,2 +1,2 @@
 echo "building site"
-bundle exec jekyll build -w -d /Users/maniginam/blogSite/maniginam.github.io/docs
+bundle exec jekyll build -w -d /Users/maniginam/projects/maniginam.github.io/docs

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Pee Pee in the Poddy!
 date: 2021-02-05
 ---

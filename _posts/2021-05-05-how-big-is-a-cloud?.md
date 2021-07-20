@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  How Big is a Cloud?
 date: 2021-05-05
 ---

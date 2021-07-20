@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Bowling & Pizza
 date: 2021-01-05
 ---

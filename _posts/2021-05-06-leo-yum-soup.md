@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Leo Yum Soup
 date: 2021-05-06
 ---

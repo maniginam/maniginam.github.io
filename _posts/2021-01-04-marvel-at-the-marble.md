@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Marvel at the Marble
 date: 2021-01-04
 ---

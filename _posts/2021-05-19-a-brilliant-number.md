@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  A Brilliant Number
 date: 2021-05-19
 ---

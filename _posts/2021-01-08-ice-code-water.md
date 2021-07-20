@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Ice Code Water
 date: 2021-01-08
 ---

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Potty Talk
 date: 2021-05-14
 ---

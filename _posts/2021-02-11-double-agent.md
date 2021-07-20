@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Double Agent
 date: 2021-02-11
 ---

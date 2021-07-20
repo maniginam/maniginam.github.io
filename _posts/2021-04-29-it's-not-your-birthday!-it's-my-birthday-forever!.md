@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  It’s Not Your Birthday! It’s My Birthday Forever!
 date: 2021-04-29
 ---

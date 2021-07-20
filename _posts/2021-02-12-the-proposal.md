@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: The Proposal
 date: 2021-02-12
 ---

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Don’t Forget the ReadMe!
 date: 2021-02-08
 ---

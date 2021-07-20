@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: 'Dow-Ah say Uff, Uff, Uff'
 date: 2021-01-11
 ---

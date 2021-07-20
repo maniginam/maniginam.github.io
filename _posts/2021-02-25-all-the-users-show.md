@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: All the Users Show
 date: 2021-02-25
 ---

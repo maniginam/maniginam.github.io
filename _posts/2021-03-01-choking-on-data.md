@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Choking on Data
 date: 2021-03-01
 ---

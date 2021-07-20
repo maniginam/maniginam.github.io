@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Keep Calm and Code On
 date: 2021-04-09
 ---

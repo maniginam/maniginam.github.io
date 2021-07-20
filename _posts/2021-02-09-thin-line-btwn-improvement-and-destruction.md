@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: The Thin Line Between Improvement & Destruction
 date: 2021-02-09
 ---

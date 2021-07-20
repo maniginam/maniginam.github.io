@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Click Bypass
 date: 2021-02-24
 ---

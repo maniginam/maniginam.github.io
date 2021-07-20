@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: A Short Post
 date: 2021-03-24
 ---

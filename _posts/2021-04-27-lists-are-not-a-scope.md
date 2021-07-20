@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Lists are Not a Scope
 date: 2021-04-27
 ---

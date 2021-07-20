@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Please Do Not Eat the Browser Cookies
 date: 2021-01-14
 ---

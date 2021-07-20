@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Snake & Helicopter Sh*t
 date: 2021-06-09
 ---

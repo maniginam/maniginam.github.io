@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Hold Your Bubble and Get Back to Base
 date: 2021-06-08
 ---

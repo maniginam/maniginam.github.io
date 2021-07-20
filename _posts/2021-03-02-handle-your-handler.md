@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Handle Your Handler!
 date: 2021-03-02
 ---

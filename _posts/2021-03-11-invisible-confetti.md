@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Invisible Confetti
 date: 2021-03-11
 ---

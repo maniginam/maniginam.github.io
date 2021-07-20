@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  The Landing Light
 date: 2021-04-30
 ---

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Losing It in a Field of Bits
 date: 2021-05-04
 ---

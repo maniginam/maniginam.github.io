@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title:  Let’s Blaze!
 date: 2021-05-21
 ---

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Mortgage, Dragons, & CONFETTI!!
 date: 2021-03-12
 ---

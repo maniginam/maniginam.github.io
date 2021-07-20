@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Cheddar’s Oasis
 date: 2021-04-22
 ---

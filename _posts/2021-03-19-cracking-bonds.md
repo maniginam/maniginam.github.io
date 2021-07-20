@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: Cracking Bonds
 date: 2021-03-19
 ---

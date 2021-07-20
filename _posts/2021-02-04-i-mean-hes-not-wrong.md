@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 Title: I Mean, He’s Not Wrong...
 date: 2021-02-04
 ---
