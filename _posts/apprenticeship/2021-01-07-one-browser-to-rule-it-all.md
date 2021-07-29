@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: One Browser to Rule it All
 date: 2021-01-07

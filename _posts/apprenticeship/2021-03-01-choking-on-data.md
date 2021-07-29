@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Choking on Data
 date: 2021-03-01

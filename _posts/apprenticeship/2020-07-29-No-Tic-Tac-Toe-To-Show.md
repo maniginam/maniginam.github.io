@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: No Tic-Tac-Toe To Show - say that 10 times fast
 date: 2020-07-29

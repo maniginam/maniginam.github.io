@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title:  It’s Not Your Birthday! It’s My Birthday Forever!
 date: 2021-04-29
@@ -27,4 +28,4 @@ Have I mentioned that Leo is obsessed with saline nasal spray?  He’s had a stu
 
 Also, yesterday, I kept the boys home, because Leo spiked a fever the night before.  I showed them hungry, hungry hippos, which they both ***loved***!  I asked them what color they wanted to be.  Rex chose orange that time, and Leo exclaimed, “Yelloooooow!!!”
 
-![Birthday Selfie!](https://maniginam.github.io/blog/pics&vids/birthdaySelfie.jpeg)
+![Birthday Selfie!](https://maniginam.github.io/apprenticeship/pics&vids/birthdaySelfie.jpeg)

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: How To Type PlayfullydotWhimsicallyWonderfullyWildly
 date: 2020-11-20
@@ -21,10 +22,10 @@ Rex has been asking for breakfast at the table recently.  It used to be that eve
 
 After which, he’s been super pleasant all week with getting ready for school.  Every morning, we play “can you get your head in this hole” (being the head hole of his t-shirt) and can you get your foot in the sock?  He finds these games hysterical! Of course I also move the items out from under him a lot to play along and make it harder, and he laughs and laughs.  
 
-<video src="https://maniginam.github.io/blog/pics&vids/oldMcDonald.mov" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/oldMcDonald.mov" width="320" height="400" controls></video>
 
 
 Leo:  
 And every time Rex sings, Leo dances!  Actually Leo did something really cute and impressive tonight.  He was wandering around and went into the bathroom.  When i found him, he was on Rex’s step with my blush brush in one had and my mascara tube in the other hand.  I asked him what he was doing, and he proceeded to dip the blush brush into my closed compact and brush it on his face and then took the mascara tube and horizontally brushed it over his eye and forehead.  This was impressive, because i don’t think I’ve put make-up on in front of him in quite a while, yet, he kind of demonstrated the basic concepts of what each tool was used for.  Then he found his toothbrush and kept that in his mouth until bed.
-![Leo chillin' in a beanbag](http://maniginam.github.io/blog/pics&vids/LeoBeanBag.jpeg#thumbnail)
+![Leo chillin' in a beanbag](http://maniginam.github.io/apprenticeship/pics&vids/LeoBeanBag.jpeg#thumbnail)
 

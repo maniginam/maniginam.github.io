@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: He’s a Solid Teacher
 date: 2020-10-13

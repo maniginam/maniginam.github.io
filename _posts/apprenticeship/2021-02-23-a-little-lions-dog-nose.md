@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: A Little Lion’s Dog Nose
 date: 2021-02-23
@@ -34,10 +35,10 @@ Rex got ice cream for breakfast again (i know, I’m a horrible mother to feed m
 After ice cream, there was an excavator in our neighbor’s yard.  Oh man!  Have you ever seen an excited 3 year old before?  This kid squealed when I asked him if he wanted to go outside and see it, but he stopped me to say “But wait, Mommy!  I need to get my toy excavator first!”  “That’s right!  That would be awesome!  Go and get it!”  And so he carried his toy excavator out to meet the big digging excavator next door—we didn’t actually get to get close to it as the fence was in the way, but i found a hole in the fence for him to peep through.
 
 I was surprised when I got back from dropping them off at school to see the toy excavator perfectly put back in the well organized parking of his trucks at his construction site (a dirt path in our yard):
-![Rex's Organized Trucks](https://maniginam.github.io/blog/pics&vids/RexTrucks.jpeg#thumbnail)
+![Rex's Organized Trucks](https://maniginam.github.io/apprenticeship/pics&vids/RexTrucks.jpeg#thumbnail)
 
 Leo:  
 Oh Leo.  This weekend, he had a little cold and was stuffy and had lots of boogers (yuck! I know...sorry, but just wait, it gets worse...). I wiped his nose pretty frequently and he made me a little uncomfortable with how much he liked getting nasal spray—like, he would sign for & say “more” each time and then laugh after getting sprayed.  Nasal spray sucks, so that was weird, but anything to clear the little guy’s nose out i guess. 
 
 Anywho, despite my efforts to spray & wipe his nose all day on Sunday, he’d apparently built up a lot.  I looked at him at one point and exclaimed “Leo, why is your nose all black?!”  He looked like a dog.  I figured he’d gotten into mud or dirt or something or maybe a sharpee.  As I approached him, i realized it was fuzzy, and then i recalled him rolling in Tails’s bed.  This kid got enough dog hair stuck to his boogery nose to resemble a dog!  It was gross and hysterical.  Here:
-![a little lion's dog nose](https://maniginam.github.io/blog/pics&vids/aLittleLionsDogNose.jpeg#thumbnail)
+![a little lion's dog nose](https://maniginam.github.io/apprenticeship/pics&vids/aLittleLionsDogNose.jpeg#thumbnail)

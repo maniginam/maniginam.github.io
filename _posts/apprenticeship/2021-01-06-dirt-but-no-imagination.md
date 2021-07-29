@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Dirt but No Imagination
 date: 2021-01-06

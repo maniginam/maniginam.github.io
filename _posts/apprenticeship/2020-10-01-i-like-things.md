@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: i like things that are things that are also bottle-openers
 date: 2020-10-01

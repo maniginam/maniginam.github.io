@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: Things That Are Things That Might Not Be Things That Are Also Bottle Openers
 date: 2020-10-02

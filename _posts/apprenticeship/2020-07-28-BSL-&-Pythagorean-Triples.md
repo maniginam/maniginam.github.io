@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: BSL & Pythagorean Triples
 date: 2020-07-28

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Why Do We Go There?
 date: 2021-03-03
@@ -57,11 +58,11 @@ For the record, I’m not suggesting that we need the government to get involved
 
 Rex:  
 Rex matured overnight.  Today, he put his head back in the bath when it came time to dump water on his head, then he shared a toy with Leo to play with, then he came right to the dinner table with no objections, *and* ate his dinner--even the green beans!  He earned 5 happy blocks within a matter of an hour.
-![Rex on a ball](https://maniginam.github.io/blog/pics&vids/RexOnABall.jpeg#thumbnail)
+![Rex on a ball](https://maniginam.github.io/apprenticeship/pics&vids/RexOnABall.jpeg#thumbnail)
 Leo:  
 First of all, tonight at dinner, Leo brought a toy screwdriver, which he’d previously been using for “fixing” as Rex would say, to the table and proceeded to use it as a terrible fork.  On the third attempt at a blueberry, however, it worked giving him the expectation that it should work.  I don’t know if I’ve ever seen this kid so frustrated as when the dull-tipped plastic screwdriver did not work on picking up the chicken & green beans or even another blueberry that wasn’t so lucky.
 
 At bedtime, he touched both my ears and said “eeaaawww”
 
-![Leo & the Screwdriver](https://maniginam.github.io/blog/pics&vids/LeoScrewdriver.jpeg#thumbnail)
+![Leo & the Screwdriver](https://maniginam.github.io/apprenticeship/pics&vids/LeoScrewdriver.jpeg#thumbnail)
 

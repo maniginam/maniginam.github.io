@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: "sacrifice or mutual gain"
 date: 2020-06-01

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title:  Lists are Not a Scope
 date: 2021-04-27

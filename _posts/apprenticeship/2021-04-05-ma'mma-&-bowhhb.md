@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Ma’m-ma & Bowhh-b
 date: 2021-04-05
@@ -23,16 +24,16 @@ Leo:
 Leo can say “Mi-ma/Ma-ma/G-ma” for gramma and “Boww!!/Bahuwwp!/Bowww-b!” for Bobby.  He also started saying “ready, set, go!”, but it’s more like: “Ouh!  Ehh!!  Gooooohhhwwww!”
 
 He also found & loved a hat this weekend:
-![Leo wearing a hat](https://maniginam.github.io/blog/pics&vids/LeoWearsHat.jpeg#thumbnail)
+![Leo wearing a hat](https://maniginam.github.io/apprenticeship/pics&vids/LeoWearsHat.jpeg#thumbnail)
 
 Also, here are their school pictures:
 <div class="row">
     <div class="column">
-<img src="https://maniginam.github.io/blog/pics&vids/RexSpr2021.jpeg" alt="Rex Spring 2021 3yrs old" style="width:82%">
+<img src="https://maniginam.github.io/apprenticeship/pics&vids/RexSpr2021.jpeg" alt="Rex Spring 2021 3yrs old" style="width:82%">
     </div>
 
    <div class="column">
-<img src="https://maniginam.github.io/blog/pics&vids/LeoSpr2021.jpeg" alt="Leo Spring 2021 18mts old" style="width:82%">
+<img src="https://maniginam.github.io/apprenticeship/pics&vids/LeoSpr2021.jpeg" alt="Leo Spring 2021 18mts old" style="width:82%">
     </div>
 </div>
 <br>

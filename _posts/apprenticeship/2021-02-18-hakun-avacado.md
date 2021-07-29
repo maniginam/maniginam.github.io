@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: apprenticeship
 categories: apprenticeship
 Title: Hakun-Avacado
 date: 2021-02-18

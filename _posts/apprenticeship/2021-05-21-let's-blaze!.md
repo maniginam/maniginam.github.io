@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title:  Let’s Blaze!
 date: 2021-05-21

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: it’s almost a thing of beauty
 date: 2020-11-11

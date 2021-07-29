@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: I Know an Enterprise Architect who likes Beer
 date: 2020-09-01

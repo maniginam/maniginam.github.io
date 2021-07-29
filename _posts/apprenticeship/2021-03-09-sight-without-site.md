@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Sight without Site
 date: 2021-03-09
@@ -22,6 +23,6 @@ I don’t need that now though.  Now I understand that my tests are my true eyes
 <sup><sup>1 - In the case of this post, “gravity” is nothing more than a calculation based on the Earth’s true gravity.  The reader should not assume that the Earth’s gravity is the actual force pulling down these ‘sparkles’ nor that the gravity in this post is attempting to overcome the true gravity of the Earth in a conspiracy to pull down all the sparkles. The sparkles mentioned in this post are completely isolated from the real world and are simply programmed to fall at a calculated acceleration similar to that of the Earth’s gravity (9.8m/s<sup>2</sup>).  Sorry for any confusion.</sup></sup>
 
 
-![Leo Dressed for School](https://maniginam.github.io/blog/pics&vids/LeoDressedForSchool.jpeg#thumbnail)
+![Leo Dressed for School](https://maniginam.github.io/apprenticeship/pics&vids/LeoDressedForSchool.jpeg#thumbnail)
 
 

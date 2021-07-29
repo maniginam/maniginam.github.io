@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Nobody Wants to Buy Crap!
 date: 2021-02-26

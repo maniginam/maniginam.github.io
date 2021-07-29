@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: \Cuddle Rex; Leo Feed Inputstream Byte by Byte by Byte
 date: 2020-12-02

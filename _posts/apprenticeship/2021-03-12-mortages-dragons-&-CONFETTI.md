@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Mortgage, Dragons, & CONFETTI!!
 date: 2021-03-12
@@ -44,7 +45,7 @@ Rex, did similar.  He sat there the entire time and watched it.  I think he got 
 With about twenty minutes left, they were done and wanted to climb the stairs.  Fortunately, there were only 2 other people in the theater--one of which was a child, so I didn’t really stop them.  
 
 I asked Rex if he liked the movie.  He said no, but when we got in the car, he said, “Mommy, i want to see the dragon movie again!”
-![Rex at the Movies](http://maniginam.github.io/blog/pics&vids/RexAtTheMovies.jpeg#thumbnail)
-![Leo at the Movies](http://maniginam.github.io/blog/pics&vids/LeoAtTheMovies.jpeg#thumbnail)
-![Me & Leo at the Movies](http://maniginam.github.io/blog/pics&vids/Me&LeoAtTheMovies.jpeg#thumbnail)
+![Rex at the Movies](http://maniginam.github.io/apprenticeship/pics&vids/RexAtTheMovies.jpeg#thumbnail)
+![Leo at the Movies](http://maniginam.github.io/apprenticeship/pics&vids/LeoAtTheMovies.jpeg#thumbnail)
+![Me & Leo at the Movies](http://maniginam.github.io/apprenticeship/pics&vids/Me&LeoAtTheMovies.jpeg#thumbnail)
 

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Eyes and Ears and Nose and Mouth
 date: 2021-03-05

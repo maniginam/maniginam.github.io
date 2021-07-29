@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: going-loopy-to-comprehend-sequences
 date: 2020-09-18

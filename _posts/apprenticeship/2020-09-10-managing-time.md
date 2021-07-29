@@ -1,6 +1,7 @@
 ---
 layout: post 
 
+tags: apprenticeship
 categories: apprenticeship
 title: Managing Time
 date: 2020-09-10

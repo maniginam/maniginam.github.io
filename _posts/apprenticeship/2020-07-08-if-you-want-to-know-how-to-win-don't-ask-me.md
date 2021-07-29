@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: If you want to know how to win, don’t ask me…
 date: 2020-07-08

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Ride til I Can’t No Mo'\
 date: 2020-11-16
@@ -23,7 +24,7 @@ Oh, and also tic tac toe is now 100% complete! [check out the code to Tic Tac To
 ***
 Rex:  
 Rex is a singer now.  He is singing constantly.  Everything from ‘twinkle twinkle” to abc’s to monkeys on the bed to little rabbit foo foo to patty cake to old town road.  He is just always singing:
-<video src="https://maniginam.github.io/blog/pics&vids/oldTownRoad.mov" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/oldTownRoad.mov" width="320" height="400" controls></video>
 
 
 Then lately, he’s been asking for a ‘dinotruck’ from the show DinoTrux (super clever and creative show by dreamworks on Netflix about (surprise!) dinosaur trucks.  But seriously, these dinotrux are super creative, and the reptools are, well i want a rep tool!  I’ve been very impressed with this show.
@@ -33,7 +34,7 @@ Anyway, he’s been asking for one, so I told him we could write to Santa and as
 Leo:  
 Leo, on top of being a champion walker, now says “ball”, tries to say & sign “light’, and says “hi”, like the actual word, while typically waving and blowing kisses to strangers as we walk by them anywhere we are.  Very cute, but beware, the kisses he blows are just as slobbery as the ones he gives face to face.
 
-![Leo loved this light pad!](https://maniginam.github.io/blog/pics&vids/Leo&theLights.jpeg#thumbnail)
+![Leo loved this light pad!](https://maniginam.github.io/apprenticeship/pics&vids/Leo&theLights.jpeg#thumbnail)
 
 
 I also have to give kudos to Keith, because he’s been working with Leo the past couple weeks on sleeping better—both going to sleep & sleeping through the night since he’s been a 2-3 hour waker for his whole life.  He started sleeping through the night after only like 2-3 nights, and then tonight when I fully put him down for the first time since, I sang him a song, then turned off the light, and he, with only a little protest, laid down from standing and went to sleep.  I was kind of wowed.  
