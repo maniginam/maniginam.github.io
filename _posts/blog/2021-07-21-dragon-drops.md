@@ -1,7 +1,7 @@
 ---
 layout: posts
 Title:  Dragon Drops
-date: 2021-07-20
+date: 2021-07-21
 ---
 
 Go figure, night two of writing for my own benefit/from my own free will, I don’t feel like writing.
