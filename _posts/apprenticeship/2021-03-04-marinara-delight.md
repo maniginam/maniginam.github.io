@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Marinara Delight
 date: 2021-03-04
@@ -11,6 +12,6 @@ After our talk, i set forth on making those improvements.  I finished all but on
 
 That’s all for now--Leo work me up at like 4:20 this morning, so I’m pretty pooped, but here’s a picture of him enjoying marinara sauce while Rex is on the slide:
 
-![Marinara Delight!](https://maniginam.github.io/blog/pics&vids/Marinara.jpeg#thumbnail)
+![Marinara Delight!](https://maniginam.github.io/apprenticeship/pics&vids/Marinara.jpeg#thumbnail)
 
 

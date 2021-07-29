@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: This One is About Cheddar too
 date: 2021-04-23
@@ -21,4 +22,4 @@ Anyway, on to what I’m actually supposed to write about…
 
 Today, I worked on the trello integration some more.  I have the authorization complete and worked on refactoring some of the javascript.  Then I switch gears to work on the poker side of it to save the information so that I can request the lists.  I should be able to finish it all by the deadline.  
 
-![Cheddar & Wasabi](https://maniginam.github.io/blog/pics&vids/Cheddar&Wasabi.JPG#thumbnail)
+![Cheddar & Wasabi](https://maniginam.github.io/apprenticeship/pics&vids/Cheddar&Wasabi.JPG#thumbnail)

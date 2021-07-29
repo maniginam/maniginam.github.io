@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: An Unanticipated Frustration of Life
 date: 2020-10-14

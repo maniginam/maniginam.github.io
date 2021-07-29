@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Building with Toddlers
 date: 2021-03-08
@@ -40,4 +41,4 @@ He did get in & out a couple times, but it was a much easier bed-time process--e
 
 It’s cute how he knows.  He knows it’s for him, and he’s excited to have it.
 
-![Big Boy Beds](https://maniginam.github.io/blog/pics&vids/BigBoyBeds.jpeg#thumbnail)
+![Big Boy Beds](https://maniginam.github.io/apprenticeship/pics&vids/BigBoyBeds.jpeg#thumbnail)

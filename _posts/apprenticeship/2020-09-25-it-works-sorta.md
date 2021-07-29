@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: It Works—sorta...
 date: 2020-09-25
@@ -23,7 +24,7 @@ Anyway, it’s not perfect, but it kind of works.
 
 Also, [Coin Changer](https://www.youtube.com/watch?v=clWyqXoG-2o): 
 
-<video src="https://maniginam.github.io/blog/pics&vids/CoinChangerKata.mp4" width="600" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/CoinChangerKata.mp4" width="600" height="400" controls></video>
 
 Rex:  
 Rex said *L*eo yesterday!  I told him, no, it’s ***M***eo!!

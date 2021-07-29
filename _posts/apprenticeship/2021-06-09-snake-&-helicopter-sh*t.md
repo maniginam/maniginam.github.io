@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title:  Snake & Helicopter Sh*t
 date: 2021-06-09

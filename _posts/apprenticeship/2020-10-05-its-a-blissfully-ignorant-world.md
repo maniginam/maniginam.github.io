@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: It’s a Blissfully Ignorant World
 date: 2020-10-05

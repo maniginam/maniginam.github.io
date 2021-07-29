@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: They're a Little Funny Looking
 date: 2021-01-20
@@ -27,4 +28,4 @@ fortunate for that and super excited!  yay!
 ta-ta for now
 
 Oh, but first, here's Leo doing a daily task for probably about 30 minutes (this is actually Rex's job, but Leo does it really well):
-<video src="https://maniginam.github.io/blog/pics&vids/LeoFeedsTails.mov" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/LeoFeedsTails.mov" width="320" height="400" controls></video>

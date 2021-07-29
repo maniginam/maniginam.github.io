@@ -1,5 +1,5 @@
 name: Gina Martiny
 markdown: kramdown
-categories: ["apprenticeship", "blog"]
-permalink: /:category/:year/:month/:day/:title.html
+tags: ["apprenticeship", "blog"]
+permalink: /:categories/:year/:month/:day/:title.html
 

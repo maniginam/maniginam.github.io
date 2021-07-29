@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: Everything’s Better with Cheddar
 date: 2021-04-21
@@ -49,4 +50,4 @@ There are a couple more clips of instants where it looks like something might ha
 Cheddar-bug was a good cat.  His squeaky meow never faded, so when he needed something, he would sing to you with it and practically shatter the panes in the house.  He loved to give massages and cuddle, and he loved goldfish crackers & shrimp.  
 
 He was a good cat.  Everything’s better with Cheddar.  
-<video src="https://maniginam.github.io/blog/pics&vids/CheddarKitten.mp4" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/CheddarKitten.mp4" width="320" height="400" controls></video>

@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: I need crab and I eat crayon
 date: 2020-08-19

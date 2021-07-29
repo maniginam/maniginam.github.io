@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: Tic-TaCoViD Bells
 date: 2020-08-05

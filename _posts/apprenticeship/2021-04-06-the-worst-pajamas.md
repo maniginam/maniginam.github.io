@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title: The Worst Pajamas
 date: 2021-04-06
@@ -25,9 +26,9 @@ Tried a few more things; got more 404’s, and that’s where I had to leave it.
 ***
 Leo:
 The other night we went to get Pizza.  Leo became obsessed with the parmesan shaker and would repeatedly shake it a couple times (sometimes nothing came out), then put it down, and pinch a couple granules to eat.  Over & over.  Then he got a lesson about lights from the best science teacher I know:
-![Leo Learning from Bobby!](https://maniginam.github.io/blog/pics&vids/LeoLearnsFromBobby.jpeg#thumbnail)
+![Leo Learning from Bobby!](https://maniginam.github.io/apprenticeship/pics&vids/LeoLearnsFromBobby.jpeg#thumbnail)
 
 Today, I saw a very disappointing pajama set in my endeavor to get Rex some new pajamas that actually fit him.  It’s below.  It’s embarrassing as I hope the makers feel.  It’s just so wrong! 
-![They should be embarrassed!](https://maniginam.github.io/blog/pics&vids/embarassingPjs.jpg#thumbnail)
+![They should be embarrassed!](https://maniginam.github.io/apprenticeship/pics&vids/embarassingPjs.jpg#thumbnail)
 
 

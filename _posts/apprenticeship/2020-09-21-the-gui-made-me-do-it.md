@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: The GUI Made Me Do It
 date: 2020-09-21

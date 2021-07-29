@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: Do-Re-Mi-La-Ti-Do-Fa-So...
 date: 2020-12-14

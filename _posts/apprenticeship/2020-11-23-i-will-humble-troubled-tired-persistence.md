@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: I Will Humble Troubled Tired Persistence
 date: 2020-11-23

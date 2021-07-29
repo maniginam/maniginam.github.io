@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 title: Look Up Duh-Low
 date: 2020-08-28
@@ -18,11 +19,11 @@ I was wanting to put it into action within TTT to use that as an example for my 
 Hurricane Babies:
 <div class="row">
     <div class="column">
-<img src="https://maniginam.github.io/blog/pics&vids/HurricaneBabies.jpeg" alt="Hurricane Babies" width="211" height="250">
+<img src="https://maniginam.github.io/apprenticeship/pics&vids/HurricaneBabies.jpeg" alt="Hurricane Babies" width="211" height="250">
     </div>
 
    <div class="column">
-<img src="https://maniginam.github.io/blog/pics&vids/HurricaneLeo.jpeg" alt="Hurricane Leo" style="width:82%">
+<img src="https://maniginam.github.io/apprenticeship/pics&vids/HurricaneLeo.jpeg" alt="Hurricane Leo" style="width:82%">
     </div>
 </div>
 <br>
@@ -30,9 +31,9 @@ Hurricane Babies:
 ***
 Rex:  
 Look up duh-low!!!!  He says as a truck launches off a ramp, which is the bed of a dump truck, and flies through the air over on lookers “duh-low” (below). 
-<video src="https://maniginam.github.io/blog/pics&vids/LookUpDuhLow.mp4" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/LookUpDuhLow.mp4" width="320" height="400" controls></video>
 
 Leo:  
 Whenever the door to outside opens, Leo stops whatever he is doing and makes a run for it.  Hence the hurricane showers yesterday...  
 I should also mention that he's been biting a lot lately!  The other day, he bit poor Rex on the nose and wouldn't let go...
-<img src="https://maniginam.github.io/blog/pics&vids/noseBite.jpeg" alt="Nose Bite" width="300" height="350">
+<img src="https://maniginam.github.io/apprenticeship/pics&vids/noseBite.jpeg" alt="Nose Bite" width="300" height="350">

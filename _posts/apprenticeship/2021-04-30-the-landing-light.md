@@ -1,5 +1,6 @@
 ---
 layout: post 
+tags: apprenticeship
 categories: apprenticeship
 Title:  The Landing Light
 date: 2021-04-30
@@ -60,4 +61,4 @@ Even with the, hopefully, temporary feeling of failure, I believe that the talk 
 Perhaps last week, my own personal landing light was out too causing me to misjudge my distance from the runway.  Upon attempting to land, I bounced, and so I had to pull up again.  I’m going around right now getting ready to line it up again for a smooth landing.
 
 
-<video src="https://maniginam.github.io/blog/pics&vids/RexFirstPlaneRide.MOV" width="320" height="400" controls></video>
+<video src="https://maniginam.github.io/apprenticeship/pics&vids/RexFirstPlaneRide.MOV" width="320" height="400" controls></video>
