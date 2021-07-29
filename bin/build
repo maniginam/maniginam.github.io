@@ -1,6 +1,3 @@
 echo "building site"
-<<<<<<< Updated upstream
-bundle exec jekyll build -s/Users/maniginam/blogSite/maniginam.github.io -w -d /Users/maniginam/projects/maniginam.github.io/docs
-=======
 bundle exec jekyll build -s/Users/maniginam/projects/maniginam.github.io -w -d /Users/maniginam/projects/maniginam.github.io/docs
->>>>>>> Stashed changes
+

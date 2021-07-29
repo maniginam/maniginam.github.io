@@ -1,0 +1,16 @@
+---
+layout: default
+title: Gina's Apprenticeship Blog
+---
+<h1>{{ page.title }}</h1>
+
+
+<ul class="posts">
+
+    {% for post in site.categories.apprenticeship %}
+    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title
+        }}</a></li>
+    {% endfor %}
+
+<!--    <a href="/blog/2020">2020 Blogs</a>-->
+</ul>
