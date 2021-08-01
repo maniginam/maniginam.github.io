@@ -1,5 +1,7 @@
 ---
-layout: posts
+layout: posts  
+categories: blog  
+tags: blog  
 title:  Dragon Drops
 date: 2021-07-21
 ---
