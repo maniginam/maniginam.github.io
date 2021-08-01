@@ -1,8 +1,8 @@
 ---
-layout: posts
-categories: blog
-tags: blog
-title:  Choo Choo Peanut Poop
+layout: posts  
+categories: blog  
+tags: blog  
+title:  Choo Choo Peanut Poop  
 date: 2021-07-31
 ---
 
