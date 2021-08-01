@@ -1,5 +1,5 @@
 ---
-layout: posts  
+layout: post  
 categories: blog  
 tags: blog  
 title:  Choo Choo Peanut Poop  
