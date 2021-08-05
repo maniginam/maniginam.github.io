@@ -6,7 +6,7 @@ title:  Cats VS HTTP
 date: 2021-08-04
 ---
 
-When it comes to skinning a cat (what a terrible metaphor), there are apparently a lot of ways to do it.  For example, cats don’t sit still, they have sharp and irritating claws when they scratch, and they bite after only a moment of belly tickles, so the task is not easy.
+When it comes to skinning a cat (what a terrible metaphor), there are apparently a lot of ways to do it.  A few reasons come to mind: cats don’t sit still, they have sharp and irritating claws when they scratch, and they bite after only a moment of belly tickles, so the task is not easy.
 
 HTTP & cats have a lot in common.
 
