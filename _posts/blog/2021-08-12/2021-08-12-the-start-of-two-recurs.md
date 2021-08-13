@@ -32,7 +32,7 @@ At (should= [5] (prime-factors 5)): (odd? n)
 
 This was obviously payback for the ifs, but to my surprise
 
-At (should= 2 3] (prime-factors 6)):  even this was paid back with evil and a ugly, yet functional for up to 6, vector.
+At (should= [2 3] (prime-factors 6)):  even this was paid back with evil and a ugly, yet functional for up to 6, vector.
 
 ![[n (/ n 2)]](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/05.png)
 
