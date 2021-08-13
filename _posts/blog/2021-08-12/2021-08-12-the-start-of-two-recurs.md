@@ -10,11 +10,11 @@ Yesterday was a special day.  It was the very first time that my baby brother an
 
 It was fun pairing with Justin as right off the bat, he started the kata differently than I do.  First he wrote a forever long description that I thought was funny.  Then, he started with 2!
 
-![Justin starts with 2!](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/01.png#thumbnail)
+![Justin starts with 2!](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/01.png)
 
 Whereas I write short descriptions, I start with 1.
 
-![Gina starts with 1](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/02.png#thumbnail)
+![Gina starts with 1](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/02.png)
 
 I did think it was very interesting how right off the bat he was thinking ahead about optimization, and then he showed me the many ways that he has performed the prime kata and described the different behaviors of each one.  We used them to compare ours against.
 
@@ -24,17 +24,17 @@ Some of these included:
 
 * At (should= [2 2] (prime-factors 4)): nested-ifs--ahhhh!!  Why didn’t you just do a cond?!  “Because you have to fix it, not me”.
 
-![nested-ifs](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/03.png#thumbnail)
+![nested-ifs](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/03.png)
 
 * At (should= [5] (prime-factors 5)): (odd? n)
-  ![(odd? n)](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/04.png#thumbnail)
+  ![(odd? n)](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/04.png)
 
 
 This was obviously payback for the ifs, but to my surprise
 
 * At (should= 2 3] (prime-factors 6)):  even this was paid back with evil and a ugly, yet functional for up to 6, vector.
 
-![[n (/ n 2)]](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/05.png#thumbnail)
+![[n (/ n 2)]](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/05.png)
 
 We finally completed it by means of recursion without a:
 
