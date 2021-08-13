@@ -22,17 +22,17 @@ Then of course, especially for the purpose of this video, we gave each other sev
 
 Some of these included:
 
-* At (should= [2 2] (prime-factors 4)): nested-ifs--ahhhh!!  Why didn’t you just do a cond?!  “Because you have to fix it, not me”.
+At (should= [2 2] (prime-factors 4)): nested-ifs--ahhhh!!  Why didn’t you just do a cond?!  “Because you have to fix it, not me”.
 
 ![nested-ifs](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/03.png)
 
-* At (should= [5] (prime-factors 5)): (odd? n)
+At (should= [5] (prime-factors 5)): (odd? n)
   ![(odd? n)](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/04.png)
 
 
 This was obviously payback for the ifs, but to my surprise
 
-* At (should= 2 3] (prime-factors 6)):  even this was paid back with evil and a ugly, yet functional for up to 6, vector.
+At (should= 2 3] (prime-factors 6)):  even this was paid back with evil and a ugly, yet functional for up to 6, vector.
 
 ![[n (/ n 2)]](https://raw.githubusercontent.com/maniginam/maniginam.github.io/master/_posts/blog/2021-08-12/img/05.png)
 
