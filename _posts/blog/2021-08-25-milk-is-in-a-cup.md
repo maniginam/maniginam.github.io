@@ -12,7 +12,7 @@ EPIC is almost complete.  I have one more thing to do--show the archived stories
 
 It feels really cool that EPIC is nearly ‘complete’ at least as a MVP.  It works, and it will do what we need it to do.  This is the first bigger project that I’ve done.  Granted a lot of it was copied from Poker, the majority of it was new--I even ‘drew’ up some new & different components and changed a lot of the behaviors.  It was a good first project to work on since it had an outline and a stencil that allowed me to build on top and extend it.
 
-Testing is hard.  In katas, it’s very straightforward.  In bigger apps, it tends to creep a little more.  I am confident that everything **is** tested, but in hindsight, I think a lot of my tests probably could have been broken down a little further.  Once that happens, however, things start to get or at least feel unorganized with tests all over the place.  Then you find that the bigger tests test the smaller stuff, so are they really necessary anymore?  I suppose they are as they are a good way to troubleshoot down the line.  A big test leaves question--which part of this failed?!  Which function failed?  Having the smaller, helper tests, would help to pinpoint exactly what failed.
+Testing is hard.  In katas, it’s very straightforward.  In bigger apps, it tends to creep a little more.  I am confident that everything *is* tested, but in hindsight, I think a lot of my tests probably could have been broken down a little further.  Once that happens, however, things start to get or at least feel unorganized with tests all over the place.  Then you find that the bigger tests test the smaller stuff, so are they really necessary anymore?  I suppose they are as they are a good way to troubleshoot down the line.  A big test leaves question--which part of this failed?!  Which function failed?  Having the smaller, helper tests, would help to pinpoint exactly what failed.
 
 But then you have a lot of seemingly redundant tests, so I’m not really sure what the answer there is...
 
@@ -30,7 +30,7 @@ The ones I want to reach out to are those who used to sell to me.  I was the cus
 ---
 
 Rex:
-Rex ate his entire dinner tonight for the reward of cookies **and** ice cream.  He then asked or milk.  I told him that ice cream has milk in it.  He replied, “No it doesn’t.  Milk is in a cup.”  He’s not wrong.  It was very cute.
+Rex ate his entire dinner tonight for the reward of cookies *and* ice cream.  He then asked or milk.  I told him that ice cream has milk in it.  He replied, “No it doesn’t.  Milk is in a cup.”  He’s not wrong.  It was very cute.
 
 Leo:
 Leo loves to take anything big and long (especially spaceships) and go “Tree!  Bash-oft!”  Translation: “3-2-1 Blast-Off!”
