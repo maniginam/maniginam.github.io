@@ -4,6 +4,7 @@ tags: apprenticeship
 categories: apprenticeship
 title: Do-Re-Mi-La-Ti-Do-Fa-So...
 date: 2020-12-14
+hide: true
 ---
 
 So something weird happened as I was developing my server today.  Actually, i think i noticed it yesterday, but it became more evident today.  
