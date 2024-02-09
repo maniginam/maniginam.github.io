@@ -8,11 +8,8 @@ title: Gina's Apprenticeship Blog
 <ul class="posts">
 
     {% for post in site.tags.apprenticeship %}
-        {% if post.hide != true %}
         <li>
             <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-        {% endif %}
     {% endfor %}
 
-<!--    <a href="/blog/2020">2020 Blogs</a>-->
 </ul>
