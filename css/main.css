@@ -43,7 +43,7 @@ h1 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     text-align: center;
 }
@@ -249,7 +249,7 @@ svg {
 }
 
 .line {
-    stroke= rgb(94, 94, 99);
+    stroke: rgb(94, 94, 99);
     stroke-width: 4;
 }
 
