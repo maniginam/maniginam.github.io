@@ -84,7 +84,7 @@ footer ul li form {
 
 input[type=text] {
 	background-color: rgba(100, 50, 255,0.25);
-	border: 1px solid #5E5E63
+	border: 1px solid #5E5E63;
 	color: rgba(67, 3, 249, .7);
 	margin-left: 250px;
 }
