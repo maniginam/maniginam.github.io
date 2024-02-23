@@ -8,19 +8,12 @@ permalink: /:tag/:year/:month/:day/:title.html
 <h2>{{ page.subtitle }}</h2>
 {% endif %}
 
-{% if post.hide-nav != true %}
-<h2>
- <ul>
-  <li><a href="{{ page.previous.url }}">previous</a></li>
-  <li><a href="{{ page.next.url }}">next</a></li>
- </ul>
-</h2>
-{% endif %}
+<h2><ul><li><a href="{{ page.previous.url }}">previous</a></li><li><a href="{{ page.next.url }}">next</a></li></ul></h2>
 
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
 
- {{ content }}
+  {{ content }}
 
 </div>
