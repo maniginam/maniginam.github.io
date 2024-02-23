@@ -1,5 +1,5 @@
 ---
-layout: post  
+layout: tec-next  
 title: Navigating the Unknown & Avoiding the Money Pit
 subtitle: How to Successfully Shop for Software Solutions
 date: 2024-02-06
