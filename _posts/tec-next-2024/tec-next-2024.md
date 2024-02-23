@@ -1,7 +1,10 @@
-#Navigating the Unknown & Avoiding the Money Pit
-##How to Successfully Shop for Software Solutions>
-###February 19, 2024
-
+---
+layout: post  
+title: Navigating the Unknown & Avoiding the Money Pit
+subtitle: How to Successfully Shop for Software Solutions
+date: 2024-02-06
+hide-nav: true
+---
 
 You may be unaware of something that you need to know.
 
