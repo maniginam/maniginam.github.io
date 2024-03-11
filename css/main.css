@@ -171,6 +171,11 @@ img[src*="#square"] {
     height: 300px;
 }
 
+img[src*="#tall"] {
+    height: 600px;
+    width: 300px;
+}
+
 video {
     display: block;
     margin-left: auto;
