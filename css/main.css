@@ -162,18 +162,8 @@ div.post video {
 }
 
 img[src*="#thumbnail"] {
-width: 300px;
-height: 350px;
-}
-
-img[src*="#square"] {
     width: 300px;
-    height: 300px;
-}
-
-img[src*="#tall"] {
-    height: 600px;
-    width: 300px;
+    height: 350px;
 }
 
 img.square {
@@ -215,11 +205,11 @@ height: 350px;
 }
 
 .col-img {
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
 .col-caption {
-    padding-left: 200px;
+    padding-left: 150px;
     padding-right: 100px;
 }
 
