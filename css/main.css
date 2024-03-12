@@ -214,11 +214,11 @@ height: 350px;
     padding: 0px;
 }
 
-.column img {
+.col-img {
     padding-left: 100px;
 }
 
-.column caption {
+.col-caption {
     padding-right: 100px;
 }
 
