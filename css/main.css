@@ -214,6 +214,14 @@ height: 350px;
     padding: 0px;
 }
 
+.column img {
+    padding-left: 100px;
+}
+
+.column caption {
+    padding-right: 100px;
+}
+
 
 post.row img {
     display: block;
