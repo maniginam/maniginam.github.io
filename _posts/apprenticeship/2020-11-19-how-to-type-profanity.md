@@ -4,7 +4,7 @@ tags: apprenticeship
 categories: apprenticeship
 title: HowToTypeProfanity
 date: 2020-11-19
-hide: true
+
 ---
 
 Well, I don’t even know what to say right now.  This task is not easy.  Nothing is working.  I don’t even mean the tests—making those pass is a task of it’s own, but for now, i can’t even get my server to connect—or rather get the specs to connect my server.  

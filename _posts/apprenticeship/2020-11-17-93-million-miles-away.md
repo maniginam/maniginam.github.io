@@ -4,7 +4,7 @@ tags: apprenticeship
 categories: apprenticeship
 title: 93 Million Miles Away
 date: 2020-11-17
-hide: true
+
 ---
 
 So today, I dove head first into writing this server.  It hasn’t been going as well as I’d like.  On that note though, it’s probably going as I’d expect it to go considering I’m doing it in java instead of clojure, and java is still a little foreign to me.  

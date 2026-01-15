@@ -4,7 +4,7 @@ tags: apprenticeship
 categories: apprenticeship
 title: How To Type PlayfullydotWhimsicallyWonderfullyWildly
 date: 2020-11-20
-hide: true
+
 ---
 
 I did it!  Today is a much better day than yesterday, granted i wasted a bunch of time working on the commandLine code that I’m not sure I actually need, but I will still be able to use the algorithms that I wrote.

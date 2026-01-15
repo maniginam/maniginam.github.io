@@ -4,7 +4,7 @@ tags: apprenticeship
 categories: apprenticeship
 title: Three Quarters of Pizza
 date: 2020-11-30
-hide: true
+
 ---
 
 Well, it’s the last day of the second to last month of this year.  I don’t have a point there; mostly just reflecting.  

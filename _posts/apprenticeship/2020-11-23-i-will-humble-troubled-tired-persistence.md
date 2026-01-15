@@ -4,7 +4,7 @@ tags: apprenticeship
 categories: apprenticeship
 title: I Will Humble Troubled Tired Persistence
 date: 2020-11-23
-hide: true
+
 ---
 
 I did not complete the task—not even close really, and what I did complete was essentially wrong…
