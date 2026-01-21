@@ -84,8 +84,28 @@ h1 {
     border-radius: 50%;
 }
 
+.selection-item .preview-canvas {
+    display: block;
+    margin: 0 auto 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .selection-item .name {
     font-size: 0.7rem;
+}
+
+.theme-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.theme-item {
+    padding: 10px 8px;
+}
+
+.theme-item .preview-canvas {
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #game-canvas {
