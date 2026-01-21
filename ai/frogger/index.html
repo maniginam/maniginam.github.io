@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div id="menu-container">
+            <h1>Frogger</h1>
+            <div id="character-select"></div>
+            <div id="theme-select"></div>
+            <button id="start-btn">Start Game</button>
+        </div>
+        <canvas id="game-canvas" width="560" height="640"></canvas>
+        <div id="hud">
+            <span id="score">Score: 0</span>
+            <span id="lives">Lives: 3</span>
+            <span id="level">Level: 1</span>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h2>Game Over</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
