@@ -57,4 +57,11 @@
   (testing "QWES keys always map to player-1 regardless of mode"
     (is (= [:player-1 :forward] (input/key->action-for-mode "KeyW" :single-player)))
     (is (= [:player-1 :forward] (input/key->action-for-mode "KeyW" :two-player)))
-    (is (= [:player-1 :forward] (input/key->action-for-mode "KeyW" :vs-computer)))))
+    (is (= [:player-1 :forward] (input/key->action-for-mode "KeyW" :vs-computer))))
+
+  (testing "spacebar scoops for player-1 in single-player and vs-computer"
+    (is (= [:player-1 :scoop] (input/key->action-for-mode "Space" :single-player)))
+    (is (= [:player-1 :scoop] (input/key->action-for-mode "Space" :vs-computer))))
+
+  (testing "spacebar does not scoop in two-player mode"
+    (is (nil? (input/key->action-for-mode "Space" :two-player)))))

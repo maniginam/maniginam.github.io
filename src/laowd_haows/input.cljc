@@ -22,12 +22,18 @@
 
 (defn key->action-for-mode
   [key-code mode]
-  (let [action (key->action key-code)]
-    (if (and action
-             (p2-to-p1-keys key-code)
-             (#{:single-player :vs-computer} mode))
-      [:player-1 (second action)]
-      action)))
+  (cond
+    (and (= key-code "Space")
+         (#{:single-player :vs-computer} mode))
+    [:player-1 :scoop]
+
+    :else
+    (let [action (key->action key-code)]
+      (if (and action
+               (p2-to-p1-keys key-code)
+               (#{:single-player :vs-computer} mode))
+        [:player-1 (second action)]
+        action))))
 
 (defn init
   []
