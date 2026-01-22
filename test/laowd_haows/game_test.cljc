@@ -130,3 +130,30 @@
           result (game/player-scoop g :player-1)]
       (is (= 1 (count (:frogs result))))
       (is (= 0 (count (get-in result [:players :player-1 :bucket])))))))
+
+(deftest ai-timer-test
+  (testing "vs-computer game initializes with ai-timer at 0"
+    (let [g (game/init {:mode :vs-computer})]
+      (is (= 0 (:ai-timer g)))))
+
+  (testing "single-player game does not have ai-timer"
+    (let [g (game/init {:mode :single-player})]
+      (is (nil? (:ai-timer g)))))
+
+  (testing "should-ai-act? returns false when timer is below threshold"
+    (let [g (assoc (game/init {:mode :vs-computer}) :ai-timer 100)]
+      (is (false? (game/should-ai-act? g)))))
+
+  (testing "should-ai-act? returns true when timer reaches threshold"
+    (let [g (assoc (game/init {:mode :vs-computer}) :ai-timer 200)]
+      (is (true? (game/should-ai-act? g)))))
+
+  (testing "update-ai-timer accumulates time"
+    (let [g (game/init {:mode :vs-computer})
+          updated (game/update-ai-timer g 50)]
+      (is (= 50 (:ai-timer updated)))))
+
+  (testing "reset-ai-timer sets timer back to 0"
+    (let [g (assoc (game/init {:mode :vs-computer}) :ai-timer 300)
+          reset (game/reset-ai-timer g)]
+      (is (= 0 (:ai-timer reset))))))

@@ -6,6 +6,7 @@
 (def ^:private orange-frog-penalty 5)
 (def ^:private initial-green-frogs 5)
 (def ^:private initial-orange-frogs 5)
+(def ^:private ai-move-delay-ms 200)
 
 (defn- random-position
   [width height]
@@ -36,14 +37,15 @@
                   {:player-1 player-1
                    :computer (assoc (player/create :lincoln {:x 700 :y 300})
                                     :is-computer? true)})]
-    {:mode mode
-     :width width
-     :height height
-     :players players
-     :frogs (create-initial-frogs width height)
-     :spawn-timer 0
-     :game-over? false
-     :winner nil}))
+    (cond-> {:mode mode
+             :width width
+             :height height
+             :players players
+             :frogs (create-initial-frogs width height)
+             :spawn-timer 0
+             :game-over? false
+             :winner nil}
+      (= mode :vs-computer) (assoc :ai-timer 0))))
 
 (defn green-frog-count
   [player]
@@ -100,3 +102,15 @@
           (update :frogs (fn [frogs] (vec (remove #(= % nearby-frog) frogs))))
           (update-in [:players player-key] player/scoop nearby-frog))
       game)))
+
+(defn should-ai-act?
+  [game]
+  (>= (:ai-timer game 0) ai-move-delay-ms))
+
+(defn update-ai-timer
+  [game delta]
+  (update game :ai-timer (fnil + 0) delta))
+
+(defn reset-ai-timer
+  [game]
+  (assoc game :ai-timer 0))

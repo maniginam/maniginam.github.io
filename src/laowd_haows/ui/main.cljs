@@ -343,20 +343,24 @@
 
 (defn- process-ai [game delta]
   (if-let [computer (get-in game [:players :computer])]
-    (if-let [action (ai/decide-action computer (:frogs game))]
-      (let [g (if (= action :scoop)
-                (let [old-bucket-count (count (get-in game [:players :computer :bucket]))
-                      new-game (game/player-scoop game :computer)
-                      new-bucket-count (count (get-in new-game [:players :computer :bucket]))]
-                  (when (> new-bucket-count old-bucket-count)
-                    (let [last-frog (last (get-in new-game [:players :computer :bucket]))]
-                      (if (= :green (:color last-frog))
-                        (audio/play-scoop-green)
-                        (audio/play-scoop-orange))))
-                  new-game)
-                (update-in game [:players :computer] player/move action))]
-        (clamp-position g :computer))
-      game)
+    (let [game-with-timer (game/update-ai-timer game delta)]
+      (if (game/should-ai-act? game-with-timer)
+        (let [game-reset (game/reset-ai-timer game-with-timer)]
+          (if-let [action (ai/decide-action computer (:frogs game-reset))]
+            (let [g (if (= action :scoop)
+                      (let [old-bucket-count (count (get-in game-reset [:players :computer :bucket]))
+                            new-game (game/player-scoop game-reset :computer)
+                            new-bucket-count (count (get-in new-game [:players :computer :bucket]))]
+                        (when (> new-bucket-count old-bucket-count)
+                          (let [last-frog (last (get-in new-game [:players :computer :bucket]))]
+                            (if (= :green (:color last-frog))
+                              (audio/play-scoop-green)
+                              (audio/play-scoop-orange))))
+                        new-game)
+                      (update-in game-reset [:players :computer] player/move action))]
+              (clamp-position g :computer))
+            game-reset))
+        game-with-timer))
     game))
 
 (defn- check-winner [game]
