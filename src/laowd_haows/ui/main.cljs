@@ -3,7 +3,8 @@
             [laowd-haows.player :as player]
             [laowd-haows.frog :as frog]
             [laowd-haows.input :as input]
-            [laowd-haows.ai :as ai]))
+            [laowd-haows.ai :as ai]
+            [laowd-haows.ui.audio :as audio]))
 
 (defonce game-state (atom nil))
 (defonce input-state (atom (input/init)))
@@ -249,10 +250,13 @@
   (let [mode (:mode game)
         p1-controls (if (= mode :two-player)
                       "P1: Q/W/E/S + L-Shift"
-                      "Move: Q/W/E/S or Arrows | Scoop: Shift")]
+                      "Move: Q/W/E/S or Arrows | Scoop: Shift/Space")]
     (draw-text ctx p1-controls 20 (- canvas-height 20) "#9b59b6" 13)
+    (if (= mode :two-player)
+      (draw-text ctx "P2: Arrows + R-Shift" 450 (- canvas-height 20) "#3498db" 13)
+      (draw-text ctx "M: Toggle Music" 580 (- canvas-height 20) "#f1c40f" 13))
     (when (= mode :two-player)
-      (draw-text ctx "P2: Arrows + R-Shift" 550 (- canvas-height 20) "#3498db" 13))))
+      (draw-text ctx "M: Music" 700 (- canvas-height 20) "#f1c40f" 11))))
 
 (defn- draw-pond [ctx]
   (draw-rect ctx 40 70 (- canvas-width 80) (- canvas-height 130) "#1a5f2a")
@@ -311,10 +315,20 @@
             (if (= pk player-key)
               (cond
                 (= action :scoop)
-                (game/player-scoop g player-key)
+                (let [old-bucket-count (count (get-in g [:players player-key :bucket]))
+                      new-game (game/player-scoop g player-key)
+                      new-bucket-count (count (get-in new-game [:players player-key :bucket]))]
+                  (when (> new-bucket-count old-bucket-count)
+                    (let [last-frog (last (get-in new-game [:players player-key :bucket]))]
+                      (if (= :green (:color last-frog))
+                        (audio/play-scoop-green)
+                        (audio/play-scoop-orange))))
+                  new-game)
 
                 (#{:forward :down :left :right} action)
-                (update-in g [:players player-key] player/move action)
+                (do
+                  (audio/play-move-sound)
+                  (update-in g [:players player-key] player/move action))
 
                 :else g)
               g))
@@ -331,23 +345,44 @@
   (if-let [computer (get-in game [:players :computer])]
     (if-let [action (ai/decide-action computer (:frogs game))]
       (let [g (if (= action :scoop)
-                (game/player-scoop game :computer)
+                (let [old-bucket-count (count (get-in game [:players :computer :bucket]))
+                      new-game (game/player-scoop game :computer)
+                      new-bucket-count (count (get-in new-game [:players :computer :bucket]))]
+                  (when (> new-bucket-count old-bucket-count)
+                    (let [last-frog (last (get-in new-game [:players :computer :bucket]))]
+                      (if (= :green (:color last-frog))
+                        (audio/play-scoop-green)
+                        (audio/play-scoop-orange))))
+                  new-game)
                 (update-in game [:players :computer] player/move action))]
         (clamp-position g :computer))
       game)
     game))
 
 (defn- check-winner [game]
-  (let [players (:players game)]
+  (let [players (:players game)
+        was-game-over? (:game-over? game)]
     (cond
       (game/winner? (:player-1 players))
-      (assoc game :game-over? true :winner (:player-1 players))
+      (do
+        (when-not was-game-over?
+          (audio/stop-music)
+          (audio/play-win-sound))
+        (assoc game :game-over? true :winner (:player-1 players)))
 
       (and (:player-2 players) (game/winner? (:player-2 players)))
-      (assoc game :game-over? true :winner (:player-2 players))
+      (do
+        (when-not was-game-over?
+          (audio/stop-music)
+          (audio/play-win-sound))
+        (assoc game :game-over? true :winner (:player-2 players)))
 
       (and (:computer players) (game/winner? (:computer players)))
-      (assoc game :game-over? true :winner (:computer players))
+      (do
+        (when-not was-game-over?
+          (audio/stop-music)
+          (audio/play-win-sound))
+        (assoc game :game-over? true :winner (:computer players)))
 
       :else game)))
 
@@ -356,8 +391,10 @@
           (fn [frogs]
             (mapv (fn [f]
                     (if (< (rand) 0.02)
-                      (frog/jump f {:x (+ (:x (:position f)) (- (rand-int 50) 25))
-                                    :y (+ (:y (:position f)) (- (rand-int 50) 25))})
+                      (do
+                        (when (< (rand) 0.3) (audio/play-jump-sound))
+                        (frog/jump f {:x (+ (:x (:position f)) (- (rand-int 50) 25))
+                                      :y (+ (:y (:position f)) (- (rand-int 50) 25))}))
                       f))
                   frogs))))
 
@@ -402,11 +439,19 @@
 (defn- handle-keydown [e]
   (.preventDefault e)
   (let [code (.-code e)]
-    (swap! input-state input/key-down code)
-    (when (and (= code "Space") (:game-over? @game-state))
-      (reset! game-state (game/init {:mode (:mode @game-state)
-                                     :width canvas-width
-                                     :height canvas-height})))))
+    (cond
+      (= code "KeyM")
+      (audio/toggle-music)
+
+      (and (= code "Space") (:game-over? @game-state))
+      (do
+        (audio/play-funky-loop)
+        (reset! game-state (game/init {:mode (:mode @game-state)
+                                       :width canvas-width
+                                       :height canvas-height})))
+
+      :else
+      (swap! input-state input/key-down code))))
 
 (defn- handle-keyup [e]
   (swap! input-state input/key-up (.-code e)))
@@ -452,6 +497,9 @@
       (reset! game-state (game/init {:mode mode :width canvas-width :height canvas-height}))
       (reset! input-state (input/init))
       (reset! last-time (js/performance.now))
+
+      (audio/init-audio)
+      (audio/play-funky-loop)
 
       (js/document.addEventListener "keydown" handle-keydown)
       (js/document.addEventListener "keyup" handle-keyup)

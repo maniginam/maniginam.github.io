@@ -16,7 +16,7 @@
          :autorun true}
 
   :release {:target :browser
-            :output-dir "js"
+            :output-dir "ai/laowd-haows/js"
             :asset-path "js"
             :modules {:main {:init-fn laowd-haows.ui.main/init}}
             :compiler-options {:optimizations :advanced}}}}
