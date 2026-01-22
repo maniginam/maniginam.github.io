@@ -1,0 +1,13 @@
+{
+  "name": "laowd-haows",
+  "version": "1.0.0",
+  "description": "A frog-catching game built with ClojureScript",
+  "scripts": {
+    "dev": "npx shadow-cljs watch app",
+    "release": "npx shadow-cljs release release",
+    "test": "npx shadow-cljs compile test"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.26.0"
+  }
+}

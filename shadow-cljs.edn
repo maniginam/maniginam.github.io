@@ -1,0 +1,22 @@
+{:deps true
+ :dev-http {8080 "resources/public"}
+
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js"
+        :asset-path "/js"
+
+        :modules {:main {:init-fn laowd-haows.ui.main/init}}
+
+        :devtools {:after-load laowd-haows.ui.main/reload}}
+
+  :test {:target :node-test
+         :output-to "out/test.js"
+         :ns-regexp "-test$"
+         :autorun true}
+
+  :release {:target :browser
+            :output-dir "docs/js"
+            :asset-path "js"
+            :modules {:main {:init-fn laowd-haows.ui.main/init}}
+            :compiler-options {:optimizations :advanced}}}}

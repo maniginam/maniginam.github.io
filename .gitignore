@@ -1,0 +1,23 @@
+# Clojure
+.cpcache/
+.nrepl-port
+*.class
+
+# Shadow-cljs
+.shadow-cljs/
+node_modules/
+resources/public/js/
+
+# Build output
+out/
+target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.calva/
+
+# OS
+.DS_Store
+Thumbs.db
