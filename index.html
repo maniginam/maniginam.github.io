@@ -1,34 +1,133 @@
 ---
-title: maniginam
+title: Gina Martiny
 layout: default
 ---
-<div class="container">
 
-	<div class="blurb">
-			<h1>Hi! I'm Gina.</h1>
+<!-- Hero -->
+<section id="hero" class="hero-section">
+  <div class="hero-gradient-out"></div>
+  <div class="hero-gradient-in"></div>
+  <div class="hero-weather-tint"></div>
+  <canvas class="hero-traffic-canvas"></canvas>
+  <canvas class="hero-weather-canvas"></canvas>
+  <div class="hero-road-layer"></div>
+  <div class="hero-content reveal">
+    <h1 class="hero-title">Gina Martiny</h1>
+    <p class="hero-tagline">Software Craftsman &bull; Agentic AI Developer</p>
+    <p class="hero-credentials">Chemical Engineer (UIC) &bull; MBA (LSU)</p>
+    <a href="#about" class="hero-cta">Explore</a>
+  </div>
+  <div class="hero-daylight-meter"></div>
+  <div class="hero-weather-badge"></div>
+</section>
 
-			<p>
-				My mission is to build bridges over the rivers & canyons that inhibit daily task efficiency within my former industry,
-				chemical manufacturing, by implementing my freshly learned and refactored skill-sets that will forge as I work to become
-				the best developer that I can be within my future industry, software.
-				<br>
-				<br>
-				I aspire to leave the industry a little bit better than how I found it.
-			</p>
-			<br>
+<!-- About -->
+<section id="about" class="about-section">
+  <div class="section-divider"></div>
+  <div class="about-content reveal">
+    <img src="/images/gina.jpg" alt="Gina Martiny" class="about-photo">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>My mission is to build bridges over the rivers &amp; canyons that inhibit daily task efficiency within my former industry, chemical manufacturing, by implementing my freshly learned and refactored skill-sets that will forge as I work to become the best developer that I can be within my future industry, software.</p>
+      <p>I aspire to leave the industry a little bit better than how I found it.</p>
+      <div class="about-links">
+        <a href="mailto:gina@cleancoders.com">Email</a>
+        <a href="https://github.com/maniginam">GitHub</a>
+        <a href="https://www.linkedin.com/in/gina-martiny-0987575/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<img src="https://maniginam.github.io/images/gina.jpg" alt="Gina Martiny" height="500">
+<!-- Portfolio -->
+<section id="portfolio" class="portfolio-section">
+  <div class="section-divider"></div>
+  <h2 class="section-title reveal">Portfolio</h2>
+  <p class="section-subtitle reveal">Clean Coders Studio</p>
+  <div class="portfolio-grid">
+    <div class="portfolio-card reveal stagger-1">
+      <h3>cleancoders.com</h3>
+      <p>Full-stack development of the Clean Coders educational platform for software professionals worldwide.</p>
+      <div class="tech-tags">
+        <span>Clojure</span><span>ClojureScript</span><span>Reagent</span><span>Datomic</span>
+      </div>
+    </div>
+    <div class="portfolio-card reveal stagger-2">
+      <h3>Epic</h3>
+      <p>Enterprise project management and workflow application for agile teams.</p>
+      <div class="tech-tags">
+        <span>Clojure</span><span>ClojureScript</span><span>PostgreSQL</span><span>EC2</span>
+      </div>
+    </div>
+    <div class="portfolio-card reveal stagger-3">
+      <h3>Poker</h3>
+      <p>Real-time multiplayer poker application with live game state synchronization.</p>
+      <div class="tech-tags">
+        <span>Clojure</span><span>ClojureScript</span><span>Reagent</span><span>DynamoDB</span>
+      </div>
+    </div>
+    <div class="portfolio-card reveal stagger-4">
+      <h3>Inventory Management System</h3>
+      <p>Enterprise inventory tracking and warehouse management solution for manufacturing operations.</p>
+      <div class="tech-tags">
+        <span>C</span><span>Python</span><span>MSSQL</span><span>EC2</span>
+      </div>
+    </div>
+    <div class="portfolio-card reveal stagger-5">
+      <h3>Supply Chain Platform</h3>
+      <p>End-to-end supply chain management and logistics platform streamlining distribution workflows.</p>
+      <div class="tech-tags">
+        <span>Ruby</span><span>React</span><span>PostgreSQL</span><span>DynamoDB</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<ul type="disc" style="font-size:18px">
-				<b>
-					<li><a href="mailto: gina@cleancoders.com">email me</a></li>
-					<li><a href="https://github.com/maniginam">github</a></li>
-					<li><a href="https://www.linkedin.com/in/gina-martiny-0987575/">Linked In</a></li>
-				</b>
-			</ul>
+<!-- AI Projects -->
+<section id="ai-projects" class="ai-section">
+  <div class="section-divider"></div>
+  <h2 class="section-title reveal">AI Projects</h2>
+  <p class="section-subtitle reveal">Experiments and games built with AI</p>
+  <div class="ai-grid">
+    <a href="/ai/frogger/" class="ai-card reveal stagger-1">
+      <h3>Frogger</h3>
+      <p>Classic Frogger game with 6 unique frog characters and 8 themed backgrounds.</p>
+    </a>
+    <a href="/ai/laowd-haows/" class="ai-card reveal stagger-2">
+      <h3>Laowd Haows</h3>
+      <p>AI-powered frog-catching game with dynamic gameplay.</p>
+    </a>
+    <a href="/ai/ttt/" class="ai-card reveal stagger-3">
+      <h3>Tic Tac Toe</h3>
+      <p>Play against AI opponents with varying difficulty levels.</p>
+    </a>
+  </div>
+</section>
 
-	</div><!-- /.blurb -->
-
-
-</div><!-- /.container -->
-
+<!-- Recent Blog Posts -->
+<section id="recent-posts" class="blog-preview-section">
+  <div class="section-divider"></div>
+  <h2 class="section-title reveal">Recent Writing</h2>
+  <div class="blog-columns">
+    <div class="blog-column reveal-left">
+      <h3>Blog</h3>
+      {% for post in site.tags.blog limit:3 %}
+      <a href="{{ post.url }}" class="blog-preview-card">
+        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <span class="post-title">{{ post.title }}</span>
+      </a>
+      {% endfor %}
+      <a href="/blog" class="see-all-link">See all posts &rarr;</a>
+    </div>
+    <div class="blog-column reveal-right">
+      <h3>Apprenticeship</h3>
+      {% for post in site.tags.apprenticeship limit:3 %}
+      <a href="{{ post.url }}" class="blog-preview-card">
+        <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <span class="post-title">{{ post.title }}</span>
+      </a>
+      {% endfor %}
+      <a href="/apprenticeship" class="see-all-link">See all posts &rarr;</a>
+    </div>
+  </div>
+</section>

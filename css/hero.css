@@ -1,0 +1,130 @@
+/* ============================================
+   Hero Live Features — Layer Stack
+   ============================================ */
+
+/* --- Gradient layers for crossfade --- */
+.hero-gradient-out,
+.hero-gradient-in {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  transition: opacity 2s ease;
+}
+
+.hero-gradient-out { opacity: 1; }
+.hero-gradient-in  { opacity: 0; }
+
+/* --- Weather tint overlay --- */
+.hero-weather-tint {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  transition: background 1s ease;
+}
+
+/* --- Traffic canvas --- */
+.hero-traffic-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 2;
+  transition: opacity 1s ease;
+}
+
+/* --- Weather canvas --- */
+.hero-weather-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 3;
+}
+
+/* --- Road SVG layer --- */
+.hero-road-layer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.hero-road-layer svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Hero content (override main.css z-index) --- */
+.hero-section .hero-content {
+  z-index: 5;
+  position: relative;
+}
+
+/* --- Daylight arc meter --- */
+.hero-daylight-meter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 6;
+}
+
+.hero-meter-label {
+  font-size: 0.7rem;
+  color: #ffcc02;
+  font-family: 'Inter', sans-serif;
+  margin-top: 2px;
+}
+
+/* --- Weather badge --- */
+.hero-weather-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(26, 26, 46, 0.8);
+  padding: 3px 7px;
+  border-radius: 6px;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-weather-badge .weather-icon {
+  font-size: 0.75rem;
+}
+
+.hero-weather-badge .weather-temp {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.hero-weather-badge .weather-details {
+  font-size: 0.45rem;
+  color: #9e9e9e;
+  line-height: 1.2;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero-road-layer text {
+    display: none;
+  }
+
+  .hero-daylight-meter svg {
+    width: 120px;
+    height: 30px;
+  }
+
+  .hero-weather-badge {
+    padding: 4px 8px;
+  }
+}

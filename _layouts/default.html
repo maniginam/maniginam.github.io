@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <!-- link to main stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-<!--    <link rel="action" type="php" href="/php/subscribe.php">-->
-
-
+    <link rel="stylesheet" type="text/css" href="/css/hero.css">
 </head>
 <body>
 <nav>
@@ -14,26 +16,21 @@
         <li><a href="/">Home</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/thingsMyKidsSay">Things My Kids Say</a></li>
-        <li><a href="/ttt/index.html">Tic Tac Toe</a></li>
-        <li><a href="/ai">AI</a></li>
-        <li><a href="/apprenticeship">Apprenticeship Blog</a></li>
+        <li><a href="/ai">AI Projects</a></li>
+        <li><a href="/apprenticeship">Apprenticeship</a></li>
         <li><a href="/tec-next-2024">Tec-Talk 2024</a></li>
     </ul>
 </nav>
 <div class="container">
-
     {{ content }}
-
-</div><!-- /.container -->
+</div>
 <footer>
     <ul>
-        <li><a href="mailto: gina@cleancoders.com">email me</a></li>
-        <li><a href="https://github.com/maniginam">github.com/maniginam</a></li>
-        <!--					<li><form action="subscribe.php" method="get">-->
-        <!--						<input name="email" type="text" placeholder="Enter your email">-->
-        <!--						<button class="button" type="submit">Subscribe</button>		-->
-        <!--					</form></li>-->
+        <li><a href="mailto:gina@cleancoders.com">Email</a></li>
+        <li><a href="https://github.com/maniginam">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gina-martiny-0987575/">LinkedIn</a></li>
     </ul>
 </footer>
+<script src="/js/scroll-animations.js"></script>
 </body>
 </html>
