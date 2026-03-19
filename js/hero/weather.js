@@ -96,9 +96,10 @@ window.HeroWeather = (function () {
   }
 
   function resizeCanvas() {
-    canvas.width = canvas.offsetWidth * 2;
-    canvas.height = canvas.offsetHeight * 2;
-    ctx.scale(2, 2);
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = canvas.offsetWidth * dpr;
+    canvas.height = canvas.offsetHeight * dpr;
+    ctx.scale(dpr, dpr);
   }
 
   function buildParticles(condition) {
