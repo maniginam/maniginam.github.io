@@ -2,7 +2,7 @@
 layout: post  
 categories: blog  
 tags: blog  
-title:  Leadership is Hard
+title:  Heat Disappearing Ink is Dangerous...
 date: 2025-05-21
 ---
 
