@@ -857,6 +857,49 @@ svg .line {
 }
 
 /* ============================================
+   Things My Kids Say
+   ============================================ */
+
+.kids-say-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.kids-say-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 24px 28px;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-coral);
+}
+
+.kids-say-card p {
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.kids-say-card p:last-child {
+    margin-bottom: 0;
+}
+
+.kids-say-card em {
+    color: var(--accent-coral-dim);
+    font-style: italic;
+}
+
+.kids-say-date {
+    display: block;
+    font-size: 0.8em;
+    color: var(--accent-purple);
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
    404 Page
    ============================================ */
 
@@ -975,5 +1018,36 @@ svg .line {
     .post-body img,
     .post-body video {
         margin: 16px auto;
+    }
+}
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .portfolio-card,
+    .ai-card,
+    .post-list-card,
+    .blog-preview-card {
+        transition: none;
+    }
+
+    .hero-cta,
+    .about-links a,
+    .nav-toggle-bar {
+        transition: none;
+    }
+
+    .section-divider::after {
+        box-shadow: none;
     }
 }
