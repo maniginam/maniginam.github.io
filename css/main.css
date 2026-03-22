@@ -1022,6 +1022,44 @@ svg .line {
 }
 
 /* ============================================
+   Scroll-to-Top Button
+   ============================================ */
+
+.scroll-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--accent-purple);
+    font-size: 1.2em;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.scroll-top:hover {
+    background: var(--accent-purple);
+    color: #1a1a2e;
+    border-color: var(--accent-purple);
+}
+
+/* ============================================
    Reduced Motion
    ============================================ */
 
@@ -1049,5 +1087,9 @@ svg .line {
 
     .section-divider::after {
         box-shadow: none;
+    }
+
+    .scroll-top {
+        transition: none;
     }
 }

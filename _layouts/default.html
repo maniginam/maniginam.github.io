@@ -40,6 +40,7 @@
 <div id="main-content" class="container">
     {{ content }}
 </div>
+<button class="scroll-top" aria-label="Scroll to top">&uarr;</button>
 <footer>
     <p class="footer-tagline">Built with craft, coffee, and curiosity.</p>
     <ul>
@@ -84,6 +85,31 @@
     var href = a.getAttribute('href');
     if (href === path || (href !== '/' && path.indexOf(href) === 0)) {
       a.classList.add('nav-active');
+    }
+  });
+})();
+
+// Scroll-to-top button
+(function() {
+  var btn = document.querySelector('.scroll-top');
+  if (!btn) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+// Lazy loading for images (add loading="lazy" to post images)
+(function() {
+  document.querySelectorAll('.post-body img, .kids-say-card img').forEach(function(img) {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
     }
   });
 })();
