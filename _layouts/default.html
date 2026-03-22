@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <meta name="description" content="Gina Martiny — Software Craftsman, Agentic AI Developer, Chemical Engineer turned full-stack developer.">
+    <meta property="og:title" content="{{ page.title | default: 'Gina Martiny' }}">
+    <meta property="og:description" content="Software Craftsman and Agentic AI Developer based in Baton Rouge, LA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maniginam.github.io{{ page.url }}">
+    <meta name="twitter:card" content="summary">
+    <title>{{ page.title | default: 'Gina Martiny' }}</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -11,20 +18,30 @@
     <link rel="stylesheet" type="text/css" href="/css/hero.css">
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/thingsMyKidsSay">Things My Kids Say</a></li>
-        <li><a href="/ai">AI Projects</a></li>
-        <li><a href="/apprenticeship">Apprenticeship</a></li>
-        <li><a href="/tec-next-2024">Tec-Talk 2024</a></li>
-    </ul>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<nav aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="/" class="nav-brand">GM</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/thingsMyKidsSay">Things My Kids Say</a></li>
+            <li><a href="/ai">AI Projects</a></li>
+            <li><a href="/apprenticeship">Apprenticeship</a></li>
+            <li><a href="/tec-next-2024">Tec-Talk 2024</a></li>
+        </ul>
+    </div>
 </nav>
-<div class="container">
+<div id="main-content" class="container">
     {{ content }}
 </div>
 <footer>
+    <p class="footer-tagline">Built with craft, coffee, and curiosity.</p>
     <ul>
         <li><a href="mailto:gina@cleancoders.com">Email</a></li>
         <li><a href="https://github.com/maniginam">GitHub</a></li>
@@ -39,5 +56,37 @@
 <script src="/js/hero/traffic.js"></script>
 <script src="/js/hero/weather.js"></script>
 <script src="/js/hero/hero.js"></script>
+<script>
+// Mobile nav toggle
+(function() {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.querySelector('.nav-links');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', function() {
+    var open = links.classList.toggle('nav-open');
+    toggle.classList.toggle('nav-toggle-open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  // Close on link click (mobile)
+  links.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      links.classList.remove('nav-open');
+      toggle.classList.remove('nav-toggle-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+// Active nav link
+(function() {
+  var path = window.location.pathname;
+  document.querySelectorAll('.nav-links a').forEach(function(a) {
+    var href = a.getAttribute('href');
+    if (href === path || (href !== '/' && path.indexOf(href) === 0)) {
+      a.classList.add('nav-active');
+    }
+  });
+})();
+</script>
 </body>
 </html>

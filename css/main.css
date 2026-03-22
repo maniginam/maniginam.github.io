@@ -26,6 +26,26 @@ body {
     padding-top: 80px;
 }
 
+/* ---- Skip Link ---- */
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 16px;
+    background: var(--accent-purple);
+    color: #1a1a2e;
+    padding: 8px 16px;
+    border-radius: 0 0 8px 8px;
+    z-index: 2000;
+    font-weight: 600;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 0;
+    filter: none;
+}
+
 /* ---- Navigation ---- */
 
 nav {
@@ -40,27 +60,84 @@ nav {
     border-bottom: 1px solid var(--border-color);
 }
 
-nav ul {
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-brand {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--accent-purple);
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 16px 0;
+}
+
+.nav-brand:hover {
+    filter: brightness(1.3);
+}
+
+.nav-links {
     display: flex;
     gap: 24px;
-    padding: 16px 40px;
-    justify-content: center;
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.nav-links li a {
     color: var(--text-primary);
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 0.95em;
+    padding: 16px 0;
+    display: inline-block;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover,
+.nav-links li a.nav-active {
     color: var(--accent-purple);
+}
+
+.nav-links li a.nav-active {
+    border-bottom: 2px solid var(--accent-purple);
+}
+
+/* Hamburger toggle */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-toggle-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.nav-toggle-open .nav-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle-open .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle-open .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ---- Typography ---- */
@@ -120,6 +197,13 @@ footer {
     text-align: center;
     padding: 40px;
     color: var(--text-muted);
+}
+
+.footer-tagline {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    opacity: 0.6;
+    margin-bottom: 16px;
 }
 
 footer ul {
@@ -547,6 +631,27 @@ img.tall {
     width: 300px;
 }
 
+/* ---- Responsive Video ---- */
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* ---- Board / SVG ---- */
 
 .board {
@@ -560,15 +665,262 @@ svg .line {
 }
 
 /* ============================================
+   Page Sections (inner pages)
+   ============================================ */
+
+.page-section {
+    padding: 60px 40px 100px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.page-section .section-title {
+    margin-bottom: 12px;
+}
+
+.page-section .section-subtitle {
+    margin-bottom: 40px;
+}
+
+/* ---- Post List (blog/apprenticeship index) ---- */
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.post-list-card {
+    display: block;
+    padding: 18px 24px;
+    border-left: 3px solid var(--border-color);
+    transition: all 0.3s;
+    text-decoration: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.post-list-card:hover {
+    border-left-color: var(--accent-purple);
+    background: rgba(179, 136, 255, 0.05);
+    transform: translateX(8px);
+}
+
+.post-list-card .post-date {
+    display: block;
+    font-size: 0.85em;
+    color: var(--text-muted);
+}
+
+.post-list-card .post-title {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1.15em;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+/* ============================================
+   Post Article
+   ============================================ */
+
+.post-article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 40px 100px;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.post-article-title {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    color: white;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.post-article-subtitle {
+    font-size: 1.3em;
+    color: var(--accent-purple);
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.post-article-date {
+    display: block;
+    font-size: 0.95em;
+    color: var(--text-muted);
+}
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-nav-bottom {
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.post-nav-link {
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.post-nav-link:hover {
+    filter: brightness(1.3);
+}
+
+.post-nav-disabled {
+    color: var(--border-color);
+    font-size: 0.95em;
+}
+
+.post-body {
+    line-height: 1.8;
+}
+
+.post-body p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.post-body ul,
+.post-body ol {
+    color: var(--text-muted);
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.post-body li {
+    margin-bottom: 8px;
+    color: var(--text-muted);
+}
+
+.post-body img {
+    max-width: 100%;
+    height: auto;
+    margin: 24px auto;
+}
+
+.post-body video {
+    display: block;
+    max-width: 100%;
+    margin: 24px auto;
+}
+
+.post-body blockquote {
+    border-left: 3px solid var(--accent-purple);
+    padding: 12px 24px;
+    margin: 24px 0;
+    background: rgba(179, 136, 255, 0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.post-body blockquote p {
+    color: var(--text-primary);
+    margin-bottom: 0;
+}
+
+.post-body code {
+    background: rgba(179, 136, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--accent-coral);
+}
+
+.post-body pre {
+    background: rgba(10, 10, 26, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 24px 0;
+}
+
+.post-body pre code {
+    background: none;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+/* ============================================
+   404 Page
+   ============================================ */
+
+.page-404 {
+    text-align: center;
+    padding: 120px 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-404 h1 {
+    font-size: 6em;
+    color: var(--accent-purple);
+    margin-bottom: 0;
+    opacity: 0.6;
+}
+
+.page-404 h2 {
+    margin-bottom: 16px;
+}
+
+.page-404 p {
+    margin-bottom: 32px;
+}
+
+.page-404 a.hero-cta {
+    display: inline-block;
+}
+
+/* ============================================
    Responsive
    ============================================ */
 
 @media (max-width: 768px) {
-    nav ul {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-inner {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
         flex-direction: column;
-        gap: 12px;
-        padding: 12px 20px;
-        align-items: center;
+        gap: 0;
+        background: rgba(26, 26, 46, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-links.nav-open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        padding: 14px 24px;
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     .about-content {
@@ -606,5 +958,22 @@ svg .line {
 
     body {
         padding-top: 0;
+    }
+
+    .page-section {
+        padding: 40px 20px 60px;
+    }
+
+    .post-article {
+        padding: 20px 20px 60px;
+    }
+
+    .post-nav-link {
+        font-size: 0.85em;
+    }
+
+    .post-body img,
+    .post-body video {
+        margin: 16px auto;
     }
 }
