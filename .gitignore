@@ -4,6 +4,7 @@ Gemfile.lock
 .idea/*
 *.iml
 *.xml
+!sitemap.xml
 .idea
 .idea/
 .docs/*

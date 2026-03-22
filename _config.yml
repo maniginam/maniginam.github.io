@@ -1,5 +1,8 @@
 name: Gina Martiny
+url: https://maniginam.com
 markdown: kramdown
 tags: ["apprenticeship", "blog"]
 permalink: /:categories/:year/:month/:day/:title.html
 
+plugins:
+  - jekyll-feed
