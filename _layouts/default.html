@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gina Martiny — Software Craftsman, Agentic AI Developer, Chemical Engineer turned full-stack developer.">
+    <meta name="description" content="{{ page.description | default: 'Gina Martiny — Software Craftsman, Agentic AI Developer, Chemical Engineer turned full-stack developer.' }}">
     <meta property="og:title" content="{{ page.title | default: 'Gina Martiny' }}">
     <meta property="og:description" content="Software Craftsman and Agentic AI Developer based in Baton Rouge, LA.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://maniginam.com{{ page.url }}">
     <meta name="twitter:card" content="summary">
-    <title>{{ page.title | default: 'Gina Martiny' }}</title>
+    <title>{% if page.url == '/' %}Gina Martiny — Software Craftsman{% elsif page.title %}{{ page.title }} | Gina Martiny{% else %}Gina Martiny{% endif %}</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    {% if page.url == '/' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gina Martiny",
+      "url": "https://maniginam.com",
+      "jobTitle": "Software Craftsman",
+      "description": "Agentic AI Developer, Chemical Engineer turned full-stack developer",
+      "sameAs": [
+        "https://github.com/maniginam",
+        "https://www.linkedin.com/in/gina-martiny-0987575/"
+      ]
+    }
+    </script>
+    {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -84,6 +100,19 @@
       links.classList.remove('nav-open');
       toggle.classList.remove('nav-toggle-open');
       toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
+// Nav shadow on scroll
+(function() {
+  var nav = document.querySelector('nav');
+  if (!nav) return;
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 10) {
+      nav.classList.add('nav-scrolled');
+    } else {
+      nav.classList.remove('nav-scrolled');
     }
   });
 })();
