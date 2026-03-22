@@ -1000,7 +1000,12 @@ svg .line {
     }
 
     body {
-        padding-top: 0;
+        padding-top: 56px;
+    }
+
+    .hero-section {
+        margin-top: -56px;
+        padding-top: 56px;
     }
 
     .page-section {
