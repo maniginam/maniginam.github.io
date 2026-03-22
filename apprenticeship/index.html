@@ -1,17 +1,18 @@
 ---
 layout: default
-title: Gina's Apprenticeship Blog
+title: Apprenticeship
 ---
-<h1>{{ page.title }}</h1>
-
-
-<ul class="posts">
-
-    {% for post in site.tags.apprenticeship %}
-      {% if post.hide != true %}
-        <li>
-         <span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-
-</ul>
+<section class="page-section">
+    <h1 class="section-title reveal">Apprenticeship</h1>
+    <p class="section-subtitle reveal">Notes from learning the craft of software development</p>
+    <div class="post-list">
+        {% for post in site.tags.apprenticeship %}
+        {% if post.hide != true %}
+        <a href="{{ post.url }}" class="post-list-card reveal" title="{{ post.title }}">
+            <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+            <span class="post-title">{{ post.title }}</span>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>

@@ -1,19 +1,42 @@
 ---
 layout: default
-permalink: /:tag/:year/:month/:day/:title.html
 ---
+<article class="post-article">
+    <header class="post-header reveal">
+        <h1 class="post-article-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <h2 class="post-article-subtitle">{{ page.subtitle }}</h2>
+        {% endif %}
+        <time class="post-article-date">{{ page.date | date: "%B %d, %Y" }}</time>
+    </header>
 
-<h1>{{ page.title }}</h1>
-{% if post.subtitle != NULL %}
-<h2>{{ page.subtitle }}</h2>
-{% endif %}
+    <nav class="post-nav" aria-label="Post navigation">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="post-nav-link post-nav-prev">&larr; Previous</a>
+        {% else %}
+        <span class="post-nav-link post-nav-disabled">&larr; Previous</span>
+        {% endif %}
+        {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="post-nav-link post-nav-next">Next &rarr;</a>
+        {% else %}
+        <span class="post-nav-link post-nav-disabled">Next &rarr;</span>
+        {% endif %}
+    </nav>
 
-<h2><ul><li><a href="{{ page.previous.url }}">previous</a></li><li><a href="{{ page.next.url }}">next</a></li></ul></h2>
+    <div class="post-body reveal">
+        {{ content }}
+    </div>
 
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-
-  {{ content }}
-
-</div>
+    <nav class="post-nav post-nav-bottom" aria-label="Post navigation">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="post-nav-link post-nav-prev">&larr; Previous</a>
+        {% else %}
+        <span class="post-nav-link post-nav-disabled">&larr; Previous</span>
+        {% endif %}
+        {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="post-nav-link post-nav-link post-nav-next">Next &rarr;</a>
+        {% else %}
+        <span class="post-nav-link post-nav-disabled">Next &rarr;</span>
+        {% endif %}
+    </nav>
+</article>
