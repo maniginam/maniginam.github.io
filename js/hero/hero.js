@@ -109,12 +109,16 @@
     }, 200);
   }
 
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // Init on DOM ready
   document.addEventListener('DOMContentLoaded', function () {
     initElements();
     if (!hero) return;
     setup();
-    setupVisibility();
-    window.addEventListener('resize', handleResize);
+    if (!prefersReducedMotion) {
+      setupVisibility();
+      window.addEventListener('resize', handleResize);
+    }
   });
 })();
