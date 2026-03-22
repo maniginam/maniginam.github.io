@@ -7,7 +7,7 @@
     <meta property="og:title" content="{{ page.title | default: 'Gina Martiny' }}">
     <meta property="og:description" content="Software Craftsman and Agentic AI Developer based in Baton Rouge, LA.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://maniginam.github.io{{ page.url }}">
+    <meta property="og:url" content="https://maniginam.com{{ page.url }}">
     <meta name="twitter:card" content="summary">
     <title>{{ page.title | default: 'Gina Martiny' }}</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/hero.css">
+    {% if page.url == '/' %}<link rel="stylesheet" type="text/css" href="/css/hero.css">{% endif %}
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to content</a>
@@ -45,11 +45,12 @@
     <p class="footer-tagline">Built with craft, coffee, and curiosity.</p>
     <ul>
         <li><a href="mailto:gina@cleancoders.com">Email</a></li>
-        <li><a href="https://github.com/maniginam">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/gina-martiny-0987575/">LinkedIn</a></li>
+        <li><a href="https://github.com/maniginam" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/gina-martiny-0987575/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
     </ul>
 </footer>
 <script src="/js/scroll-animations.js"></script>
+{% if page.url == '/' %}
 <script src="/js/vendor/suncalc.min.js"></script>
 <script src="/js/hero/roads.js"></script>
 <script src="/js/hero/gradient.js"></script>
@@ -57,6 +58,7 @@
 <script src="/js/hero/traffic.js"></script>
 <script src="/js/hero/weather.js"></script>
 <script src="/js/hero/hero.js"></script>
+{% endif %}
 <script>
 // Mobile nav toggle
 (function() {
@@ -75,6 +77,14 @@
       toggle.classList.remove('nav-toggle-open');
       toggle.setAttribute('aria-expanded', 'false');
     });
+  });
+  // Close on outside click (mobile)
+  document.addEventListener('click', function(e) {
+    if (links.classList.contains('nav-open') && !e.target.closest('nav')) {
+      links.classList.remove('nav-open');
+      toggle.classList.remove('nav-toggle-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
   });
 })();
 

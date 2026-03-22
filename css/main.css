@@ -1065,6 +1065,31 @@ svg .line {
 }
 
 /* ============================================
+   Focus-Visible (Keyboard Navigation)
+   ============================================ */
+
+a:focus-visible,
+button:focus-visible,
+.nav-toggle:focus-visible {
+    outline: 2px solid var(--accent-purple);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.hero-cta:focus-visible,
+.about-links a:focus-visible {
+    outline-offset: 4px;
+}
+
+.post-list-card:focus-visible,
+.blog-preview-card:focus-visible,
+.ai-card:focus-visible {
+    outline: 2px solid var(--accent-purple);
+    outline-offset: 2px;
+    border-color: var(--accent-purple);
+}
+
+/* ============================================
    Reduced Motion
    ============================================ */
 
