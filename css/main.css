@@ -687,6 +687,50 @@ svg .line {
     margin-bottom: 40px;
 }
 
+/* ---- 3D Blog Scene ---- */
+
+.blog-3d-section {
+    padding: 40px 0 0;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.blog-3d-section .section-title {
+    margin-bottom: 12px;
+}
+
+.blog-3d-section .section-subtitle {
+    margin-bottom: 20px;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+#blog-3d-scene {
+    width: 100%;
+    height: calc(100vh - 220px);
+    min-height: 500px;
+    position: relative;
+}
+
+#blog-3d-scene canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#blog-fallback {
+    display: none;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #blog-3d-scene { display: none; }
+    #blog-fallback { display: block !important; }
+}
+
 /* ---- Post List (blog/apprenticeship index) ---- */
 
 .post-list {

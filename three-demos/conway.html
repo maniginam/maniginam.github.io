@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Game of Life — 3D</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <style>
+    :root {
+      --bg-primary: #1a1a2e;
+      --accent-purple: #b388ff;
+      --accent-coral: #ff6b6b;
+      --text-primary: #e0e0e0;
+      --text-muted: #9e9e9e;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a1a;
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, sans-serif;
+      overflow: hidden;
+    }
+    #scene { width: 100vw; height: 100vh; display: block; }
+    .overlay {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      z-index: 10;
+      pointer-events: none;
+    }
+    .overlay h1 {
+      font-size: 1.6rem;
+      background: linear-gradient(135deg, var(--accent-purple), var(--accent-coral));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 6px;
+    }
+    .overlay p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+    .controls {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+    }
+    .controls button {
+      background: rgba(36, 36, 68, 0.85);
+      border: 1px solid #4a3f6b;
+      color: var(--accent-purple);
+      padding: 10px 24px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s;
+    }
+    .controls button:hover {
+      background: var(--accent-purple);
+      color: #1a1a2e;
+      border-color: var(--accent-purple);
+    }
+    .controls button.active {
+      background: var(--accent-coral);
+      color: #1a1a2e;
+      border-color: var(--accent-coral);
+    }
+    .gen-counter {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      color: var(--accent-coral);
+      font-size: 1.1rem;
+      font-weight: 600;
+      z-index: 10;
+    }
+    .back-link {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      color: var(--accent-purple);
+      text-decoration: none;
+      font-size: 0.85rem;
+      z-index: 10;
+    }
+    .back-link:hover { color: var(--accent-coral); }
+  </style>
+</head>
+<body>
+
+<div class="overlay">
+  <h1>Conway's Game of Life</h1>
+  <p>3D cells live and die by the classic rules.<br>Drag to orbit. Scroll to zoom.</p>
+</div>
+<div class="gen-counter" id="genCounter">Generation: 0</div>
+<div class="controls">
+  <button id="btnPause">Pause</button>
+  <button id="btnStep">Step</button>
+  <button id="btnReset">Randomize</button>
+  <button id="btnFlat">Flat</button>
+  <button id="btnTower" class="active">Tower</button>
+  <button id="btnExplode">Explode</button>
+</div>
+<a href="/three-demos/" class="back-link">&larr; Back to demos</a>
+
+<div id="scene"></div>
+
+<script>
+(function() {
+  // --- Config ---
+  var GRID = 32;           // NxN grid
+  var CELL_SIZE = 0.28;
+  var GAP = 0.32;
+  var TICK_MS = 200;
+  var ALIVE_CHANCE = 0.3;
+
+  // --- Scene ---
+  var container = document.getElementById('scene');
+  var w = window.innerWidth, h = window.innerHeight;
+  var scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x0a0a1a, 0.015);
+
+  var camera = new THREE.PerspectiveCamera(50, w / h, 0.1, 200);
+  camera.position.set(0, 18, 18);
+  camera.lookAt(0, 0, 0);
+
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(w, h);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.shadowMap.enabled = true;
+  container.appendChild(renderer.domElement);
+
+  // Lighting
+  scene.add(new THREE.AmbientLight(0x7c4dff, 0.3));
+  var dirLight = new THREE.DirectionalLight(0xffffff, 0.6);
+  dirLight.position.set(10, 20, 10);
+  scene.add(dirLight);
+  var ptLight = new THREE.PointLight(0xb388ff, 1, 40);
+  ptLight.position.set(0, 12, 0);
+  scene.add(ptLight);
+  var ptLight2 = new THREE.PointLight(0xff6b6b, 0.5, 30);
+  ptLight2.position.set(-8, 5, 8);
+  scene.add(ptLight2);
+
+  // Ground plane (subtle grid reference)
+  var groundGeo = new THREE.PlaneGeometry(GRID * GAP + 2, GRID * GAP + 2);
+  var groundMat = new THREE.MeshStandardMaterial({
+    color: 0x0d0d1a,
+    transparent: true,
+    opacity: 0.6,
+    roughness: 1
+  });
+  var ground = new THREE.Mesh(groundGeo, groundMat);
+  ground.rotation.x = -Math.PI / 2;
+  ground.position.y = -0.1;
+  scene.add(ground);
+
+  // --- Game of Life state ---
+  var grid = [];
+  var nextGrid = [];
+  var generation = 0;
+  var paused = false;
+  var mode = 'tower'; // 'flat', 'tower', 'explode'
+
+  function initGrids() {
+    grid = [];
+    nextGrid = [];
+    for (var y = 0; y < GRID; y++) {
+      grid[y] = [];
+      nextGrid[y] = [];
+      for (var x = 0; x < GRID; x++) {
+        grid[y][x] = Math.random() < ALIVE_CHANCE ? 1 : 0;
+        nextGrid[y][x] = 0;
+      }
+    }
+    generation = 0;
+  }
+
+  function countNeighbors(g, x, y) {
+    var count = 0;
+    for (var dy = -1; dy <= 1; dy++) {
+      for (var dx = -1; dx <= 1; dx++) {
+        if (dx === 0 && dy === 0) continue;
+        var nx = (x + dx + GRID) % GRID;
+        var ny = (y + dy + GRID) % GRID;
+        count += g[ny][nx];
+      }
+    }
+    return count;
+  }
+
+  function step() {
+    for (var y = 0; y < GRID; y++) {
+      for (var x = 0; x < GRID; x++) {
+        var n = countNeighbors(grid, x, y);
+        if (grid[y][x]) {
+          nextGrid[y][x] = (n === 2 || n === 3) ? 1 : 0;
+        } else {
+          nextGrid[y][x] = (n === 3) ? 1 : 0;
+        }
+      }
+    }
+    // Swap
+    var tmp = grid;
+    grid = nextGrid;
+    nextGrid = tmp;
+    generation++;
+    document.getElementById('genCounter').textContent = 'Generation: ' + generation;
+  }
+
+  // --- 3D Cell Meshes ---
+  // Use InstancedMesh for performance
+  var cellGeo = new THREE.BoxGeometry(CELL_SIZE, CELL_SIZE, CELL_SIZE);
+  var cellMat = new THREE.MeshStandardMaterial({
+    color: 0xb388ff,
+    roughness: 0.4,
+    metalness: 0.3,
+    transparent: true
+  });
+  var maxCells = GRID * GRID;
+  var instancedMesh = new THREE.InstancedMesh(cellGeo, cellMat, maxCells);
+  instancedMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+  scene.add(instancedMesh);
+
+  // Color buffer for per-instance colors
+  var colorArray = new Float32Array(maxCells * 3);
+  var colorAttr = new THREE.InstancedBufferAttribute(colorArray, 3);
+  instancedMesh.instanceColor = colorAttr;
+
+  // Cell age tracking for color transitions
+  var cellAge = [];
+  for (var i = 0; i < maxCells; i++) cellAge[i] = 0;
+
+  var dummy = new THREE.Object3D();
+  var offset = (GRID * GAP) / 2;
+
+  // Targets for smooth animation
+  var targetY = new Float32Array(maxCells);
+  var currentY = new Float32Array(maxCells);
+  var targetScale = new Float32Array(maxCells);
+  var currentScale = new Float32Array(maxCells);
+  for (var i = 0; i < maxCells; i++) {
+    currentY[i] = 0;
+    currentScale[i] = 0;
+    targetY[i] = 0;
+    targetScale[i] = 0;
+  }
+
+  function updateTargets() {
+    for (var y = 0; y < GRID; y++) {
+      for (var x = 0; x < GRID; x++) {
+        var idx = y * GRID + x;
+        var alive = grid[y][x];
+
+        if (alive) {
+          cellAge[idx] = Math.min(cellAge[idx] + 1, 20);
+          targetScale[idx] = 1;
+
+          if (mode === 'tower') {
+            var n = countNeighbors(grid, x, y);
+            targetY[idx] = CELL_SIZE / 2 + n * CELL_SIZE * 0.6;
+          } else if (mode === 'explode') {
+            targetY[idx] = CELL_SIZE / 2 + cellAge[idx] * CELL_SIZE * 0.4;
+          } else {
+            targetY[idx] = CELL_SIZE / 2;
+          }
+        } else {
+          cellAge[idx] = 0;
+          targetScale[idx] = 0;
+          targetY[idx] = 0;
+        }
+      }
+    }
+  }
+
+  function updateInstances() {
+    var count = 0;
+    var purple = new THREE.Color(0xb388ff);
+    var coral = new THREE.Color(0xff6b6b);
+    var white = new THREE.Color(0xffffff);
+
+    for (var y = 0; y < GRID; y++) {
+      for (var x = 0; x < GRID; x++) {
+        var idx = y * GRID + x;
+
+        // Smooth interpolation
+        currentY[idx] += (targetY[idx] - currentY[idx]) * 0.12;
+        currentScale[idx] += (targetScale[idx] - currentScale[idx]) * 0.15;
+
+        var s = currentScale[idx];
+        if (s < 0.01) continue; // Skip invisible cells
+
+        dummy.position.set(
+          x * GAP - offset,
+          currentY[idx],
+          y * GAP - offset
+        );
+        dummy.scale.set(s, s * (1 + currentY[idx] * 0.3), s);
+        dummy.updateMatrix();
+        instancedMesh.setMatrixAt(count, dummy.matrix);
+
+        // Color: purple -> coral -> white based on age
+        var age = cellAge[idx] / 20;
+        var col = age < 0.5
+          ? purple.clone().lerp(coral, age * 2)
+          : coral.clone().lerp(white, (age - 0.5) * 2);
+        colorArray[count * 3] = col.r;
+        colorArray[count * 3 + 1] = col.g;
+        colorArray[count * 3 + 2] = col.b;
+
+        count++;
+      }
+    }
+
+    instancedMesh.count = count;
+    instancedMesh.instanceMatrix.needsUpdate = true;
+    instancedMesh.instanceColor.needsUpdate = true;
+  }
+
+  // --- Orbit Controls (simple manual) ---
+  var orbitAngle = 0.8;
+  var orbitPitch = 0.6;
+  var orbitDist = 22;
+  var isDragging = false;
+  var prevMouse = { x: 0, y: 0 };
+
+  container.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    prevMouse.x = e.clientX;
+    prevMouse.y = e.clientY;
+  });
+  window.addEventListener('mouseup', function() { isDragging = false; });
+  window.addEventListener('mousemove', function(e) {
+    if (!isDragging) return;
+    orbitAngle += (e.clientX - prevMouse.x) * 0.005;
+    orbitPitch -= (e.clientY - prevMouse.y) * 0.005;
+    orbitPitch = Math.max(0.1, Math.min(1.4, orbitPitch));
+    prevMouse.x = e.clientX;
+    prevMouse.y = e.clientY;
+  });
+  container.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    orbitDist += e.deltaY * 0.02;
+    orbitDist = Math.max(8, Math.min(45, orbitDist));
+  }, { passive: false });
+
+  // Touch orbit
+  container.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 1) {
+      isDragging = true;
+      prevMouse.x = e.touches[0].clientX;
+      prevMouse.y = e.touches[0].clientY;
+    }
+  }, { passive: true });
+  window.addEventListener('touchend', function() { isDragging = false; });
+  window.addEventListener('touchmove', function(e) {
+    if (!isDragging || e.touches.length !== 1) return;
+    orbitAngle += (e.touches[0].clientX - prevMouse.x) * 0.005;
+    orbitPitch -= (e.touches[0].clientY - prevMouse.y) * 0.005;
+    orbitPitch = Math.max(0.1, Math.min(1.4, orbitPitch));
+    prevMouse.x = e.touches[0].clientX;
+    prevMouse.y = e.touches[0].clientY;
+  });
+
+  // --- Controls ---
+  document.getElementById('btnPause').addEventListener('click', function() {
+    paused = !paused;
+    this.textContent = paused ? 'Play' : 'Pause';
+    this.classList.toggle('active', paused);
+  });
+  document.getElementById('btnStep').addEventListener('click', function() {
+    step();
+    updateTargets();
+  });
+  document.getElementById('btnReset').addEventListener('click', function() {
+    initGrids();
+    for (var i = 0; i < maxCells; i++) { cellAge[i] = 0; currentY[i] = 0; currentScale[i] = 0; }
+    updateTargets();
+  });
+
+  var modeButtons = { flat: 'btnFlat', tower: 'btnTower', explode: 'btnExplode' };
+  Object.keys(modeButtons).forEach(function(m) {
+    document.getElementById(modeButtons[m]).addEventListener('click', function() {
+      mode = m;
+      Object.keys(modeButtons).forEach(function(k) {
+        document.getElementById(modeButtons[k]).classList.toggle('active', k === m);
+      });
+    });
+  });
+
+  // --- Init & Loop ---
+  initGrids();
+  updateTargets();
+
+  var lastTick = 0;
+  function animate(time) {
+    requestAnimationFrame(animate);
+
+    // Game tick
+    if (!paused && time - lastTick > TICK_MS) {
+      step();
+      updateTargets();
+      lastTick = time;
+    }
+
+    updateInstances();
+
+    // Orbit camera
+    orbitAngle += 0.001; // slow auto-rotate
+    camera.position.x = Math.sin(orbitAngle) * Math.cos(orbitPitch) * orbitDist;
+    camera.position.y = Math.sin(orbitPitch) * orbitDist;
+    camera.position.z = Math.cos(orbitAngle) * Math.cos(orbitPitch) * orbitDist;
+    camera.lookAt(0, 1, 0);
+
+    // Animate lights
+    var t = time * 0.001;
+    ptLight.position.x = Math.sin(t * 0.2) * 8;
+    ptLight.position.z = Math.cos(t * 0.2) * 8;
+
+    renderer.render(scene, camera);
+  }
+  requestAnimationFrame(animate);
+
+  // Resize
+  window.addEventListener('resize', function() {
+    w = window.innerWidth; h = window.innerHeight;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h);
+  });
+
+})();
+</script>
+</body>
+</html>
