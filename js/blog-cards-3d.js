@@ -57,76 +57,76 @@
 
     // Render to canvas
     var canvas2d = document.createElement('canvas');
-    canvas2d.width = 512;
-    canvas2d.height = 320;
+    canvas2d.width = 1024;
+    canvas2d.height = 640;
     var ctx = canvas2d.getContext('2d');
 
     // Background
     ctx.fillStyle = '#242444';
     ctx.beginPath();
-    ctx.roundRect(0, 0, 512, 320, 16);
+    ctx.roundRect(0, 0, 1024, 640, 32);
     ctx.fill();
 
     // Top accent
-    var grad = ctx.createLinearGradient(0, 0, 512, 0);
+    var grad = ctx.createLinearGradient(0, 0, 1024, 0);
     grad.addColorStop(0, '#b388ff');
     grad.addColorStop(1, '#ff6b6b');
     ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, 512, 5);
+    ctx.fillRect(0, 0, 1024, 10);
 
     // Date
     ctx.fillStyle = '#b388ff';
-    ctx.font = '600 18px Inter, Arial, sans-serif';
-    ctx.fillText(post.date, 28, 42);
+    ctx.font = '600 36px Inter, Arial, sans-serif';
+    ctx.fillText(post.date, 56, 84);
 
     // Title with word wrap
     ctx.fillStyle = '#e0e0e0';
-    ctx.font = 'bold 26px Inter, Arial, sans-serif';
+    ctx.font = 'bold 52px Inter, Arial, sans-serif';
     var words = post.title.split(' ');
     var line = '';
-    var lineY = 80;
+    var lineY = 160;
     words.forEach(function (word) {
       var test = line + word + ' ';
-      if (ctx.measureText(test).width > 440 && line) {
-        ctx.fillText(line.trim(), 28, lineY);
+      if (ctx.measureText(test).width > 880 && line) {
+        ctx.fillText(line.trim(), 56, lineY);
         line = word + ' ';
-        lineY += 34;
+        lineY += 68;
       } else {
         line = test;
       }
     });
-    ctx.fillText(line.trim(), 28, lineY);
+    ctx.fillText(line.trim(), 56, lineY);
 
     // Excerpt
     if (post.excerpt) {
       ctx.fillStyle = '#9e9e9e';
-      ctx.font = '16px Inter, Arial, sans-serif';
+      ctx.font = '32px Inter, Arial, sans-serif';
       var eWords = post.excerpt.split(' ').slice(0, 18);
       var eLine = '';
-      var eY = lineY + 40;
+      var eY = lineY + 80;
       eWords.forEach(function (word) {
         var test = eLine + word + ' ';
-        if (ctx.measureText(test).width > 440 && eLine) {
-          ctx.fillText(eLine.trim(), 28, eY);
+        if (ctx.measureText(test).width > 880 && eLine) {
+          ctx.fillText(eLine.trim(), 56, eY);
           eLine = word + ' ';
-          eY += 22;
+          eY += 44;
         } else {
           eLine = test;
         }
       });
-      if (eY < 280) ctx.fillText(eLine.trim(), 28, eY);
+      if (eY < 560) ctx.fillText(eLine.trim(), 56, eY);
     }
 
     // Read link
     ctx.fillStyle = '#ff6b6b';
-    ctx.font = '600 16px Inter, Arial, sans-serif';
-    ctx.fillText('Read \u2192', 28, 296);
+    ctx.font = '600 32px Inter, Arial, sans-serif';
+    ctx.fillText('Read \u2192', 56, 592);
 
     // Border
     ctx.strokeStyle = '#4a3f6b';
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 4;
     ctx.beginPath();
-    ctx.roundRect(1, 1, 510, 318, 16);
+    ctx.roundRect(2, 2, 1020, 636, 32);
     ctx.stroke();
 
     var tex = new THREE.CanvasTexture(canvas2d);
