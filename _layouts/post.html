@@ -10,19 +10,6 @@ layout: default
         <time class="post-article-date">{{ page.date | date: "%B %d, %Y" }}</time>
     </header>
 
-    <nav class="post-nav" aria-label="Post navigation">
-        {% if page.previous.url %}
-        <a href="{{ page.previous.url }}" class="post-nav-link post-nav-prev">&larr; Previous</a>
-        {% else %}
-        <span class="post-nav-link post-nav-disabled">&larr; Previous</span>
-        {% endif %}
-        {% if page.next.url %}
-        <a href="{{ page.next.url }}" class="post-nav-link post-nav-next">Next &rarr;</a>
-        {% else %}
-        <span class="post-nav-link post-nav-disabled">Next &rarr;</span>
-        {% endif %}
-    </nav>
-
     <div class="post-body reveal">
         {{ content }}
     </div>
@@ -34,7 +21,7 @@ layout: default
         <span class="post-nav-link post-nav-disabled">&larr; Previous</span>
         {% endif %}
         {% if page.next.url %}
-        <a href="{{ page.next.url }}" class="post-nav-link post-nav-link post-nav-next">Next &rarr;</a>
+        <a href="{{ page.next.url }}" class="post-nav-link post-nav-next">Next &rarr;</a>
         {% else %}
         <span class="post-nav-link post-nav-disabled">Next &rarr;</span>
         {% endif %}
