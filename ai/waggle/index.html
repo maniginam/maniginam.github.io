@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waggle — Multi-Agent Coordination Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --bg-deep: #0a0a0c;
+  --bg-surface: #111114;
+  --bg-card: #18181c;
+  --bg-card-hover: #1e1e24;
+  --bg-elevated: #222228;
+  --border: #2a2a32;
+  --border-subtle: #1e1e26;
+  --text-primary: #e8e6e3;
+  --text-secondary: #8a8a96;
+  --text-dim: #55555f;
+  --amber: #f0a500;
+  --amber-dim: #9e7000;
+  --amber-glow: rgba(240,165,0,0.08);
+  --amber-glow-strong: rgba(240,165,0,0.15);
+  --green: #34d399;
+  --green-dim: rgba(52,211,153,0.15);
+  --red: #f87171;
+  --red-dim: rgba(248,113,113,0.15);
+  --blue: #60a5fa;
+  --blue-dim: rgba(96,165,250,0.15);
+  --purple: #a78bfa;
+  --purple-dim: rgba(167,139,250,0.15);
+  --cyan: #22d3ee;
+  --cyan-dim: rgba(34,211,238,0.15);
+  --radius: 6px;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+html { font-size: 13px; }
+body {
+  font-family: var(--font-mono);
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── HEADER ── */
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px; border-bottom: 1px solid var(--border);
+  background: var(--bg-surface); position: sticky; top: 0; z-index: 100;
+}
+.header-left { display: flex; align-items: center; gap: 16px; }
+.logo {
+  font-family: var(--font-sans); font-size: 1.4rem; font-weight: 700;
+  color: var(--amber); letter-spacing: -0.5px;
+  display: flex; align-items: center; gap: 8px;
+}
+.logo-hex {
+  width: 28px; height: 28px; background: var(--amber);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.logo-hex-inner {
+  width: 20px; height: 20px; background: var(--bg-surface);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.header-stats { display: flex; gap: 20px; font-size: 0.85rem; }
+.header-stat { color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
+.header-stat .val { color: var(--text-primary); font-weight: 600; }
+.demo-badge {
+  font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1.5px;
+  padding: 3px 10px; border-radius: 10px; font-weight: 600;
+  background: var(--amber-glow-strong); color: var(--amber); border: 1px solid var(--amber-dim);
+}
+.pulse-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52,211,153,0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 6px rgba(52,211,153,0); }
+}
+.header-right { display: flex; align-items: center; gap: 12px; }
+.sse-status { font-size: 0.75rem; color: var(--text-dim); display: flex; align-items: center; gap: 6px; }
+.sse-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+
+/* ── LAYOUT ── */
+.app-shell {
+  display: grid; grid-template-columns: 200px 1fr;
+  height: calc(100vh - 49px);
+}
+
+/* ── SIDEBAR ── */
+.project-nav {
+  background: var(--bg-surface); border-right: 1px solid var(--border);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.project-nav-header {
+  padding: 12px 14px; border-bottom: 1px solid var(--border);
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-dim); font-weight: 600;
+}
+.project-nav-list {
+  flex: 1; overflow-y: auto; padding: 6px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.project-nav-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px; border-radius: var(--radius);
+  cursor: pointer; transition: all 0.15s; border: none; background: none;
+  width: 100%; text-align: left; font-family: var(--font-mono);
+}
+.project-nav-item:hover { background: var(--bg-card); }
+.project-nav-item.active {
+  background: var(--amber-glow); border: 1px solid rgba(240,165,0,0.2);
+}
+.nav-icon {
+  width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0;
+  background: var(--text-dim);
+}
+.project-nav-item.active .nav-icon { background: var(--amber); }
+.nav-icon.hex {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 10px; height: 10px; background: var(--amber);
+}
+.project-nav-name {
+  flex: 1; font-size: 0.8rem; color: var(--text-secondary);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-family: var(--font-sans); font-weight: 500;
+}
+.project-nav-item.active .project-nav-name { color: var(--text-primary); }
+.project-nav-count {
+  font-size: 0.6rem; background: var(--bg-elevated); color: var(--text-dim);
+  padding: 1px 6px; border-radius: 8px; font-weight: 600; flex-shrink: 0;
+}
+.project-nav-item.active .project-nav-count {
+  background: var(--amber-glow-strong); color: var(--amber);
+}
+.nav-activity {
+  width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+}
+.nav-activity.active { background: var(--green); animation: pulse 2s ease-in-out infinite; }
+.nav-activity.working { background: var(--amber); animation: pulse 2s ease-in-out infinite; }
+
+/* ── MAIN CONTENT ── */
+.main-content { overflow-y: auto; padding: 24px; display: flex; flex-direction: column; gap: 24px; }
+
+/* ── STATS ROW ── */
+.stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.stat-card {
+  background: var(--bg-card); border: 1px solid var(--border-subtle);
+  border-radius: 8px; padding: 16px 18px; position: relative; overflow: hidden;
+}
+.stat-card-label {
+  font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-dim); font-weight: 600; margin-bottom: 8px;
+}
+.stat-card-value {
+  font-family: var(--font-sans); font-size: 2rem; font-weight: 700;
+  color: var(--text-primary);
+}
+.stat-card-sub {
+  font-size: 0.7rem; color: var(--text-secondary); margin-top: 4px;
+}
+.stat-accent {
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-dim); font-weight: 600; margin-bottom: 8px;
+}
+
+/* ── AGENT GRID ── */
+.agent-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;
+}
+.agent-card {
+  background: var(--bg-card); border: 1px solid var(--border-subtle);
+  border-radius: 8px; padding: 16px 18px; cursor: pointer;
+  transition: all 0.2s; position: relative; overflow: hidden;
+}
+.agent-card:hover {
+  background: var(--bg-card-hover); border-color: var(--border);
+  transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.agent-card-accent {
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  opacity: 0; transition: opacity 0.2s;
+}
+.agent-card:hover .agent-card-accent { opacity: 1; }
+.agent-card-header {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;
+}
+.agent-name {
+  font-family: var(--font-sans); font-size: 1rem; font-weight: 600;
+  color: var(--text-primary); display: flex; align-items: center; gap: 8px;
+}
+.agent-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.agent-dot.working { background: var(--amber); animation: pulse 2s ease-in-out infinite; }
+.agent-dot.idle { background: var(--green); }
+.agent-dot.blocked { background: var(--red); animation: pulse 1.5s ease-in-out infinite; }
+.agent-dot.done { background: var(--blue); }
+.agent-role {
+  font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px;
+  padding: 2px 8px; border-radius: 10px; font-weight: 600;
+}
+.role-alpha { background: var(--amber-glow-strong); color: var(--amber); }
+.role-leader { background: var(--purple-dim); color: var(--purple); }
+.role-worker { background: var(--bg-elevated); color: var(--text-secondary); }
+.agent-task {
+  font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 8px;
+  line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.agent-meta {
+  display: flex; gap: 12px; font-size: 0.65rem; color: var(--text-dim);
+}
+.agent-meta-item { display: flex; align-items: center; gap: 4px; }
+.status-badge {
+  font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px;
+  padding: 2px 8px; border-radius: 10px; font-weight: 600;
+}
+.status-working { background: var(--amber-glow-strong); color: var(--amber); }
+.status-idle { background: var(--green-dim); color: var(--green); }
+.status-blocked { background: var(--red-dim); color: var(--red); }
+.status-done { background: var(--blue-dim); color: var(--blue); }
+
+/* ── TASK COLUMNS ── */
+.task-board {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+}
+.task-column {
+  background: var(--bg-surface); border: 1px solid var(--border-subtle);
+  border-radius: 8px; padding: 12px; min-height: 200px;
+}
+.task-column-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+.task-column-title {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-dim); font-weight: 600;
+}
+.task-column-count {
+  font-size: 0.6rem; background: var(--bg-elevated); color: var(--text-dim);
+  padding: 1px 6px; border-radius: 8px; font-weight: 600;
+}
+.task-item {
+  background: var(--bg-card); border: 1px solid var(--border-subtle);
+  border-radius: var(--radius); padding: 10px 12px; margin-bottom: 8px;
+  cursor: pointer; transition: all 0.15s;
+}
+.task-item:hover { background: var(--bg-card-hover); border-color: var(--border); }
+.task-title {
+  font-size: 0.8rem; color: var(--text-primary); margin-bottom: 4px;
+  font-family: var(--font-sans); font-weight: 500;
+}
+.task-assignee {
+  font-size: 0.65rem; color: var(--text-dim);
+}
+.task-priority {
+  display: inline-block; font-size: 0.55rem; text-transform: uppercase;
+  letter-spacing: 0.5px; padding: 1px 6px; border-radius: 8px;
+  font-weight: 600; margin-top: 6px;
+}
+.priority-high { background: var(--red-dim); color: var(--red); }
+.priority-medium { background: var(--amber-glow-strong); color: var(--amber); }
+.priority-low { background: var(--bg-elevated); color: var(--text-dim); }
+
+/* ── MESSAGE FEED ── */
+.message-feed {
+  background: var(--bg-card); border: 1px solid var(--border-subtle);
+  border-radius: 8px; overflow: hidden;
+}
+.message-item {
+  padding: 10px 16px; border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.15s; cursor: pointer;
+}
+.message-item:last-child { border-bottom: none; }
+.message-item:hover { background: var(--bg-card-hover); }
+.message-header {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 4px;
+}
+.message-from {
+  font-size: 0.75rem; font-weight: 600; color: var(--amber);
+  font-family: var(--font-sans);
+}
+.message-arrow { font-size: 0.65rem; color: var(--text-dim); }
+.message-to { font-size: 0.75rem; color: var(--text-secondary); font-family: var(--font-sans); }
+.message-time { font-size: 0.6rem; color: var(--text-dim); margin-left: auto; }
+.message-body {
+  font-size: 0.75rem; color: var(--text-secondary); line-height: 1.5;
+  display: -webkit-box; -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* ── FOOTER ── */
+.demo-footer {
+  padding: 24px; text-align: center; border-top: 1px solid var(--border);
+  background: var(--bg-surface);
+}
+.demo-footer p { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 12px; }
+.demo-footer a {
+  color: var(--amber); text-decoration: none; font-weight: 600;
+  transition: color 0.15s;
+}
+.demo-footer a:hover { color: var(--text-primary); }
+.gh-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 20px; border-radius: var(--radius);
+  border: 1px solid var(--amber-dim); background: var(--amber-glow);
+  color: var(--amber); font-family: var(--font-mono); font-size: 0.8rem;
+  font-weight: 600; text-decoration: none; transition: all 0.2s;
+}
+.gh-btn:hover {
+  background: var(--amber-glow-strong); border-color: var(--amber);
+  transform: translateY(-1px); box-shadow: 0 4px 12px rgba(240,165,0,0.15);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+}
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.25s; }
+.delay-6 { animation-delay: 0.3s; }
+.delay-7 { animation-delay: 0.35s; }
+.delay-8 { animation-delay: 0.4s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .app-shell { grid-template-columns: 1fr; }
+  .project-nav { display: none; }
+  .stats-row { grid-template-columns: repeat(2, 1fr); }
+  .task-board { grid-template-columns: repeat(2, 1fr); }
+  .agent-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .stats-row { grid-template-columns: 1fr; }
+  .task-board { grid-template-columns: 1fr; }
+  .header-stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo">
+      <div class="logo-hex"><div class="logo-hex-inner"></div></div>
+      waggle
+    </div>
+    <div class="header-stats">
+      <div class="header-stat"><div class="pulse-dot"></div> <span class="val">6</span> agents</div>
+      <div class="header-stat"><span class="val">14</span> tasks</div>
+      <div class="header-stat"><span class="val">3</span> projects</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="demo-badge">interactive demo</span>
+    <div class="sse-status"><div class="sse-dot"></div> connected</div>
+  </div>
+</div>
+
+<!-- APP SHELL -->
+<div class="app-shell">
+
+  <!-- SIDEBAR -->
+  <div class="project-nav">
+    <div class="project-nav-header">projects</div>
+    <div class="project-nav-list">
+      <div class="project-nav-item" onclick="showProject('overview')">
+        <div class="nav-icon hex"></div>
+        <span class="project-nav-name">Overview</span>
+      </div>
+      <div class="project-nav-item active" onclick="showProject('acme')">
+        <div class="nav-icon" style="background:var(--green)"></div>
+        <span class="project-nav-name">acme-saas</span>
+        <span class="project-nav-count">4</span>
+        <div class="nav-activity active"></div>
+      </div>
+      <div class="project-nav-item" onclick="showProject('mobile')">
+        <div class="nav-icon" style="background:var(--blue)"></div>
+        <span class="project-nav-name">mobile-app</span>
+        <span class="project-nav-count">2</span>
+        <div class="nav-activity working"></div>
+      </div>
+      <div class="project-nav-item" onclick="showProject('infra')">
+        <div class="nav-icon" style="background:var(--purple)"></div>
+        <span class="project-nav-name">infra</span>
+        <span class="project-nav-count">1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main-content">
+
+    <!-- STATS -->
+    <div class="stats-row">
+      <div class="stat-card animate-in delay-1">
+        <div class="stat-accent" style="background:var(--green)"></div>
+        <div class="stat-card-label">agents online</div>
+        <div class="stat-card-value">6</div>
+        <div class="stat-card-sub">2 working &middot; 3 idle &middot; 1 blocked</div>
+      </div>
+      <div class="stat-card animate-in delay-2">
+        <div class="stat-accent" style="background:var(--amber)"></div>
+        <div class="stat-card-label">tasks in progress</div>
+        <div class="stat-card-value">5</div>
+        <div class="stat-card-sub">9 remaining &middot; 12 completed today</div>
+      </div>
+      <div class="stat-card animate-in delay-3">
+        <div class="stat-accent" style="background:var(--blue)"></div>
+        <div class="stat-card-label">messages</div>
+        <div class="stat-card-value">47</div>
+        <div class="stat-card-sub">3 unread &middot; last 2m ago</div>
+      </div>
+      <div class="stat-card animate-in delay-4">
+        <div class="stat-accent" style="background:var(--purple)"></div>
+        <div class="stat-card-label">uptime</div>
+        <div class="stat-card-value" id="uptime-val">4h 23m</div>
+        <div class="stat-card-sub">session started 9:15 AM</div>
+      </div>
+    </div>
+
+    <!-- AGENTS -->
+    <div>
+      <div class="section-title">agents</div>
+      <div class="agent-grid">
+
+        <div class="agent-card animate-in delay-2">
+          <div class="agent-card-accent" style="background:var(--amber)"></div>
+          <div class="agent-card-header">
+            <div class="agent-name"><div class="agent-dot working"></div> alpha</div>
+            <span class="agent-role role-alpha">alpha</span>
+          </div>
+          <div class="agent-task">Coordinating sprint — delegated auth module to backend-agent, monitoring test results</div>
+          <div class="agent-meta">
+            <span class="agent-meta-item">acme-saas</span>
+            <span class="agent-meta-item">seen 12s ago</span>
+          </div>
+        </div>
+
+        <div class="agent-card animate-in delay-3">
+          <div class="agent-card-accent" style="background:var(--purple)"></div>
+          <div class="agent-card-header">
+            <div class="agent-name"><div class="agent-dot working"></div> backend-lead</div>
+            <span class="agent-role role-leader">leader</span>
+          </div>
+          <div class="agent-task">Implementing OAuth2 token refresh flow — 847 specs passing, 0 failures</div>
+          <div class="agent-meta">
+            <span class="agent-meta-item">acme-saas</span>
+            <span class="agent-meta-item">seen 5s ago</span>
+          </div>
+        </div>
+
+        <div class="agent-card animate-in delay-4">
+          <div class="agent-card-accent" style="background:var(--green)"></div>
+          <div class="agent-card-header">
+            <div class="agent-name"><div class="agent-dot idle"></div> frontend-agent</div>
+            <span class="agent-role role-worker">worker</span>
+          </div>
+          <div class="agent-task">Waiting for auth API — dashboard components complete, ready for integration</div>
+          <div class="agent-meta">
+            <span class="agent-meta-item">acme-saas</span>
+            <span class="agent-meta-item">seen 30s ago</span>
+          </div>
+        </div>
+
+        <div class="agent-card animate-in delay-5">
+          <div class="agent-card-accent" style="background:var(--green)"></div>
+          <div class="agent-card-header">
+            <div class="agent-name"><div class="agent-dot idle"></div> test-runner</div>
+            <span class="agent-role role-worker">worker</span>
+          </div>
+          <div class="agent-task">All suites green — 2,341 specs, 0 failures, 0 pending</div>
+          <div class="agent-meta">
+            <span class="agent-meta-item">acme-saas</span>
+            <span class="agent-meta-item">seen 45s ago</span>
+          </div>
+        </div>
+
+        <div class="agent-card animate-in delay-6">
+          <div class="agent-card-accent" style="background:var(--red)"></div>
+          <div class="agent-card-header">
+            <div class="agent-name"><div class="agent-dot blocked"></div> db-migrator</div>
+            <span class="agent-role role-worker">worker</span>
+          </div>
+          <div class="agent-task">Blocked — migration lock held by staging deploy, waiting for release</div>
+          <div class="agent-meta">
+            <span class="agent-meta-item">infra</span>
+            <span class="agent-meta-item">seen 8s ago</span>
+          </div>
+        </div>
+
+        <div class="agent-card animate-in delay-7">
+          <div class="agent-card-accent" style="background:var(--blue)"></div>
+          <div class="agent-card-header">
+            <div class="agent-name"><div class="agent-dot idle"></div> mobile-lead</div>
+            <span class="agent-role role-leader">leader</span>
+          </div>
+          <div class="agent-task">React Native build complete — 312 specs passing, APK ready for QA</div>
+          <div class="agent-meta">
+            <span class="agent-meta-item">mobile-app</span>
+            <span class="agent-meta-item">seen 1m ago</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TASK BOARD -->
+    <div>
+      <div class="section-title">task board &mdash; acme-saas</div>
+      <div class="task-board">
+        <div class="task-column animate-in delay-3">
+          <div class="task-column-header">
+            <span class="task-column-title">backlog</span>
+            <span class="task-column-count">4</span>
+          </div>
+          <div class="task-item">
+            <div class="task-title">Add rate limiting to API</div>
+            <div class="task-assignee">unassigned</div>
+            <span class="task-priority priority-medium">medium</span>
+          </div>
+          <div class="task-item">
+            <div class="task-title">Email notification service</div>
+            <div class="task-assignee">unassigned</div>
+            <span class="task-priority priority-low">low</span>
+          </div>
+          <div class="task-item">
+            <div class="task-title">Admin audit log</div>
+            <div class="task-assignee">unassigned</div>
+            <span class="task-priority priority-low">low</span>
+          </div>
+          <div class="task-item">
+            <div class="task-title">WebSocket reconnection</div>
+            <div class="task-assignee">unassigned</div>
+            <span class="task-priority priority-medium">medium</span>
+          </div>
+        </div>
+
+        <div class="task-column animate-in delay-4">
+          <div class="task-column-header">
+            <span class="task-column-title">in progress</span>
+            <span class="task-column-count">3</span>
+          </div>
+          <div class="task-item" style="border-left: 3px solid var(--amber)">
+            <div class="task-title">OAuth2 token refresh</div>
+            <div class="task-assignee">backend-lead</div>
+            <span class="task-priority priority-high">high</span>
+          </div>
+          <div class="task-item" style="border-left: 3px solid var(--amber)">
+            <div class="task-title">Dashboard auth integration</div>
+            <div class="task-assignee">frontend-agent</div>
+            <span class="task-priority priority-high">high</span>
+          </div>
+          <div class="task-item" style="border-left: 3px solid var(--red)">
+            <div class="task-title">Staging DB migration</div>
+            <div class="task-assignee">db-migrator</div>
+            <span class="task-priority priority-high">high</span>
+          </div>
+        </div>
+
+        <div class="task-column animate-in delay-5">
+          <div class="task-column-header">
+            <span class="task-column-title">in review</span>
+            <span class="task-column-count">2</span>
+          </div>
+          <div class="task-item" style="border-left: 3px solid var(--purple)">
+            <div class="task-title">User settings page</div>
+            <div class="task-assignee">frontend-agent</div>
+            <span class="task-priority priority-medium">medium</span>
+          </div>
+          <div class="task-item" style="border-left: 3px solid var(--purple)">
+            <div class="task-title">API pagination</div>
+            <div class="task-assignee">backend-lead</div>
+            <span class="task-priority priority-medium">medium</span>
+          </div>
+        </div>
+
+        <div class="task-column animate-in delay-6">
+          <div class="task-column-header">
+            <span class="task-column-title">done</span>
+            <span class="task-column-count">5</span>
+          </div>
+          <div class="task-item" style="opacity: 0.6">
+            <div class="task-title">User registration flow</div>
+            <div class="task-assignee">backend-lead</div>
+          </div>
+          <div class="task-item" style="opacity: 0.6">
+            <div class="task-title">Dashboard layout</div>
+            <div class="task-assignee">frontend-agent</div>
+          </div>
+          <div class="task-item" style="opacity: 0.6">
+            <div class="task-title">CI/CD pipeline</div>
+            <div class="task-assignee">db-migrator</div>
+          </div>
+          <div class="task-item" style="opacity: 0.6">
+            <div class="task-title">Schema validation</div>
+            <div class="task-assignee">test-runner</div>
+          </div>
+          <div class="task-item" style="opacity: 0.6">
+            <div class="task-title">Error boundary setup</div>
+            <div class="task-assignee">frontend-agent</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECENT MESSAGES -->
+    <div>
+      <div class="section-title">recent messages</div>
+      <div class="message-feed animate-in delay-5">
+        <div class="message-item">
+          <div class="message-header">
+            <span class="message-from">backend-lead</span>
+            <span class="message-arrow">&rarr;</span>
+            <span class="message-to">alpha</span>
+            <span class="message-time">2m ago</span>
+          </div>
+          <div class="message-body">OAuth2 refresh flow implemented. 847 specs passing, 0 failures. Ready for frontend integration. Token rotation handles edge cases for expired refresh tokens.</div>
+        </div>
+        <div class="message-item">
+          <div class="message-header">
+            <span class="message-from">db-migrator</span>
+            <span class="message-arrow">&rarr;</span>
+            <span class="message-to">alpha</span>
+            <span class="message-time">5m ago</span>
+          </div>
+          <div class="message-body">Blocked on staging migration — lock held by previous deploy. Attempted release but lock owner PID still active. Need manual intervention or process kill.</div>
+        </div>
+        <div class="message-item">
+          <div class="message-header">
+            <span class="message-from">alpha</span>
+            <span class="message-arrow">&rarr;</span>
+            <span class="message-to">frontend-agent</span>
+            <span class="message-time">8m ago</span>
+          </div>
+          <div class="message-body">Backend auth is almost ready. Start wiring up the login flow — backend-lead will have the token refresh endpoint live in ~10 minutes.</div>
+        </div>
+        <div class="message-item">
+          <div class="message-header">
+            <span class="message-from">test-runner</span>
+            <span class="message-arrow">&rarr;</span>
+            <span class="message-to">alpha</span>
+            <span class="message-time">12m ago</span>
+          </div>
+          <div class="message-body">Full suite complete: 2,341 specs, 0 failures, 0 pending. Coverage at 94%. All green.</div>
+        </div>
+        <div class="message-item">
+          <div class="message-header">
+            <span class="message-from">user</span>
+            <span class="message-arrow">&rarr;</span>
+            <span class="message-to">alpha</span>
+            <span class="message-time">18m ago</span>
+          </div>
+          <div class="message-body">Push everything to staging once auth is integrated. I want to demo this to the client tomorrow morning.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="demo-footer">
+      <p>Waggle is a multi-agent coordination dashboard for AI development teams.<br>
+      Orchestrate Claude Code agents, track tasks, and monitor progress in real time.</p>
+      <a href="https://github.com/maniginam/waggle" class="gh-btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        View on GitHub
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Simulate uptime ticking
+(function() {
+  var hours = 4, mins = 23;
+  setInterval(function() {
+    mins++;
+    if (mins >= 60) { mins = 0; hours++; }
+    document.getElementById('uptime-val').textContent = hours + 'h ' + (mins < 10 ? '0' : '') + mins + 'm';
+  }, 60000);
+})();
+
+// Sidebar nav interaction
+function showProject(name) {
+  document.querySelectorAll('.project-nav-item').forEach(function(el) {
+    el.classList.remove('active');
+  });
+  event.currentTarget.classList.add('active');
+}
+
+// Simulate agent heartbeats — randomly update "seen" times
+(function() {
+  var times = ['just now', '3s ago', '5s ago', '12s ago', '20s ago', '30s ago', '45s ago', '1m ago'];
+  setInterval(function() {
+    document.querySelectorAll('.agent-meta-item:last-child').forEach(function(el) {
+      if (el.textContent.indexOf('seen') === 0) {
+        el.textContent = 'seen ' + times[Math.floor(Math.random() * times.length)];
+      }
+    });
+  }, 5000);
+})();
+</script>
+
+</body>
+</html>
