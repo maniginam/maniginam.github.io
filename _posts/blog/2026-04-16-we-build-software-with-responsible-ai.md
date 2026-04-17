@@ -3,6 +3,7 @@ layout: post
 title: "We Build Software with Responsible AI — Here's Why Discipline Still Matters"
 date: 2026-04-16
 categories: blog
+tags: blog
 ---
 
 Last week my six-year-old asked me, "Mommy, in your job, do you get to tell robots what to do?"

@@ -3,6 +3,7 @@ layout: post
 title: "The Hive is Open"
 date: 2026-04-15
 categories: blog
+tags: blog
 ---
 
 A few months ago I was sitting at my desk with six AI agents running in six terminal panes, and I couldn't tell what any of them were doing.

@@ -3,6 +3,7 @@ layout: post
 title: "I Made some Mistakes. The Robot Made Them Faster."
 date: 2026-04-08
 categories: blog
+tags: blog
 ---
 
 Last week I committed a Secure cookie flag to production that only worked on localhost. The week before that, I restructured a data map and silently nuked three features that had nothing to do with what I was touching. And somewhere in between, I approved a test that was — technically — testing something. Just not anything that mattered.
