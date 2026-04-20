@@ -179,7 +179,10 @@
   var zoomedCard = null;
   var scrollY = 0;
   var targetScrollY = 0;
-  var maxScroll = Math.max(0, (totalH - h * 0.3) / 2);
+  // Visible height in world units at z=0
+  var vFov = camera.fov * Math.PI / 180;
+  var visibleH = 2 * Math.tan(vFov / 2) * camera.position.z;
+  var maxScroll = Math.max(0, (totalH - visibleH + gapY) / 2);
 
   // Scroll to pan vertically through the wall
   container.addEventListener('wheel', function (e) {
@@ -324,5 +327,8 @@
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
     renderer.setSize(w, h);
+    visibleH = 2 * Math.tan(vFov / 2) * camera.position.z;
+    maxScroll = Math.max(0, (totalH - visibleH + gapY) / 2);
+    targetScrollY = Math.max(-maxScroll, Math.min(maxScroll, targetScrollY));
   });
 })();
