@@ -177,8 +177,8 @@
   var mouse = new THREE.Vector2(0, 0);
   var hoveredCard = null;
   var zoomedCard = null;
-  var scrollY = 0;
-  var targetScrollY = 0;
+  var scrollY = -maxScroll;
+  var targetScrollY = -maxScroll;
   // Visible height in world units at z=0
   var vFov = camera.fov * Math.PI / 180;
   var visibleH = 2 * Math.tan(vFov / 2) * camera.position.z;
