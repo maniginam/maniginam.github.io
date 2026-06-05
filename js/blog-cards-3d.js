@@ -177,12 +177,12 @@
   var mouse = new THREE.Vector2(0, 0);
   var hoveredCard = null;
   var zoomedCard = null;
-  var scrollY = -maxScroll;
-  var targetScrollY = -maxScroll;
   // Visible height in world units at z=0
   var vFov = camera.fov * Math.PI / 180;
   var visibleH = 2 * Math.tan(vFov / 2) * camera.position.z;
   var maxScroll = Math.max(0, (totalH - visibleH + gapY) / 2);
+  var scrollY = -maxScroll;
+  var targetScrollY = -maxScroll;
 
   // Scroll to pan vertically through the wall
   container.addEventListener('wheel', function (e) {
